@@ -49,11 +49,11 @@ Todo esto nos permite enfocarnos en evaluar la mejora de los modelos desarrollad
 ### Modelos a testear
 
 De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos a los 5 proyectos con mejor desempeño basado en las métricas de evaluación primarias utilizadas para la evaluación de los modelos, entre ellos, precisión, sensibilidad y F-Score, siendo esta última la única medida de evaluación oficial de ambas categorías. Los modelos seleccionados son los presentados por las siguientes instituciones y autores:
-1. Bosch Center for Artificial Intelligence
-2. Universitat Rovira i Virgili, CRISES group 
-3. Vicomtech
-4. FSL
-5. Universitat Rovira i Virgili, iTAKA Research Group
+1. Bosch Center for Artificial Intelligence: centro de investigación que se especializa en el desarrollo de tecnologías de inteligencia artificial. Su enfoque abarca una variedad de aplicaciones, incluyendo el sector de la salud, donde buscan innovar en el análisis de datos y el procesamiento de lenguaje natural para mejorar la atención médica y la eficiencia de los sistemas de salud.
+2. Universitat Rovira i Virgili, CRISES group: grupo de investigación se centra en la intersección entre la ciencia de datos y la salud pública. Su trabajo implica la identificación de patrones en datos clínicos y la mejora de la atención médica mediante el uso de técnicas avanzadas de análisis y modelado. El grupo se dedica a desarrollar soluciones que optimicen la gestión de la salud y la calidad del cuidado.
+3. Vicomtech:  centro tecnológico de investigación aplicada, se especializa en la creación de soluciones innovadoras en diversas áreas, incluyendo la inteligencia artificial y el análisis de datos. En el ámbito de la salud, trabajan en el desarrollo de herramientas que faciliten la gestión y el procesamiento de información médica, contribuyendo a la mejora de la atención al paciente.
+4. FSL:  se dedica a la investigación en el campo del procesamiento del lenguaje natural y la creación de algoritmos avanzados. Su enfoque está en desarrollar herramientas y técnicas que mejoren la extracción y análisis de información en textos médicos, contribuyendo a la automatización y eficiencia en el manejo de datos sensibles.
+5. Universitat Rovira i Virgili, iTAKA Research Group:  se especializa en el análisis de datos, con un énfasis particular en su aplicación en el sector salud. Investigan cómo los datos pueden ser utilizados para mejorar los procesos de atención médica, la toma de decisiones clínicas y la identificación de factores que afectan la salud de las poblaciones.
 
 ### DataSet
 

@@ -1,7 +1,7 @@
 # Trabajo de presentación para el curso: "Minería de Datos para Textos" (Text Mining)
 ## Impacto de la Dependencia de Datos en Modelos de Fine-Tuning para la anonimización de textos de ciencias de la vida
 **Profesores**: Laura Alonso Alemany, Matias Eduardo Bordone Carranza, Milagro Teruel  
-**Alumnos**: Florencia Brunello, Julieta Paola Storino, Santiago Troya.
+**Alumnos**: Florencia Brunello, Julieta Paola Storino, Santiago Troiano.
 
 ### Índice
 1. [Introducción](#introducción)

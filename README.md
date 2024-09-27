@@ -9,6 +9,7 @@
 3. [Trabajos anteriores](#trabajos-anteriores)
 4. [Modelos a testear](#modelos-a-testear)
 5. [DataSet](#dataset)
+6. [Planificación](#planificación)
 
 ### Introducción
 
@@ -56,5 +57,16 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 
 ### DataSet
 
-A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarrolladas por el generador de pacientes sintéticos open source [Synthea](https://github.com/synthetichealth/synthea/wiki)
- que proporciona datos de alta calidad, realistas, pero no reales, de pacientes; en una variedad de formatos, con diferentes niveles de complejidad, cubriendo todos los aspectos de la atención médica. Los datos obtenidos no tienen coste, ni privacidad ni restricciones de seguridad.
+A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarrolladas por el generador de pacientes sintéticos open source [Synthea](https://github.com/synthetichealth/synthea/wiki) que proporciona datos de alta calidad, realistas, pero no reales, de pacientes; en una variedad de formatos, con diferentes niveles de complejidad, cubriendo todos los aspectos de la atención médica. Los datos obtenidos no tienen coste, ni privacidad ni restricciones de seguridad.
+
+### Planificación
+* *Semana 1*: Definir los objetivos del proyecto y el alcance del testeo de los modelos. 
+
+* *Semana 2*: Preparar el conjunto de datos. Adaptar modelos existentes para transformar los datos de entrada y salida a los formatos requeridos por los nuevos modelos a testear.
+
+* *Semana 3*: Configurar los modelos a testear y desarrollar el modelo de evaluación para comparar los resultados obtenidos.
+
+* *Semana 4*: Ejecutar los modelos y realizar una evaluación preliminar de los resultados obtenidos.
+
+* *Semana 5*: Analizar los resultados obtenidos en detalle y redactar el informe final, incluyendo conclusiones y recomendaciones para futuros trabajos.
+

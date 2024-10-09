@@ -6,10 +6,11 @@
 ### Índice
 1. [Introducción](#introducción)
 2. [Motivación](#motivación)
-3. [Trabajos anteriores](#trabajos-anteriores)
-4. [Modelos a testear](#modelos-a-testear)
-5. [DataSet](#dataset)
-6. [Planificación](#planificación)
+3. [Objetivos](#objetivos)
+4. [Trabajos anteriores](#trabajos-anteriores)
+5. [Modelos a testear](#modelos-a-testear)
+6. [DataSet](#dataset)
+7. [Planificación](#planificación)
 
 ### Introducción
 
@@ -25,6 +26,14 @@ Sin embargo, estos textos médicos están compuestos, en gran medida, por datos 
 Esto plantea retos en cuanto a la protección de la privacidad de los datos de los pacientes, en la cual resalta el delicado equilibrio entre la utilidad de los datos y la privacidad, ya que, se pueden anonimizar datos hasta un punto en que no brinden información beneficiosa, volviéndose inútil, o por lo contrario, se puede tener datos que brinden información sustancial para ser vinculados a las personas a las que refieren.
 
 Por estas razones, investigadores de todo el mundo han desarrollado técnicas y algoritmos avanzados para anonimizar datos, permitiendo su uso para los fines solicitados mientras se mantiene el anonimato del paciente. Esto nos da paso a analizar las fortalezas y debilidades de los algoritmos y software que anonimizan datos de salud estructurados, con el objetivo de identificar áreas de mejora y diseñar estrategias para optimizar su rendimiento.
+
+### Objetivos
+
+El presente informe tiene como objetivo principal comparar diferentes aproximaciones para la anonimización de textos médicos. Para ello, se establecen los siguientes objetivos específicos:
+- Evaluar el rendimiento de modelos ya existentes: analizaremos la eficacia de los modelos de fine-tuning seleccionados en la tarea de anonimización de textos, enfocándonos en métricas clave como precisión, sensibilidad y F-Score.
+- Identificar la dependencia de datos: buscaremos determinar cómo la calidad y la variedad de los conjuntos de datos utilizados en el entrenamiento de los modelos afectan su desempeño en contextos diferentes a los de entrenamiento, incluyendo el uso de datos sintéticos.
+- Optimizar estrategias de anonimización: propondremos mejoras y estrategias basadas en los hallazgos del análisis, con el fin de optimizar el rendimiento de los modelos en la anonimización de datos sensibles.
+- Fomentar la colaboración interdisciplinaria: el trabajo será en parte guiado por las críticas de nuestros compañeros, por lo que habrá un intercambio de conocimientos dado por la colaboración entre los diferentes equipos.
 
 ### Trabajos anteriores
 

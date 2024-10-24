@@ -26,7 +26,7 @@ Esto plantea retos en cuanto a la protección de la privacidad de los datos de l
 
 ### Objetivos
 
-El presente informe tiene como objetivo principal comparar diferentes aproximaciones para la anonimización de textos médicos. Para ello, se establecen los siguientes objetivos específicos:
+El presente informe tiene como objetivo principal comparar la dependencia de datos presenre en diferentes aproximaciones para la anonimización de textos médicos en español. Para ello, se establecen los siguientes objetivos específicos:
 - Evaluar el rendimiento de modelos ya existentes: analizaremos la eficacia de los modelos de fine-tuning seleccionados en la tarea de anonimización de textos, enfocándonos en métricas clave como precisión, sensibilidad y F-Score.
 - Identificar la dependencia de datos: buscaremos determinar cómo la calidad y la variedad de los conjuntos de datos utilizados en el entrenamiento de los modelos afectan su desempeño en contextos diferentes a los de entrenamiento, incluyendo el uso de datos sintéticos.
 - Optimizar estrategias de anonimización: propondremos mejoras y estrategias basadas en los hallazgos del análisis, con el fin de optimizar el rendimiento de los modelos en la anonimización de datos sensibles.
@@ -279,35 +279,27 @@ Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en u
 
 ### Modelos a testear
 
-De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos a los 5 proyectos con mejor desempeño basado en las métricas de evaluación primarias utilizadas para la evaluación de los modelos, entre ellos:
+De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 4 proyectos presentados por las siguientes instituciones:
 
-1. *Precisión*: La proporción de verdaderos positivos $(TP)$ sobre el total de predicciones positivas $(TP + FP)$. Es decir, mide la exactitud de las predicciones positivas realizadas por el modelo.
+1. **Bosch Center for Artificial Intelligence (Alemania)**: Centro de investigación que se especializa en el desarrollo de tecnologías de inteligencia artificial. Su enfoque abarca una variedad de aplicaciones, incluyendo el sector de la salud, donde buscan innovar en el análisis de datos y el procesamiento de lenguaje natural para mejorar la atención médica y la eficiencia de los sistemas de salud.
 
-$$ \text{Precisión} = \frac{TP}{TP + FP} $$
+2. **University of Pennsylvania (Estados Unidos)**:
 
-2. *Exhaustividad*: La proporción de verdaderos positivos $(TP)$ sobre el total de casos positivos en el conjunto de datos $(TP + FN)$. Es decir, mide la capacidad del modelo para identificar correctamente los casos positivos.
+3. **Carlos III University of Madrid (España)**:
 
-$$ \text{Exhaustividad} = \frac{TP}{TP + FN} $$
-
-3. *Puntuación F1*: La media armónica de la precisión y la exhaustividad, y se utiliza para evaluar el equilibrio entre ambas métricas.
-
-$$ F1 = 2 \times \frac{\text{Precisión} \times \text{Exhaustividad}}{\text{Precisión} + \text{Exhaustividad}} $$
-  
-Los modelos seleccionados son los presentados por las siguientes instituciones y autores:
-
-1. Bosch Center for Artificial Intelligence: Centro de investigación que se especializa en el desarrollo de tecnologías de inteligencia artificial. Su enfoque abarca una variedad de aplicaciones, incluyendo el sector de la salud, donde buscan innovar en el análisis de datos y el procesamiento de lenguaje natural para mejorar la atención médica y la eficiencia de los sistemas de salud.
-
-2. Universitat Rovira i Virgili, CRISES group: Grupo de investigación se centra en la intersección entre la ciencia de datos y la salud pública. Su trabajo implica la identificación de patrones en datos clínicos y la mejora de la atención médica mediante el uso de técnicas avanzadas de análisis y modelado. El grupo se dedica a desarrollar soluciones que optimicen la gestión de la salud y la calidad del cuidado.
-
-3. Vicomtech: Centro tecnológico de investigación aplicada, se especializa en la creación de soluciones innovadoras en diversas áreas, incluyendo la inteligencia artificial y el análisis de datos. En el ámbito de la salud, trabajan en el desarrollo de herramientas que faciliten la gestión y el procesamiento de información médica, contribuyendo a la mejora de la atención al paciente.
-
-4. FSL: Se dedica a la investigación en el campo del procesamiento del lenguaje natural y la creación de algoritmos avanzados. Su enfoque está en desarrollar herramientas y técnicas que mejoren la extracción y análisis de información en textos médicos, contribuyendo a la automatización y eficiencia en el manejo de datos sensibles.
-
-5. Universitat Rovira i Virgili, iTAKA Research Group: Se especializa en el análisis de datos, con un énfasis particular en su aplicación en el sector salud. Investigan cómo los datos pueden ser utilizados para mejorar los procesos de atención médica, la toma de decisiones clínicas y la identificación de factores que afectan la salud de las poblaciones.
+4. **LSI2 - Universidad Nacional de Educación a Distancia (España)**:  
 
 ### DataSet
 
 A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarrolladas por el generador de pacientes sintéticos open source Synthea que proporciona datos de alta calidad, realistas, pero no reales, de pacientes; en una variedad de formatos, con diferentes niveles de complejidad, cubriendo todos los aspectos de la atención médica. Los datos obtenidos no tienen coste, ni privacidad ni restricciones de seguridad.
+
+[1301 casos clínicos oncológicos:](https://huggingface.co/datasets/PlanTL-GOB-ES/cantemist-ner) This dataset was designed for the CANcer TExt MIning Shared Task, sponsored by Plan-TL.
+
+[3219 reportes radiológicos:](https://huggingface.co/datasets/chizhikchi/CARES) Corpus of Anonymised Radiological Evidences in Spanish
+
+[850 reportes](https://huggingface.co/datasets/IIC/livingner1) LivingNER: Named entity recognition, normalization & classification of species, pathogens and food
+
+[500 reportes](https://huggingface.co/datasets/bigbio/meddocan)
 
 ### Planificación
 * *Semana 1*: Definir los objetivos del proyecto y el alcance del testeo de los modelos. 

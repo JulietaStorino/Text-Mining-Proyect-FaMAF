@@ -1,0 +1,11 @@
+ID del Paciente: 7172bfe6-4fbe-fd05-e43c-df4a69335e7e
+Lugar de nacimiento:
+Ciudad: Everett
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Jerome176 Bechtelar572
+Dirección: 865 Kuhlman Trafficway, New Bedford, MA 02744, US
+Teléfono: 555-870-4348
+Género: hombre

@@ -1,0 +1,11 @@
+ID del Paciente: 410b38f3-26bf-7b35-ef3c-4f98b818f03d
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Dee580 Veum823
+Dirección: 1024 Gerlach Rapid, Westport, MA 00000, US
+Teléfono: 555-647-2529
+Género: hombre

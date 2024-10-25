@@ -1,0 +1,11 @@
+ID del Paciente: 3f5b85b9-15cf-c1dd-0fee-fdbde1bf83ee
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Bettie175 Gerlach374
+Dirección: 157 Krajcik Byway Apt 75, Middleton, MA 00000, US
+Teléfono: 555-735-9865
+Género: mujer

@@ -1,0 +1,11 @@
+ID del Paciente: f9477af7-f497-0bd4-e32e-982ab917c5b2
+Lugar de nacimiento:
+Ciudad: Brockton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Jonathan639 Ortiz186
+Dirección: 988 Harvey Branch, Cambridge, MA 02140, US
+Teléfono: 555-970-3652
+Género: hombre

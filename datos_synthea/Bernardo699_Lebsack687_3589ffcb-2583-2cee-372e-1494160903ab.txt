@@ -1,0 +1,11 @@
+ID del Paciente: 3589ffcb-2583-2cee-372e-1494160903ab
+Lugar de nacimiento:
+Ciudad: Weymouth
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Bernardo699 Lebsack687
+Dirección: 731 Harris Ville, Randolph, MA 02368, US
+Teléfono: 555-636-4674
+Género: hombre

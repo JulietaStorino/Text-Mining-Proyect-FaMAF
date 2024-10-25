@@ -1,0 +1,11 @@
+ID del Paciente: f84e764e-2c4b-fbbd-2db1-cc7d98dcd91d
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Diego848 Skiles927
+Dirección: 483 Rutherford Bypass Suite 72, Wayland, MA 00000, US
+Teléfono: 555-881-7019
+Género: hombre

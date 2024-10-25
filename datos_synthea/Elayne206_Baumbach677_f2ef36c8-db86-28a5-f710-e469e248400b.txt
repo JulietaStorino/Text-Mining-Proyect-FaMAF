@@ -1,0 +1,11 @@
+ID del Paciente: f2ef36c8-db86-28a5-f710-e469e248400b
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Ms. Elayne206 Baumbach677
+Dirección: 282 Treutel Mill, Boston, MA 02467, US
+Teléfono: 555-650-7567
+Género: mujer

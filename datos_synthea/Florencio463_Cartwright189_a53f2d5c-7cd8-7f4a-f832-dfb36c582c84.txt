@@ -1,0 +1,11 @@
+ID del Paciente: a53f2d5c-7cd8-7f4a-f832-dfb36c582c84
+Lugar de nacimiento:
+Ciudad: Worcester
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Florencio463 Cartwright189
+Dirección: 178 Kuhlman Byway, Boston, MA 02108, US
+Teléfono: 555-948-1568
+Género: hombre

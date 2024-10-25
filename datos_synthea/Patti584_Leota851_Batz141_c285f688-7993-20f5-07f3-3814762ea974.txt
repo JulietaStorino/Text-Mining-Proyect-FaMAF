@@ -1,0 +1,11 @@
+ID del Paciente: c285f688-7993-20f5-07f3-3814762ea974
+Lugar de nacimiento:
+Ciudad: Macau
+Estado: Macao Special Administrative Region of the People's Republic of China
+País: CN
+
+Datos del Paciente:
+Nombre: Mrs. Patti584 Batz141
+Dirección: 118 Pfeffer Walk Apt 83, Everett, MA 02149, US
+Teléfono: 555-425-6908
+Género: mujer

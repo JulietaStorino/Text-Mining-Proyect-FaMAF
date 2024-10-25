@@ -1,0 +1,11 @@
+ID del Paciente: 37c4ac81-7469-6a39-89f4-45f1557cd4ac
+Lugar de nacimiento:
+Ciudad: Fairhaven
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Darryl392 Barton704
+Dirección: 774 Cole Port Unit 82, Pepperell, MA 01463, US
+Teléfono: 555-882-6636
+Género: hombre

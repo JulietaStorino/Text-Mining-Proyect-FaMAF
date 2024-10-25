@@ -1,0 +1,11 @@
+ID del Paciente: f18f36bf-5f47-8ad4-35c0-6be49df88cb6
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Joaquina124 Braun514
+Dirección: 116 Huels Heights, Boston, MA 02136, US
+Teléfono: 555-196-1038
+Género: mujer

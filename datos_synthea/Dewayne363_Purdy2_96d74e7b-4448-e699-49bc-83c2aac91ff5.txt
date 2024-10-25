@@ -1,0 +1,11 @@
+ID del Paciente: 96d74e7b-4448-e699-49bc-83c2aac91ff5
+Lugar de nacimiento:
+Ciudad: Leverett
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Dewayne363 Purdy2
+Dirección: 707 Williamson Neck, Somerville, MA 02145, US
+Teléfono: 555-845-4596
+Género: hombre

@@ -1,0 +1,11 @@
+ID del Paciente: e97b97c1-6a58-a920-c4cf-db6b45b40b58
+Lugar de nacimiento:
+Ciudad: Juarez
+Estado: Chihuahua
+País: MX
+
+Datos del Paciente:
+Nombre: Mr. Sancho742 Peres371
+Dirección: 790 Parker Skyway, Freetown, MA 00000, US
+Teléfono: 555-372-9321
+Género: hombre

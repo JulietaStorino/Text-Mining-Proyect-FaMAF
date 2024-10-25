@@ -1,0 +1,11 @@
+ID del Paciente: fbc851b8-94ec-5fb5-5e3a-53f5003ed007
+Lugar de nacimiento:
+Ciudad: Chelsea
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Mason910 Spinka232
+Dirección: 412 Koss Bypass, Fall River, MA 02720, US
+Teléfono: 555-173-7093
+Género: hombre

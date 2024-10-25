@@ -1,0 +1,11 @@
+ID del Paciente: 6de913e0-4710-7ab2-9b7e-487d513a3071
+Lugar de nacimiento:
+Ciudad: Cambridge
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Federico589 Nader710
+Dirección: 581 Dickens Bypass, Orange, MA 01364, US
+Teléfono: 555-589-8157
+Género: hombre

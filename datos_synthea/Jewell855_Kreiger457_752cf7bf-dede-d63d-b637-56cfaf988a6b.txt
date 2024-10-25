@@ -1,0 +1,11 @@
+ID del Paciente: 752cf7bf-dede-d63d-b637-56cfaf988a6b
+Lugar de nacimiento:
+Ciudad: Framingham
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Jewell855 Kreiger457
+Dirección: 969 Marks Trailer Apt 2, Cambridge, MA 02140, US
+Teléfono: 555-447-1235
+Género: hombre

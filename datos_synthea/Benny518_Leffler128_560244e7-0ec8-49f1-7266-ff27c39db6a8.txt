@@ -1,0 +1,11 @@
+ID del Paciente: 560244e7-0ec8-49f1-7266-ff27c39db6a8
+Lugar de nacimiento:
+Ciudad: Brockton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Benny518 Leffler128
+Dirección: 650 Reichel Way, Revere, MA 02151, US
+Teléfono: 555-938-6046
+Género: hombre

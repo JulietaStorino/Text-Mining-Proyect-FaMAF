@@ -1,0 +1,11 @@
+ID del Paciente: 40e8448d-7f3d-b1ae-f174-79d20582b25e
+Lugar de nacimiento:
+Ciudad: Chelsea
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Rocio28 Schaefer657
+Dirección: 200 Bergstrom Plaza, Lowell, MA 01852, US
+Teléfono: 555-410-8699
+Género: mujer

@@ -1,0 +1,11 @@
+ID del Paciente: c67e89fb-0f01-daaa-daac-0153e99f7fee
+Lugar de nacimiento:
+Ciudad: Worcester
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Cherrie404 Purdy2
+Dirección: 838 VonRueden Heights, Somerville, MA 02138, US
+Teléfono: 555-943-3611
+Género: mujer

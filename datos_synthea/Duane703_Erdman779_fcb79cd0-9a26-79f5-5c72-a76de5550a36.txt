@@ -1,0 +1,11 @@
+ID del Paciente: fcb79cd0-9a26-79f5-5c72-a76de5550a36
+Lugar de nacimiento:
+Ciudad: Northampton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Duane703 Erdman779
+Dirección: 178 Mayer Road, Everett, MA 02149, US
+Teléfono: 555-347-9219
+Género: hombre

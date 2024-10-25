@@ -1,0 +1,11 @@
+ID del Paciente: 6de0d770-9021-0732-a69a-3dba47366fd9
+Lugar de nacimiento:
+Ciudad: Mashpee
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Duncan491 Legros616
+Dirección: 705 Nolan Branch, Lynn, MA 01905, US
+Teléfono: 555-848-7312
+Género: hombre

@@ -1,0 +1,11 @@
+ID del Paciente: a089be6c-a896-9c4b-b8bf-a2bb3abdc3d3
+Lugar de nacimiento:
+Ciudad: Dedham
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Gregory545 Miller503
+Dirección: 159 Douglas Mall, Springfield, MA 01104, US
+Teléfono: 555-474-7710
+Género: hombre

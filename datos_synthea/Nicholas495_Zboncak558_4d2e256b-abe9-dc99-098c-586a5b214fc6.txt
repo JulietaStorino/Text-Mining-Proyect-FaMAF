@@ -1,0 +1,11 @@
+ID del Paciente: 4d2e256b-abe9-dc99-098c-586a5b214fc6
+Lugar de nacimiento:
+Ciudad: Shirley
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Nicholas495 Zboncak558
+Dirección: 1001 Jaskolski Frontage road Apt 96, Swansea, MA 00000, US
+Teléfono: 555-377-4089
+Género: hombre

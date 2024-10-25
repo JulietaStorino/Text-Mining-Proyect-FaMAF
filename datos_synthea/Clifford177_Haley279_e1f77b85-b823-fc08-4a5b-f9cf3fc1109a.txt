@@ -1,0 +1,11 @@
+ID del Paciente: e1f77b85-b823-fc08-4a5b-f9cf3fc1109a
+Lugar de nacimiento:
+Ciudad: Milford
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Clifford177 Haley279
+Dirección: 399 Dare Promenade Apt 92, Lowell, MA 01851, US
+Teléfono: 555-480-6748
+Género: hombre

@@ -1,0 +1,11 @@
+ID del Paciente: 232eeceb-6418-1870-8142-2ce5c3f6bc3f
+Lugar de nacimiento:
+Ciudad: Whitman
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Yanira774 Beier427
+Dirección: 442 Kuhn Stravenue, Belmont, MA 02472, US
+Teléfono: 555-669-5818
+Género: mujer

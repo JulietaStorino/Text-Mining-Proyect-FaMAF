@@ -1,0 +1,11 @@
+ID del Paciente: c764b2fa-083b-faa6-7812-024359b5e043
+Lugar de nacimiento:
+Ciudad: Ahmedabad
+Estado: Gujarat
+País: IN
+
+Datos del Paciente:
+Nombre: Mr. Rudy520 Schulist381
+Dirección: 901 Carter Camp, Fall River, MA 02790, US
+Teléfono: 555-643-5331
+Género: hombre

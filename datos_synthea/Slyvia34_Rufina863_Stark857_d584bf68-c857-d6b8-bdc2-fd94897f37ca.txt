@@ -1,0 +1,11 @@
+ID del Paciente: d584bf68-c857-d6b8-bdc2-fd94897f37ca
+Lugar de nacimiento:
+Ciudad: Leominster
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Slyvia34 Stark857
+Dirección: 685 Predovic Trace Apt 42, Sturbridge, MA 01507, US
+Teléfono: 555-407-9371
+Género: mujer

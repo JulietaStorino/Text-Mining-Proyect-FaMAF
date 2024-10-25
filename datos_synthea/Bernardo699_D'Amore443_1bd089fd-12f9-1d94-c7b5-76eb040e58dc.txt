@@ -1,0 +1,11 @@
+ID del Paciente: 1bd089fd-12f9-1d94-c7b5-76eb040e58dc
+Lugar de nacimiento:
+Ciudad: Avon
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Bernardo699 D'Amore443
+Dirección: 655 Parisian Terrace, Stoughton, MA 00000, US
+Teléfono: 555-209-3624
+Género: hombre

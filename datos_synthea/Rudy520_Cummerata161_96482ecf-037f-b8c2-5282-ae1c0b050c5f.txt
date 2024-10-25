@@ -1,0 +1,11 @@
+ID del Paciente: 96482ecf-037f-b8c2-5282-ae1c0b050c5f
+Lugar de nacimiento:
+Ciudad: Hanover
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Rudy520 Cummerata161
+Dirección: 665 Dicki Lock, Westport, MA 00000, US
+Teléfono: 555-689-3092
+Género: hombre

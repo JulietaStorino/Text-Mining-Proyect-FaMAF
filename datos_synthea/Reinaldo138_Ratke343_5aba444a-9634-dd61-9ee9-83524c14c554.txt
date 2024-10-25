@@ -1,0 +1,11 @@
+ID del Paciente: 5aba444a-9634-dd61-9ee9-83524c14c554
+Lugar de nacimiento:
+Ciudad: Hamburg
+Estado: Hamburg
+País: DE
+
+Datos del Paciente:
+Nombre: Mr. Reinaldo138 Ratke343
+Dirección: 414 Gerlach Landing, Norton, MA 00000, US
+Teléfono: 555-118-1870
+Género: hombre

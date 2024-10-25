@@ -1,0 +1,11 @@
+ID del Paciente: 0f07c2e1-bb44-5a8c-c57f-34f756bdbb6a
+Lugar de nacimiento:
+Ciudad: Revere
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Charita800 Cormier289
+Dirección: 665 Rippin Wynd Apt 44, Fall River, MA 02720, US
+Teléfono: 555-516-8764
+Género: mujer

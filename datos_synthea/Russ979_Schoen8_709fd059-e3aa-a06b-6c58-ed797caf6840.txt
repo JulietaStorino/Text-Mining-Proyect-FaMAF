@@ -1,0 +1,11 @@
+ID del Paciente: 709fd059-e3aa-a06b-6c58-ed797caf6840
+Lugar de nacimiento:
+Ciudad: Hull
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Russ979 Schoen8
+Dirección: 505 Koss Trace Unit 31, Cambridge, MA 02139, US
+Teléfono: 555-482-9560
+Género: hombre

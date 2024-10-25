@@ -1,0 +1,11 @@
+ID del Paciente: 86746e6d-c5c9-14b9-23f7-22f1878b344e
+Lugar de nacimiento:
+Ciudad: Westford
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Fred155 Lemke654
+Dirección: 424 Yundt Way, Brookline, MA 02467, US
+Teléfono: 555-974-2082
+Género: hombre

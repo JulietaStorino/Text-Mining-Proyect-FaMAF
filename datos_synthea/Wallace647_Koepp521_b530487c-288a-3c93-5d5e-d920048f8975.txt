@@ -1,0 +1,11 @@
+ID del Paciente: b530487c-288a-3c93-5d5e-d920048f8975
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Wallace647 Koepp521
+Dirección: 354 Swift Plaza Apt 12, Wellesley, MA 02482, US
+Teléfono: 555-185-2313
+Género: hombre

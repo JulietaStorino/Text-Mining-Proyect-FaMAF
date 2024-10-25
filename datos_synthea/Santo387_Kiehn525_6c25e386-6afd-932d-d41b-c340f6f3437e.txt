@@ -1,0 +1,11 @@
+ID del Paciente: 6c25e386-6afd-932d-d41b-c340f6f3437e
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Santo387 Kiehn525
+Dirección: 1044 Schneider Byway Apt 9, North Amherst, MA 01059, US
+Teléfono: 555-133-3870
+Género: hombre

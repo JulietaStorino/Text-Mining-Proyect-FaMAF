@@ -1,0 +1,11 @@
+ID del Paciente: 35037ec6-9297-a6d8-613f-3fdbf7fe977e
+Lugar de nacimiento:
+Ciudad: Everett
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Bernie827 Wolff180
+Dirección: 628 Kemmer Burg Apt 68, Stoughton, MA 00000, US
+Teléfono: 555-947-8484
+Género: hombre

@@ -1,8 +1,11 @@
 import json
 import os
 
+# Para usar este archivo, debes tener descargado synthea y haber corrido el archivo "generate_samples.sh"
+# Luego, modificar la variable "carpeta" con el path a tu carpeta de samples
+
 # Ruta de la carpeta que contiene los archivos JSON
-carpeta = "synthea/samples/"
+carpeta = "synthea/samples/" # 
 salida_carpeta = "datos_synthea"
 
 # Asegurarse de que la carpeta de salida existe

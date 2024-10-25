@@ -312,6 +312,18 @@ A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarr
 
 * *Semana 5*: Analizar los resultados obtenidos en detalle y redactar el informe final, incluyendo conclusiones y recomendaciones para futuros trabajos.
 
+# Informe de Avances
+
+- Se generaron datos utilizando la herramienta Synthea y se transformaron a un formato compatible con el corpus de MEDDOCAN, en formato .brat.
+- Disponemos actualmente del corpus de MEDDOCAN.
+- Se realizó una investigación exhaustiva sobre los modelos asociados a MEDDOCAN y se identificó que algunos modelos inicialmente previstos para estudio no contaban con código accesible.
+  - Por ello, se procedió a realizar ajustes en los objetivos iniciales del proyecto.
+- Actualmente, estamos considerando los siguientes modelos:
+  - [lukas.lange](https://huggingface.co/llange/xlm-roberta-large-spanish-clinical)
+  - [gauku](https://github.com/ionur/MEDDOCAN-Medical-Document-Anonymization)
+  - [ccolon](https://github.com/ccolonruiz/MEDDOCAN)
+  - [lsi2](https://github.com/alicialara/lsi2_uned_at_MEDDOCAN2019)
+
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.
 - [Automatic De-Identification of Medical Texts in Spanish: the MEDDOCAN Track, Corpus, Guidelines, Methods and Evaluation of Results.](https://ceur-ws.org/Vol-2421/MEDDOCAN_overview.pdf)

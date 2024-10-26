@@ -312,12 +312,11 @@ A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarr
 
 * *Semana 5*: Analizar los resultados obtenidos en detalle y redactar el informe final, incluyendo conclusiones y recomendaciones para futuros trabajos.
 
-# Informe de Avances
+# Preparación del conjunto de datos
 
-- Se generaron datos utilizando la herramienta Synthea y se transformaron a un formato compatible con el corpus de MEDDOCAN, en formato .brat.
+- Se generaron datos sintéticos utilizando la herramienta Synthea y se transformaron a un formato compatible con el corpus de MEDDOCAN, en formato .brat.
 - Disponemos actualmente del corpus de MEDDOCAN.
-- Se realizó una investigación exhaustiva sobre los modelos asociados a MEDDOCAN y se identificó que algunos modelos inicialmente previstos para estudio no contaban con código accesible.
-  - Por ello, se procedió a realizar ajustes en los objetivos iniciales del proyecto.
+- Se realizó una investigación exhaustiva sobre los modelos asociados a MEDDOCAN y se identificó que algunos modelos inicialmente previstos para estudio no contaban con código accesible. Por ello, se procedió a realizar ajustes en los objetivos iniciales del proyecto.
 - Actualmente, estamos considerando los siguientes modelos:
   - [lukas.lange](https://huggingface.co/llange/xlm-roberta-large-spanish-clinical)
   - [gauku](https://github.com/ionur/MEDDOCAN-Medical-Document-Anonymization)

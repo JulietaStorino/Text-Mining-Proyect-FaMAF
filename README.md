@@ -312,7 +312,7 @@ A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarr
 
 * *Semana 5*: Analizar los resultados obtenidos en detalle y redactar el informe final, incluyendo conclusiones y recomendaciones para futuros trabajos.
 
-# Preparación del conjunto de datos
+### Preparación del conjunto de datos
 
 - Se generaron datos sintéticos utilizando la herramienta Synthea y se transformaron a un formato compatible con el corpus de MEDDOCAN, en formato .brat.
 - Disponemos actualmente del corpus de MEDDOCAN.

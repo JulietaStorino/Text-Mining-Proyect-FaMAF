@@ -314,8 +314,8 @@ A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarr
 
 ### Preparación del conjunto de datos
 
-- Se generaron datos sintéticos utilizando la herramienta Synthea y se transformaron a un formato compatible con el corpus de MEDDOCAN, en formato .brat.
-- Disponemos actualmente del corpus de MEDDOCAN.
+- Se generaron datos sintéticos utilizando la herramienta Synthea y se transformaron a un formato compatible con el corpus de MEDDOCAN (formato .brat).
+- Asimismo disponemos del corpus de MEDDOCAN.
 - Se realizó una investigación exhaustiva sobre los modelos asociados a MEDDOCAN y se identificó que algunos modelos inicialmente previstos para estudio no contaban con código accesible. Por ello, se procedió a realizar ajustes en los objetivos iniciales del proyecto.
 - Actualmente, estamos considerando los siguientes modelos:
   - [lukas.lange](https://huggingface.co/llange/xlm-roberta-large-spanish-clinical)

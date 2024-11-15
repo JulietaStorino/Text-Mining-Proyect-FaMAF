@@ -1,0 +1,3 @@
+[submodule "models/clin_x"]
+	path = models/clin_x
+	url = https://github.com/boschresearch/clin_x

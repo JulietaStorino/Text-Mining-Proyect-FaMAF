@@ -4,3 +4,6 @@
 [submodule "SPACCC_MEDDOCAN"]
 	path = SPACCC_MEDDOCAN
 	url = https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN
+[submodule "models/Bi-LSTM"]
+	path = models/Bi-LSTM
+	url = https://github.com/ionur/MEDDOCAN-Medical-Document-Anonymization/

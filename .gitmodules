@@ -13,6 +13,3 @@
 [submodule "models/CLIN_X"]
     path = models/CLIN_X
     url = https://github.com/boschresearch/clin_x
-[submodule "SPACCC_MEDDOCAN/scripts/Format-Converter-Script"]
-    path = SPACCC_MEDDOCAN/scripts/Format-Converter-Script
-    url = https://github.com/PlanTL-GOB-ES/MEDDOCAN-Format-Converter-Script

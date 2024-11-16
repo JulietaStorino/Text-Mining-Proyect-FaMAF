@@ -1,9 +1,15 @@
-[submodule "models/clin_x"]
-	path = models/clin_x
-	url = https://github.com/boschresearch/clin_x
 [submodule "SPACCC_MEDDOCAN"]
 	path = SPACCC_MEDDOCAN
 	url = https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN
-[submodule "models/Bi-LSTM"]
-	path = models/Bi-LSTM
+[submodule "models/BiLSTM-CRF"]
+	path = models/BiLSTM-CRF
 	url = https://github.com/ionur/MEDDOCAN-Medical-Document-Anonymization/
+[submodule "models/NeuroNER"]
+	path = models/NeuroNER
+	url = https://github.com/ccolonruiz/MEDDOCAN
+[submodule "models/Few-short-NER"]
+	path = models/Few-short-NER
+	url = https://github.com/alicialara/lsi2_uned_at_MEDDOCAN2019
+[submodule "models/CLIN_X"]
+	path = models/CLIN_X
+	url = https://github.com/boschresearch/clin_x

@@ -13,10 +13,10 @@ def download_and_save_dataset():
     token = input("Introduce tu token de Hugging Face: ")
     login(token=token)
 
-    # Cargar el conjunto de datos
+    # Carga el conjunto de datos
     ds = hf_load_dataset("PlanTL-GOB-ES/cantemist-ner")
 
-    # Selecciona la división del conjunto de datos que deseas guardar, por ejemplo, 'train'
+    # Selecciona la división del conjunto de datos 'train'
     data = ds['train']
 
     # Convierte los datos a una lista de diccionarios
@@ -63,10 +63,11 @@ if __name__ == '__main__':
     download_and_save_dataset()
     
     if os.path.exists('cantemist.json'):
-        print("Descarga completada.\n")
+        print("Descarga completada.")
         print("Procesando el dataset...")
         
         process_dataset()
+        print("Procesamiento completado.")
 
     else:
         print("Error al descargar el dataset.")

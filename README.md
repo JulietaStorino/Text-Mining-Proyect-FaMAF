@@ -45,225 +45,42 @@ Para llevar a cabo la anotación manual, se construyeron las primeras pautas pú
 <div align="center">
   <table>
     <thead>
-      <tr>
-        <th>Type</th>
-        <th>Train</th>
-        <th>Dev</th>
-        <th>Test</th>
-        <th>Total</th>
-      </tr>
+      <tr> <th>Type</th>                             <th>Train</th><th>Dev</th><th>Test</th><th>Total</th> </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>TERRITORIO</td>
-        <td>1875</td>
-        <td>987</td>
-        <td>956</td>
-        <td>3818</td>
-      </tr>
-      <tr>
-        <td>FECHAS</td>
-        <td>1231</td>
-        <td>724</td>
-        <td>611</td>
-        <td>2566</td>
-      </tr>
-      <tr>
-        <td>EDAD_SUJETO_ASISTENCIA</td>
-        <td>1035</td>
-        <td>521</td>
-        <td>518</td>
-        <td>2074</td>
-      </tr>
-      <tr>
-        <td>NOMBRE_SUJETO_ASISTENCIA</td>
-        <td>1009</td>
-        <td>503</td>
-        <td>502</td>
-        <td>2014</td>
-      </tr>
-      <tr>
-        <td>NOMBRE_PERSONAL_SANITARIO</td>
-        <td>1000</td>
-        <td>497</td>
-        <td>501</td>
-        <td>1998</td>
-      </tr>
-      <tr>
-        <td>SEXO_SUJETO_ASISTENCIA</td> 
-        <td>925</td>
-        <td>455</td>
-        <td>461</td>
-        <td>1841</td>
-      </tr>
-      <tr>
-        <td>CALLE</td> 
-        <td>862</td>
-        <td>434</td>
-        <td>413</td>
-        <td>1709</td>
-      </tr>
-      <tr>
-        <td>PAIS</td> 
-        <td>713</td>
-        <td>347</td>
-        <td>363</td>
-        <td>1423</td>
-      </tr>
-      <tr>
-        <td>ID_SUJETO_ASISTENCIA</td> 
-        <td>567</td>
-        <td>292</td>
-        <td>283</td>
-        <td>1142</td>
-      </tr>
-      <tr>
-        <td>CORREO_ELECTRONICO</td> 
-        <td>469</td>
-        <td>241</td>
-        <td>249</td>
-        <td>959</td>
-      </tr>
-      <tr>
-        <td>ID_TITULACION_PERSONAL_SANITARIO</td> 
-        <td>471</td>
-        <td>226</td>
-        <td>234</td>
-        <td>931</td>
-      </tr>
-      <tr>
-        <td>ID_ASEGURAMIENTO</td> 
-        <td>391</td>
-        <td>194</td>
-        <td>198</td>
-        <td>783</td>
-      </tr>
-      <tr>
-        <td>HOSPITAL</td> 
-        <td>255</td>
-        <td>140</td>
-        <td>130</td>
-        <td>525</td>
-      </tr>
-      <tr>
-        <td>FAMILIARES_SUJETO_ASISTENCIA</td> 
-        <td>243</td>
-        <td>92</td>
-        <td>81</td>
-        <td>416</td>
-      </tr>
-      <tr>
-        <td>INSTITUCION</td> 
-        <td>98</td>
-        <td>72</td>
-        <td>67</td>
-        <td>237</td>
-      </tr>
-      <tr>
-        <td>ID_CONTACTO_ASISTENCIAL</td> 
-        <td>77</td>
-        <td>32</td>
-        <td>39</td>
-        <td>148</td>
-      </tr>
-      <tr>
-        <td>NUMERO_TELEFONO</td> 
-        <td>58</td>
-        <td>25</td>
-        <td>26</td>
-        <td>109</td>
-      </tr>
-      <tr>
-        <td>PROFESION</td> 
-        <td>24</td>
-        <td>4</td>
-        <td>9</td>
-        <td>37</td>
-      </tr>
-      <tr>
-        <td>NUMERO_FAX</td> 
-        <td>15</td>
-        <td>6</td>
-        <td>7</td>
-        <td>28</td>
-      </tr>
-      <tr>
-        <td>OTROS_SUJETO_ASISTENCIA</td>
-        <td>9</td>
-        <td>6</td>
-        <td>7</td>
-        <td>22</td>
-      </tr>
-      <tr>
-        <td>CENTRO_SALUD</td>
-        <td>6</td>
-        <td>2</td>
-        <td>6</td>
-        <td>14</td> 
-      </tr>
-      <tr>
-        <td>ID_EMPLEO_PERSONAL_SANITARIO</td>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>IDENTIF_VEHICULOS_NRSERIE_PLACAS</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>IDENTIF_DISPOSITIVOS_NRSERIE</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>NUMERO_BENEF_PLAN_SALUD</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>URL_WEB</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>DIREC_PROT_INTERNET</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>IDENTF_BIOMETRICOS</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>OTRO_NUMERO_IDENTIF</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
+      <tr> <td>TERRITORIO</td>                       <td>1875</td> <td>987</td> <td>956</td> <td>3818</td> </tr>
+      <tr> <td>FECHAS</td>                           <td>1231</td> <td>724</td> <td>611</td> <td>2566</td> </tr>
+      <tr> <td>EDAD_SUJETO_ASISTENCIA</td>           <td>1035</td> <td>521</td> <td>518</td> <td>2074</td> </tr>
+      <tr> <td>NOMBRE_SUJETO_ASISTENCIA</td>         <td>1009</td> <td>503</td> <td>502</td> <td>2014</td> </tr>
+      <tr> <td>NOMBRE_PERSONAL_SANITARIO</td>        <td>1000</td> <td>497</td> <td>501</td> <td>1998</td> </tr>
+      <tr> <td>SEXO_SUJETO_ASISTENCIA</td>           <td>925</td>  <td>455</td> <td>461</td> <td>1841</td> </tr>
+      <tr> <td>CALLE</td>                            <td>862</td>  <td>434</td> <td>413</td> <td>1709</td> </tr>
+      <tr> <td>PAIS</td>                             <td>713</td>  <td>347</td> <td>363</td> <td>1423</td> </tr>
+      <tr> <td>ID_SUJETO_ASISTENCIA</td>             <td>567</td>  <td>292</td> <td>283</td> <td>1142</td> </tr>
+      <tr> <td>CORREO_ELECTRONICO</td>               <td>469</td>  <td>241</td> <td>249</td> <td>959</td>  </tr>
+      <tr> <td>ID_TITULACION_PERSONAL_SANITARIO</td> <td>471</td>  <td>226</td> <td>234</td> <td>931</td>  </tr>
+      <tr> <td>ID_ASEGURAMIENTO</td>                 <td>391</td>  <td>194</td> <td>198</td> <td>783</td>  </tr>
+      <tr> <td>HOSPITAL</td>                         <td>255</td>  <td>140</td> <td>130</td> <td>525</td>  </tr>
+      <tr> <td>FAMILIARES_SUJETO_ASISTENCIA</td>     <td>243</td>  <td>92</td>  <td>81</td>  <td>416</td>  </tr>
+      <tr> <td>INSTITUCION</td>                      <td>98</td>   <td>72</td>  <td>67</td>  <td>237</td>  </tr>
+      <tr> <td>ID_CONTACTO_ASISTENCIAL</td>          <td>77</td>   <td>32</td>  <td>39</td>  <td>148</td>  </tr>
+      <tr> <td>NUMERO_TELEFONO</td>                  <td>58</td>   <td>25</td>  <td>26</td>  <td>109</td>  </tr>
+      <tr> <td>PROFESION</td>                        <td>24</td>   <td>4</td>   <td>9</td>   <td>37</td>   </tr>
+      <tr> <td>NUMERO_FAX</td>                       <td>15</td>   <td>6</td>   <td>7</td>   <td>28</td>   </tr>
+      <tr> <td>OTROS_SUJETO_ASISTENCIA</td>          <td>9</td>    <td>6</td>   <td>7</td>   <td>22</td>   </tr>
+      <tr> <td>CENTRO_SALUD</td>                     <td>6</td>    <td>2</td>   <td>6</td>   <td>14</td>   </tr>
+      <tr> <td>ID_EMPLEO_PERSONAL_SANITARIO</td>     <td>0</td>    <td>1</td>   <td>0</td>   <td>1</td>    </tr>
+      <tr> <td>IDENTIF_VEHICULOS_NRSERIE_PLACAS</td> <td>0</td>    <td>0</td>   <td>0</td>   <td>0</td>    </tr>
+      <tr> <td>IDENTIF_DISPOSITIVOS_NRSERIE</td>     <td>0</td>    <td>0</td>   <td>0</td>   <td>0</td>    </tr>
+      <tr> <td>NUMERO_BENEF_PLAN_SALUD</td>          <td>0</td>    <td>0</td>   <td>0</td>   <td>0</td>    </tr>
+      <tr> <td>URL_WEB</td>                          <td>0</td>    <td>0</td>   <td>0</td>   <td>0</td>    </tr>
+      <tr> <td>DIREC_PROT_INTERNET</td>              <td>0</td>    <td>0</td>   <td>0</td>   <td>0</td>    </tr>
+      <tr> <td>IDENTF_BIOMETRICOS</td>               <td>0</td>    <td>0</td>   <td>0</td>   <td>0</td>    </tr>
+      <tr> <td>OTRO_NUMERO_IDENTIF</td>              <td>0</td>    <td>0</td>   <td>0</td>   <td>0</td>    </tr>
     </tbody>
   </table>
-  
   <figcaption>Tabla 1: Distribución del tipo de entidad entre los conjuntos de datos.</figcaption>
 </div>
-
-
 
 Durante el proyecto se desarrollaron diversos modelos entrenados con 500 casos clínicos del corpus, seleccionados aleatoriamente, siendo los casos restantes utilizados para desarrollo y prueba. Para evaluar el rendimiento de los sistemas de desidentificación, el proyecto definió dos subtareas o categorías principales que constribuyeron al objetivo general del proyecto:
 
@@ -289,37 +106,17 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 
 ### DataSet
 
-A los datos brindados por el corpus MEDDOCAN sumaremos historias médicas desarrolladas por el generador de pacientes sintéticos open source Synthea que proporciona datos de alta calidad, realistas, pero no reales, de pacientes; en una variedad de formatos, con diferentes niveles de complejidad, cubriendo todos los aspectos de la atención médica. Los datos obtenidos no tienen coste, ni privacidad ni restricciones de seguridad.
+Para llevar a cabo la comparación de los modelos seleccionados, se utilizarán los siguientes conjuntos de datos:
 
-[1301 casos clínicos oncológicos:](https://huggingface.co/datasets/PlanTL-GOB-ES/cantemist-ner) This dataset was designed for the CANcer TExt MIning Shared Task, sponsored by Plan-TL.
+- **CANTEMIST NER**: Colección de 1301 informes clínicos oncológicos escritos en español, con menciones de morfología tumoral anotadas manualmente y mapeadas por expertos clínicos a una terminología controlada. Este conjunto de datos fue diseñado para la tarea compartida de minería de texto sobre cáncer, patrocinada por Plan-TL.
 
-[3219 reportes radiológicos:](https://huggingface.co/datasets/chizhikchi/CARES) Corpus of Anonymised Radiological Evidences in Spanish
+- **CARES**: Corpus de Anonimización de Evidencias Radiológicas en Español, que contiene 3219 informes radiológicos en español, anotados con entidades médicas y personales de manera manual y revisados por radiólogos.
 
-[850 reportes](https://huggingface.co/datasets/IIC/livingner1) LivingNER: Named entity recognition, normalization & classification of species, pathogens and food
+- **LivingNER**: Conjunto de datos de entidades nombradas, normalización y clasificación de especies, patógenos y alimentos, que contiene 850 informes. Este conjunto de datos fue diseñado para la tarea compartida de minería de texto sobre reconocimiento de entidades nombradas, normalización y clasificación de especies, patógenos y alimentos, patrocinada por Plan-TL.
 
-[500 reportes](https://huggingface.co/datasets/bigbio/meddocan)
-
-### Planificación
-* *Semana 1*: Definir los objetivos del proyecto y el alcance del testeo de los modelos. 
-
-* *Semana 2*: Preparar el conjunto de datos. Adaptar modelos existentes para transformar los datos de entrada y salida a los formatos requeridos por los nuevos modelos a testear.
-
-* *Semana 3*: Configurar los modelos a testear y desarrollar el modelo de evaluación para comparar los resultados obtenidos.
-
-* *Semana 4*: Ejecutar los modelos y realizar una evaluación preliminar de los resultados obtenidos.
-
-* *Semana 5*: Analizar los resultados obtenidos en detalle y redactar el informe final, incluyendo conclusiones y recomendaciones para futuros trabajos.
+- **Synthea**: Conjunto de datos sintéticos generados por la herramienta Synthea, que simula datos de pacientes siguiendo un modelo de datos realista y estructurado.
 
 ### Preparación del conjunto de datos
-
-- Se generaron datos sintéticos utilizando la herramienta Synthea y se transformaron a un formato compatible con el corpus de MEDDOCAN (formato .brat).
-- Asimismo disponemos del corpus de MEDDOCAN.
-- Se realizó una investigación exhaustiva sobre los modelos asociados a MEDDOCAN y se identificó que algunos modelos inicialmente previstos para estudio no contaban con código accesible. Por ello, se procedió a realizar ajustes en los objetivos iniciales del proyecto.
-- Actualmente, estamos considerando los siguientes modelos:
-  - [Bosch](https://github.com/boschresearch/clin_x)
-  - [gauku](https://github.com/ionur/MEDDOCAN-Medical-Document-Anonymization)
-  - [ccolon](https://github.com/ccolonruiz/MEDDOCAN)
-  - [lsi2](https://github.com/alicialara/lsi2_uned_at_MEDDOCAN2019)
 
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.

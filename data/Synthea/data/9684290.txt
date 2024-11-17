@@ -1,0 +1,11 @@
+ID del Paciente: 7541032e-14be-e297-85c2-4fa13765c9dd
+Lugar de nacimiento:
+Ciudad: Marblehead
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Rich Ortiz
+Dirección: 474 Gleason Annex Suite 94, Westford, MA 00000, US
+Teléfono: 555-182-9656
+Género: hombre

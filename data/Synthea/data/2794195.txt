@@ -1,0 +1,11 @@
+ID del Paciente: 526cbc57-7cb2-eb91-d5da-2345b4f8863a
+Lugar de nacimiento:
+Ciudad: Plympton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Harlan Braun
+Dirección: 556 Zemlak Rest, Hampden, MA 00000, US
+Teléfono: 555-664-3864
+Género: hombre

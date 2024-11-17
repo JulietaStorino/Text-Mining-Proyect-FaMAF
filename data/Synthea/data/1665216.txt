@@ -1,0 +1,11 @@
+ID del Paciente: 1e6c87c1-623c-0ba8-3dc4-07bb49a5e4e5
+Lugar de nacimiento:
+Ciudad: Franklin
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Mauricio Fadel
+Dirección: 350 Kihn Viaduct Suite 81, Sudbury, MA 00000, US
+Teléfono: 555-998-8534
+Género: hombre

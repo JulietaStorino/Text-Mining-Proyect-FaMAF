@@ -1,0 +1,11 @@
+ID del Paciente: 6b755726-20d7-f139-0d4f-93e04ac96b06
+Lugar de nacimiento:
+Ciudad: Nagoya
+Estado:  Aichi
+País: JP
+
+Datos del Paciente:
+Nombre: Mrs. Kathy Gutmann
+Dirección: 981 Baumbach Esplanade Suite 57, Arlington, MA 02474, US
+Teléfono: 555-131-3784
+Género: mujer

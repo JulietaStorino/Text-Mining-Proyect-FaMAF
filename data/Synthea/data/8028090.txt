@@ -1,0 +1,11 @@
+ID del Paciente: cab26688-2da9-e94a-c087-e93045f10c06
+Lugar de nacimiento:
+Ciudad: Sturbridge
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Shu Bahringer
+Dirección: 978 Armstrong Lock Apt 34, Norwood, MA 02062, US
+Teléfono: 555-374-1443
+Género: mujer

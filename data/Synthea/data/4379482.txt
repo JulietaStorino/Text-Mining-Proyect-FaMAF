@@ -1,0 +1,11 @@
+ID del Paciente: 842dcb38-51b3-e908-f55a-8900780ffb0b
+Lugar de nacimiento:
+Ciudad: North Andover
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Aron Stoltenberg
+Dirección: 741 Treutel Tunnel, Ashburnham, MA 00000, US
+Teléfono: 555-921-8640
+Género: hombre

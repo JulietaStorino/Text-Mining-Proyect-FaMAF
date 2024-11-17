@@ -1,0 +1,11 @@
+ID del Paciente: 9b80eb1c-36d0-5a51-9e12-baf615af6bd0
+Lugar de nacimiento:
+Ciudad: Cambridge
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Pauline Blanda
+Dirección: 357 Hackett Stravenue Apt 3, Boston, MA 02125, US
+Teléfono: 555-415-1919
+Género: mujer

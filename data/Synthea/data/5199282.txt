@@ -1,0 +1,11 @@
+ID del Paciente: 3bbf64cb-95c3-0194-1f68-c763c8c15f0a
+Lugar de nacimiento:
+Ciudad: Clinton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Silvia Larkin
+Dirección: 329 Anderson Way, Marshfield, MA 02050, US
+Teléfono: 555-266-1856
+Género: mujer

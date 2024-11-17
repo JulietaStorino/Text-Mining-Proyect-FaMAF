@@ -1,0 +1,11 @@
+ID del Paciente: 54a24c4e-60ed-6ecf-9a66-b803629f8813
+Lugar de nacimiento:
+Ciudad: Hanover
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Lester McClure
+Dirección: 928 Wolff Boulevard, North Brookfield, MA 01535, US
+Teléfono: 555-786-4045
+Género: hombre

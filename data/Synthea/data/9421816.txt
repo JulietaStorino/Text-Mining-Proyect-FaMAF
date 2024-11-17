@@ -1,0 +1,11 @@
+ID del Paciente: 2409f0bb-f452-8b18-db32-c73c19bacdc1
+Lugar de nacimiento:
+Ciudad: Chelmsford
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Graig Gleichner
+Dirección: 703 Cummerata Mill, Springfield, MA 01104, US
+Teléfono: 555-175-4031
+Género: hombre

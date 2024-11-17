@@ -1,0 +1,11 @@
+ID del Paciente: 75395b29-5064-deb6-f9dd-c7e3192d8796
+Lugar de nacimiento:
+Ciudad: Cambridge
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Dannie Senger
+Dirección: 534 Jenkins Green Apt 97, Quincy, MA 02169, US
+Teléfono: 555-871-2269
+Género: hombre

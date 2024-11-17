@@ -1,0 +1,11 @@
+ID del Paciente: 6c77ddd8-56d2-133a-e38e-8584daadd773
+Lugar de nacimiento:
+Ciudad: Sandwich
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Forest Ward
+Dirección: 713 Macejkovic Drive Unit 47, Newbury, MA 00000, US
+Teléfono: 555-347-9971
+Género: hombre

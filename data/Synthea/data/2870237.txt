@@ -1,0 +1,11 @@
+ID del Paciente: ee072543-9cd6-6ca0-6cd9-32cfa82e772c
+Lugar de nacimiento:
+Ciudad: Sharon
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Armida Toy
+Dirección: 192 Lowe Quay Suite 51, Waltham, MA 02453, US
+Teléfono: 555-547-9799
+Género: mujer

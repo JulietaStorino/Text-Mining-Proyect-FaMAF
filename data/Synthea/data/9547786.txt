@@ -1,0 +1,11 @@
+ID del Paciente: b2d01cb2-2026-1f41-6eb4-1e02dbddb02b
+Lugar de nacimiento:
+Ciudad: New Bedford
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Tyron Braun
+Dirección: 595 Legros Rapid Apt 6, Westport, MA 00000, US
+Teléfono: 555-221-5979
+Género: hombre

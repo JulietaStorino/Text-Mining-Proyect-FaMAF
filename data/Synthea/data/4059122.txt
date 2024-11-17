@@ -1,0 +1,11 @@
+ID del Paciente: a004fed8-3a8f-d2cc-76e9-9d556cda2489
+Lugar de nacimiento:
+Ciudad: Agawam
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Lewis Feest
+Dirección: 744 Abbott Ranch Apt 62, New Bedford, MA 02748, US
+Teléfono: 555-424-1513
+Género: hombre

@@ -1,8 +1,0 @@
-No se encontró un recurso de tipo 'Patient'.
-No se encontró 'valueAddress' en el recurso 'Patient'.
-
-Datos del Paciente:
-Nombre: None
-Dirección: None
-Teléfono: None
-Género: None

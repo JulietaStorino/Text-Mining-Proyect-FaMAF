@@ -1,0 +1,11 @@
+ID del Paciente: c60d2be3-a34b-0c28-5004-fcb052716b47
+Lugar de nacimiento:
+Ciudad: Revere
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Austin Stroman
+Dirección: 155 Kunze Wynd Unit 35, Wrentham, MA 00000, US
+Teléfono: 555-497-4345
+Género: hombre

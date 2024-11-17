@@ -1,0 +1,11 @@
+ID del Paciente: e8db6fce-c3e2-0c7a-e70f-3a197f73b607
+Lugar de nacimiento:
+Ciudad: Revere
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Gena Swift
+Dirección: 718 Will Route, Needham, MA 02494, US
+Teléfono: 555-979-4080
+Género: mujer

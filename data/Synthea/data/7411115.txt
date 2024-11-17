@@ -1,0 +1,11 @@
+ID del Paciente: a7071e25-52c0-ac05-3cfe-357ab0fd1b11
+Lugar de nacimiento:
+Ciudad: Maynard
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Jackson Blick
+Dirección: 581 Douglas Course, Manchester-by-the-Sea, MA 00000, US
+Teléfono: 555-238-6745
+Género: hombre

@@ -1,0 +1,11 @@
+ID del Paciente: da819cc4-e7f1-f264-e1a3-e94f4a271abd
+Lugar de nacimiento:
+Ciudad: Westborough
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Ms. Shaquita Batz
+Dirección: 505 Beier Manor Unit 75, Woburn, MA 01801, US
+Teléfono: 555-738-1763
+Género: mujer

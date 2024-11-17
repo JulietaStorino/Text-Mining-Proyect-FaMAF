@@ -1,0 +1,11 @@
+ID del Paciente: 8dbe44dd-9fa0-397e-5f46-ea3b03a6e9c9
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Carey Erdman
+Dirección: 968 Schamberger Club Apt 63, Cambridge, MA 02142, US
+Teléfono: 555-926-5289
+Género: mujer

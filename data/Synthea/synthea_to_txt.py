@@ -1,6 +1,7 @@
 import json
 import os
 import re
+from random import randint
 
 def cargar_datos(archivo):
     """Carga los datos de un archivo JSON."""
@@ -25,19 +26,28 @@ def obtener_lugar_nacimiento(data):
     return None
 
 def procesar_archivos(carpeta):
+    """Procesa los archivos de texto en la carpeta sacando los números de los nombres."""
     for archivo_nombre in os.listdir(carpeta):
-        if archivo_nombre.endswith(".txt"):
-            archivo_path = os.path.join(carpeta, archivo_nombre)
             
-            with open(archivo_path, 'r', encoding='utf8') as file:
-                contenido = file.read()
-            
-            # Buscar y reemplazar números en el nombre
-            contenido_modificado = re.sub(r'Nombre: (Mrs\.|Mr\.|Ms\.) (([\wáéíóúÁÉÍÓÚñÑ]+)\d* ){1,2}([\wáéíóúÁÉÍÓÚñÑ]+)\d*', r'Nombre: \1 \2 \4', contenido)
-                                    
-            # Guardar el contenido modificado en el mismo archivo
-            with open(archivo_path, 'w', encoding='utf8') as file:
-                file.write(contenido_modificado)
+        # Leer el contenido del archivo y obtener el nombre
+        archivo_path = os.path.join(carpeta, archivo_nombre)
+        
+        with open(archivo_path, 'r', encoding='utf8') as file:
+            contenido = file.read()
+
+        # Modificar el contenido del archivo para sacar los números de los nombres
+        contenido_modificado = re.sub( r'Nombre:\s*(Mrs\.|Mr\.|Ms\.)?\s*((\w+\d*[\s]*){1,3}\w+\d*)', lambda m: f"Nombre: {m.group(1) if m.group(1) else ''} {' '.join(re.sub(r'\d+', '', nombre) for nombre in m.group(2).split()).strip()}", contenido ) 
+        
+        # Modificar el contenido del archivo para agregar saltos de línea antes de la dirección
+        contenido_modificado = re.sub(r'\s*Dirección', '\nDirección', contenido_modificado)
+
+        # Guardar el contenido modificado en el mismo archivo
+        with open(archivo_path, 'w', encoding='utf8') as file:
+            file.write(contenido_modificado)
+
+        # Renombra el archivo
+        nuevo_nombre = os.path.join(carpeta, f"{randint(1000000, 9999999)}.txt")
+        os.rename(archivo_path, nuevo_nombre)
 
 def obtener_datos_paciente(data):
     """Extrae los datos principales del paciente de los datos."""

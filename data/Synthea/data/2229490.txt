@@ -1,0 +1,11 @@
+ID del Paciente: 4fd1afb8-ef02-844b-39b6-4a3133793198
+Lugar de nacimiento:
+Ciudad: Dracut
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Ms. Yesenia Romaguera
+Dirección: 281 Wyman Row Suite 67, Dedham, MA 02090, US
+Teléfono: 555-715-2910
+Género: mujer

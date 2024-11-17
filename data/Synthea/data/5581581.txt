@@ -1,0 +1,11 @@
+ID del Paciente: 38411a56-93ca-9a70-9069-7846a30ddca3
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Abbie Sauer
+Dirección: 979 Kutch Forge Suite 97, Lawrence, MA 01841, US
+Teléfono: 555-144-5328
+Género: mujer

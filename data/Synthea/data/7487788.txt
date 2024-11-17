@@ -1,0 +1,11 @@
+ID del Paciente: 73d4a09a-35f3-899a-c03f-e57950b8bcaa
+Lugar de nacimiento:
+Ciudad: Richmond
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Titus Emard
+Dirección: 752 Hauck Forge Unit 90, Belmont, MA 02472, US
+Teléfono: 555-491-5197
+Género: hombre

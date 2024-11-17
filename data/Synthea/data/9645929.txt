@@ -1,0 +1,11 @@
+ID del Paciente: e45e1928-5569-e70b-10f1-618774d9f951
+Lugar de nacimiento:
+Ciudad: Brockton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Shane Hettinger
+Dirección: 546 Walter Route Suite 9, Cambridge, MA 02142, US
+Teléfono: 555-844-7388
+Género: hombre

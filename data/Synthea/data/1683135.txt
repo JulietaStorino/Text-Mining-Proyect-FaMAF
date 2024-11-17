@@ -1,0 +1,11 @@
+ID del Paciente: 92caf724-35a8-df35-d8c3-15b88bb128a9
+Lugar de nacimiento:
+Ciudad: West Boylston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Emanuel Veum
+Dirección: 293 Schumm Crossing Suite 33, Boston, MA 02128, US
+Teléfono: 555-969-1172
+Género: hombre

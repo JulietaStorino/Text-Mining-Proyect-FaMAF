@@ -1,0 +1,11 @@
+ID del Paciente: 48e2fe68-81c6-3075-71a1-81f73d37d31a
+Lugar de nacimiento:
+Ciudad: West Tisbury
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Erik Labadie
+Dirección: 385 Lebsack Tunnel, Chelsea, MA 02149, US
+Teléfono: 555-710-2787
+Género: hombre

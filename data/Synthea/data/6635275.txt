@@ -1,0 +1,11 @@
+ID del Paciente: 6ad0a252-64d2-1105-7d76-46ae3049f50e
+Lugar de nacimiento:
+Ciudad: Leominster
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Ms. Luanne McLaughlin
+Dirección: 861 Harvey Meadow, Worcester, MA 01583, US
+Teléfono: 555-160-7392
+Género: mujer

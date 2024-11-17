@@ -1,0 +1,11 @@
+ID del Paciente: b05a7e30-e448-c10a-9c14-bd576db4e276
+Lugar de nacimiento:
+Ciudad: Taunton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Graham Kub
+Dirección: 796 Lebsack Gate Suite 61, Leominster, MA 01420, US
+Teléfono: 555-408-2341
+Género: hombre

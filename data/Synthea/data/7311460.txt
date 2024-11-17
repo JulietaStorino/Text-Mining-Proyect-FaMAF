@@ -1,0 +1,11 @@
+ID del Paciente: 62f23b31-f570-c5fe-3366-50b61b87b864
+Lugar de nacimiento:
+Ciudad: Fall River
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Ms. Valery Jakubowski
+Dirección: 913 Ryan Lodge, Somerset, MA 02726, US
+Teléfono: 555-136-1964
+Género: mujer

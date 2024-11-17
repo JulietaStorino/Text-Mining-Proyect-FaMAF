@@ -1,0 +1,11 @@
+ID del Paciente: 5319dfce-3bee-2e1f-fca6-d5d012582f7a
+Lugar de nacimiento:
+Ciudad: Waltham
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Ms. Alaine Aufderhar
+Dirección: 800 Gleason Crossing, Marshfield, MA 02050, US
+Teléfono: 555-787-9094
+Género: mujer

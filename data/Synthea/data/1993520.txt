@@ -1,0 +1,11 @@
+ID del Paciente: 2d22560d-965b-f9a4-74ff-28737ed2e2da
+Lugar de nacimiento:
+Ciudad: Cambridge
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Willian Haag
+Dirección: 466 Turner Camp Apt 71, Quincy, MA 02186, US
+Teléfono: 555-953-8556
+Género: hombre

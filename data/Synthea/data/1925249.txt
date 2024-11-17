@@ -1,0 +1,11 @@
+ID del Paciente: a2babb70-83e4-ea6c-c7db-5a03560e5777
+Lugar de nacimiento:
+Ciudad: Brockton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Stewart Cummings
+Dirección: 307 Weber Byway, Westport, MA 00000, US
+Teléfono: 555-568-7557
+Género: hombre

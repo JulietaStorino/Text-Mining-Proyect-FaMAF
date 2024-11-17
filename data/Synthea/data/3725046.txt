@@ -1,0 +1,11 @@
+ID del Paciente: 592737bb-ddf3-ba2f-a809-15bd905851b0
+Lugar de nacimiento:
+Ciudad: North Seekonk
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Long Berge
+Dirección: 887 Runte Trailer, Hull, MA 02045, US
+Teléfono: 555-167-5842
+Género: hombre

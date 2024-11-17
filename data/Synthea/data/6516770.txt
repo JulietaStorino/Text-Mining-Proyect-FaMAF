@@ -1,0 +1,11 @@
+ID del Paciente: 2dbeb576-1c7b-dfe5-04f2-d39575b199e1
+Lugar de nacimiento:
+Ciudad: Boston
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Jack Rau
+Dirección: 618 McDermott Arcade Unit 67, Dartmouth, MA 00000, US
+Teléfono: 555-376-1261
+Género: hombre

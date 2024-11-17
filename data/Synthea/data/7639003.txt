@@ -1,0 +1,11 @@
+ID del Paciente: 6ce14058-fc31-cb21-4db2-5a6ece7bcc4f
+Lugar de nacimiento:
+Ciudad: Quincy
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Charlie McCullough
+Dirección: 815 Ankunding Station, Boston, MA 02110, US
+Teléfono: 555-413-8930
+Género: mujer

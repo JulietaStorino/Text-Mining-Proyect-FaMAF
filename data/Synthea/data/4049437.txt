@@ -1,0 +1,11 @@
+ID del Paciente: 3ac83a40-9f75-df58-bf9c-33cd58b9418f
+Lugar de nacimiento:
+Ciudad: Barnstable
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre:  Mariella Brakus
+Dirección: 946 Rowe Trailer, Peabody, MA 01960, US
+Teléfono: 555-815-4643
+Género: mujer

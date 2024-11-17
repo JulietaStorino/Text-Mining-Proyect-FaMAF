@@ -1,0 +1,11 @@
+ID del Paciente: 10615687-48a1-cbea-3586-a8d31d392fba
+Lugar de nacimiento:
+Ciudad: Attleboro
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Karissa Anderson
+Dirección: 157 Botsford Viaduct, Leominster, MA 01420, US
+Teléfono: 555-434-4155
+Género: mujer

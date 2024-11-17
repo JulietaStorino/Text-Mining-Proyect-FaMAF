@@ -1,0 +1,11 @@
+ID del Paciente: 7c807f5e-2729-94b5-a4b3-958239e3b43b
+Lugar de nacimiento:
+Ciudad: Worcester
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Vella Kuhn
+Dirección: 866 Daniel Throughway, Weymouth, MA 02191, US
+Teléfono: 555-859-6124
+Género: mujer

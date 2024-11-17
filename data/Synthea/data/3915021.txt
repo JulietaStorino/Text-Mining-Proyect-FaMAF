@@ -1,0 +1,11 @@
+ID del Paciente: bdfcb7e9-a41a-b327-74fd-f8eef37ec524
+Lugar de nacimiento:
+Ciudad: Leominster
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Newton Shields
+Dirección: 244 Windler Forge, Medway, MA 00000, US
+Teléfono: 555-398-1963
+Género: hombre

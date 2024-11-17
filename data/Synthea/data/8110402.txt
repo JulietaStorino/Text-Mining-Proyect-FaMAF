@@ -1,0 +1,11 @@
+ID del Paciente: 0f2e4616-5e9a-cc5f-19f9-dc54bbe31aae
+Lugar de nacimiento:
+Ciudad: Wilmington
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Nina Brakus
+Dirección: 895 Torp Road Unit 2, Brockton, MA 02302, US
+Teléfono: 555-210-9734
+Género: mujer

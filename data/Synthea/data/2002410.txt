@@ -1,0 +1,11 @@
+ID del Paciente: 1f75ee92-cbd4-d45e-2711-039468d12d6d
+Lugar de nacimiento:
+Ciudad: Springfield
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Nguyet Bechtelar
+Dirección: 139 Kshlerin Extension, Westfield, MA 01085, US
+Teléfono: 555-110-1123
+Género: mujer

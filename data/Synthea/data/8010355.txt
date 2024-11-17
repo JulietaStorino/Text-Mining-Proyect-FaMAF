@@ -1,0 +1,11 @@
+ID del Paciente: 12ede847-03a5-6705-e634-512484dc9d06
+Lugar de nacimiento:
+Ciudad: West Springfield
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Ms. Michael White
+Dirección: 166 Ziemann Club Apt 98, West Bridgewater, MA 00000, US
+Teléfono: 555-769-4351
+Género: mujer

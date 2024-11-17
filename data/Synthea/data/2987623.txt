@@ -1,0 +1,11 @@
+ID del Paciente: fa4e9be1-94d5-3b2b-f1b1-6276a5cc7f81
+Lugar de nacimiento:
+Ciudad: Portsmouth
+Estado: Saint John Parish
+País: DM
+
+Datos del Paciente:
+Nombre: Ms. Barbara Gutiérrez
+Dirección: 236 Satterfield Station, Boston, MA 02215, US
+Teléfono: 555-840-1464
+Género: mujer

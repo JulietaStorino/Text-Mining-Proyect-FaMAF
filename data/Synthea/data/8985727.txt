@@ -1,0 +1,11 @@
+ID del Paciente: 811042ee-287b-7595-7085-5a70365c5d3b
+Lugar de nacimiento:
+Ciudad: Lowell
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mr. Alfonso Rutherford
+Dirección: 918 McDermott Village, Dartmouth, MA 00000, US
+Teléfono: 555-631-3856
+Género: hombre

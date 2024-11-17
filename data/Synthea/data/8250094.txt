@@ -1,0 +1,11 @@
+ID del Paciente: bce23b95-e4ed-c9ad-fc1a-37e91478466f
+Lugar de nacimiento:
+Ciudad: Sandwich
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Ivette Hettinger
+Dirección: 650 Lehner Quay, Weymouth, MA 02189, US
+Teléfono: 555-753-4222
+Género: mujer

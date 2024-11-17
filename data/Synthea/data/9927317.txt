@@ -1,0 +1,11 @@
+ID del Paciente: aa562fc1-6b6e-2053-1bea-0507875c634b
+Lugar de nacimiento:
+Ciudad: Northampton
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Delta Miller
+Dirección: 256 Marvin Vista, Woburn, MA 01801, US
+Teléfono: 555-436-5614
+Género: mujer

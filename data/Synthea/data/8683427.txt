@@ -1,0 +1,11 @@
+ID del Paciente: 885cb1f9-6bcd-1678-a947-36c4e169545b
+Lugar de nacimiento:
+Ciudad: Beverly
+Estado: Massachusetts
+País: US
+
+Datos del Paciente:
+Nombre: Mrs. Julianna Mitchell
+Dirección: 672 Weimann Forge Suite 52, Leominster, MA 01453, US
+Teléfono: 555-334-2531
+Género: mujer

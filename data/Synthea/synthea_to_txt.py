@@ -36,7 +36,7 @@ def procesar_archivos(carpeta):
             contenido = file.read()
 
         # Modificar el contenido del archivo para sacar los números de los nombres
-        contenido_modificado = re.sub( r'Nombre:\s*(Mrs\.|Mr\.|Ms\.)?\s*((\w+\d*[\s]*){1,3}\w+\d*)', lambda m: f"Nombre: {m.group(1) if m.group(1) else ''} {' '.join(re.sub(r'\d+', '', nombre) for nombre in m.group(2).split()).strip()}", contenido ) 
+        contenido_modificado = re.sub( r'Nombre:\s*(Mrs\.|Mr\.|Ms\.|Miss)?\s*(([\wáéíóúÁÉÍÓÚñÑ\'\d]+[\s]*){1,3}\w+\d*)', lambda m: f"Nombre: {m.group(1) if m.group(1) else ''} {' '.join(re.sub(r'\d+', '', nombre) for nombre in m.group(2).split()).strip()}", contenido ) 
         
         # Modificar el contenido del archivo para agregar saltos de línea antes de la dirección
         contenido_modificado = re.sub(r'\s*Dirección', '\nDirección', contenido_modificado)

@@ -127,4 +127,8 @@ Para llevar a cabo la comparación de los modelos seleccionados, se utilizarán 
 - [GDPR: General Data Protection Regulation.](https://gdpr.eu/)
 - [HIPAA: Health Insurance Portability and Accountability Act.](https://www.hhs.gov/hipaa/index.html)
 - [i2b2: Informatics for Integrating Biology and the Bedside.](https://www.i2b2.org/)
+- [Bhavna Saluja, Gaurav Kumar, João Sedoc, Chris Callison-Burch. Anonymization of Sensitive Information in Medical Health Records.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_2.pdf)
+- [Lukas Lange, Heike Adel, Jannik Strötgen. NLNDE: The Neither-Language-Nor-Domain-Experts’ Way of Spanish Medical Document De-Identification.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_5.pdf)
+- [Cristóbal Colón-Ruiz, Isabel Segura-Dedmar. Protected Health Information Recognition by BiLSTM-CRF.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_6.pdf)
+- [Alicia Lara-Clares, Ana Garcia-Serrano. Key Phrases Annotation in Medical Documents: MEDDOCAN 2019 Anonymization Task.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_15.pdf)
 

@@ -5,7 +5,7 @@ Estado: Massachusetts
 País: US
 
 Datos del Paciente:
-Nombre: Mr. Bernardo D'Amore443
+Nombre: Mr. Bernardo D'Amore
 Dirección: 655 Parisian Terrace, Stoughton, MA 00000, US
 Teléfono: 555-209-3624
 Género: hombre

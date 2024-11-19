@@ -13,3 +13,6 @@
 [submodule "models/CLIN_X"]
     path = models/CLIN_X
     url = https://github.com/boschresearch/clin_x
+[submodule "data/DataGenerator"]
+	path = data/DataGenerator
+	url = https://github.com/JulietaStorino/Synthetic-Patient-Generation/

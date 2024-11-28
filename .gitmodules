@@ -1,9 +1,6 @@
 # [submodule "SPACCC_MEDDOCAN"]
 #     path = SPACCC_MEDDOCAN
 #     url = https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN
-[submodule "models/BiLSTM-CRF"]
-    path = models/BiLSTM-CRF
-    url = https://github.com/ionur/MEDDOCAN-Medical-Document-Anonymization/
 [submodule "models/NeuroNer"]
     path = models/NeuroNer
     url = https://github.com/ccolonruiz/MEDDOCAN
@@ -13,3 +10,9 @@
 [submodule "models/CLIN_X"]
     path = models/CLIN_X
     url = https://github.com/boschresearch/clin_x
+[submodule "Synthetic-Patient-Generation"]
+	path = Synthetic-Patient-Generation
+	url = https://github.com/JulietaStorino/Synthetic-Patient-Generation.git
+[submodule "models/BiLSTM-CRF"]
+	path = models/BiLSTM-CRF
+	url = https://github.com/ionur/MEDDOCAN-Medical-Document-Anonymization/

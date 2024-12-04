@@ -114,15 +114,7 @@ from keras.backend.tensorflow_backend import set_session -> from tensorflow.comp
 
 ### DataSet
 
-Para llevar a cabo la comparación de los modelos seleccionados, se utilizarán los siguientes conjuntos de datos:
-
-- **CANTEMIST NER**: Colección de 1301 informes clínicos oncológicos escritos en español, con menciones de morfología tumoral anotadas manualmente y mapeadas por expertos clínicos a una terminología controlada. Este conjunto de datos fue diseñado para la tarea compartida de minería de texto sobre cáncer, patrocinada por Plan-TL.
-
-- **CARES**: Corpus de Anonimización de Evidencias Radiológicas en Español, que contiene 3219 informes radiológicos en español, anotados con entidades médicas y personales de manera manual y revisados por radiólogos.
-
-- **LivingNER**: Conjunto de datos de entidades nombradas, normalización y clasificación de especies, patógenos y alimentos, que contiene 850 informes. Este conjunto de datos fue diseñado para la tarea compartida de minería de texto sobre reconocimiento de entidades nombradas, normalización y clasificación de especies, patógenos y alimentos, patrocinada por Plan-TL.
-
-- **Synthea**: Conjunto de datos sintéticos generados por la herramienta Synthea, que simula datos de pacientes siguiendo un modelo de datos realista y estructurado.
+Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. 
 
 ### Preparación del conjunto de datos
 

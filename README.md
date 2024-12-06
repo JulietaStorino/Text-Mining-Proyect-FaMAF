@@ -1,7 +1,7 @@
 # Trabajo de presentación para el curso: "Minería de Datos para Textos" (Text Mining)
 ## Impacto de la Dependencia de Datos en Modelos de Fine-Tuning para la anonimización de textos de ciencias de la vida
 **Profesores**: Laura Alonso Alemany, Matias Eduardo Bordone Carranza, Milagro Teruel  
-**Alumnos**: Florencia Brunello, Julieta Paola Storino, Santiago Troiano.
+**Alumnos**: Brunello Florencia, Storino Julieta Paola, Troiano Santiago.
 
 ### Índice
 1. [Introducción](#introducción)
@@ -10,8 +10,7 @@
 4. [Trabajos anteriores](#trabajos-anteriores)
 5. [Modelos a testear](#modelos-a-testear)
 6. [DataSet](#dataset)
-7. [Planificación](#planificación)
-8. [Referencias](#referencias)
+7. [Referencias](#referencias)
 
 ### Introducción
 
@@ -28,7 +27,7 @@ Esto plantea retos en cuanto a la protección de la privacidad de los datos de l
 
 El presente informe tiene como objetivo principal comparar la dependencia de datos presenre en diferentes aproximaciones para la anonimización de textos médicos en español. Para ello, se establecen los siguientes objetivos específicos:
 - **Evaluar el rendimiento de modelos ya existentes**: los datos usados para el desarrollo, entrenamiento y validación de los modelos de anonimización de textos médicos en español, provienen de una fuente específica, desarrollados por un equipo en particular, con una estructura y contenido bien definidos, lo que puede afectar su rendimiento en contextos diferentes de la vida real, porque un problema común en el aprendizaje automático es que los modelos no generalizan bien a datos que no han visto antes (overfitting). Por ello, buscamos conocer su verdadera eficacia en la tarea de anonimización de textos, donde la notación de textos médicos pueden variar en su estructura y contenido, analizando la eficacia de los modelos seleccionados, con datos que no fueron utilizados en su entrenamiento y creados a partir de diferentes fuentes.
-- **Identificar la dependencia de datos y optimizar estrategias de anonimización**: buscaremos determinar en qué puntos los modelos son dependientes de los datos de entrenamiento y cómo esta dependencia afecta su rendimiento. Propondremos mejoras y estrategias basadas en los hallazgos del análisis, con el fin de optimizar el rendimiento de los modelos en la anonimización de datos sensibles.
+- **Comparar el rendimiento de los modelos**: buscaremos determinar en qué aspectos los modelos se destacan o presentan deficiencias al realizar la tarea de anonimización en distintos conjuntos de datos.
 - **Fomentar la colaboración interdisciplinaria**: el trabajo será en parte guiado por las críticas de nuestros compañeros, por lo que habrá un intercambio de conocimientos dado por la colaboración entre los diferentes equipos.
 
 ### Trabajos anteriores
@@ -98,11 +97,14 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 
 - **CLIN-X (Bosch Center for Artificial Intelligence - Spoken Language Systems, Saarland University, Alemania)**: El modelo CLIN-X es un modelo preentrenado basado en el transformador multilingüe XLM-R, entrenado en 100 idiomas. Para adaptarlo al dominio clínico español, se entrenó con un corpus de 790MB de documentos del archivo Scielo y los recursos MeSpEn, utilizando el objetivo de modelado de lenguaje enmascarado (MLM). Aunque el modelo se adaptó al español, sigue siendo multilingüe y se puede aplicar a tareas en inglés.
 
-Notar que el comando para ejecutar train_our_model_architecture.py (python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models) tiene un error: hay que reemplazar --model xlm-roberta-large-spanish-clinical por --model llange/xlm-roberta-large-spanish-clinical. 
-Para usar la CPU (y no GPU de NVIDIA) hay que hacer ciertas modificaciones en el archivo create_data_splits.py:
-model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path)
-input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long()
-doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024)
+    Notar que el comando para ejecutar train_our_model_architecture.py:
+     python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file 
+     random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models
+    tiene un error: hay que reemplazar --model xlm-roberta-large-spanish-clinical por --model llange/xlm-roberta-large-spanish-clinical. 
+    Para usar la CPU (y no GPU de NVIDIA) hay que hacer ciertas modificaciones en el archivo create_data_splits.py:
+    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path)
+    input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long()
+    doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024)
 
 - **BiLSTM-CRF (University of Pennsylvania, Estados Unidos)**: Este modelo es una red neuronal que combina Bi-LSTM para capturar el contexto y CRF para la decodificación de etiquetas. Bi-LSTM (memoria bidireccional a largo y corto plazo) es un tipo de red neuronal recurrente (RNN) que procesa datos secuenciales tanto en dirección directa como inversa. Combina la potencia de LSTM con el procesamiento bidireccional, lo que permite que el modelo capture el contexto pasado y futuro de la secuencia de entrada. Por otro lado, CRF (campo aleatorio condicional) es un modelo estocástico utilizado para modelar secuencias de etiquetas en problemas de aprendizaje supervisado.
 
@@ -115,8 +117,6 @@ from keras.backend.tensorflow_backend import set_session -> from tensorflow.comp
 ### DataSet
 
 Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. 
-
-### Preparación del conjunto de datos
 
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.
@@ -131,4 +131,3 @@ Para llevar a cabo la comparación de los modelos seleccionados se utilizará el
 - [Lukas Lange, Heike Adel, Jannik Strötgen. NLNDE: The Neither-Language-Nor-Domain-Experts’ Way of Spanish Medical Document De-Identification.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_5.pdf)
 - [Cristóbal Colón-Ruiz, Isabel Segura-Dedmar. Protected Health Information Recognition by BiLSTM-CRF.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_6.pdf)
 - [Alicia Lara-Clares, Ana Garcia-Serrano. Key Phrases Annotation in Medical Documents: MEDDOCAN 2019 Anonymization Task.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_15.pdf)
-

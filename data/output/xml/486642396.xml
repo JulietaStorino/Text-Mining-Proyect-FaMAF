@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<MEDDOCAN>
+    <TEXT><![CDATA[Datos del paciente.
+Nombre: José Ángel Rviera Alonso
+DNI: 75505441Y
+Fecha de nacimiento: 07/02/1951
+Género: Hombre
+Domicilio: Calle de la Magdalena 72
+Ciudad: Eibar, Mallorca, Islas Baleares
+Código postal: 07471
+Email: AizoF928@gmail.com
+Teléfono fijo: +34 971 96 96 23
+Teléfono móvil: +34 671 73 83 06
+NHC: 6603161
+NASS: 301918965027
+
+Datos asistenciales.
+Médico: Dra. Claudia Alarcon Miguel. NC 833695456. Residente de 4° año en Cardiología. Instituto de Investigación Biomédica en Red de Enfermedades Cardiovasculares (CIBERCV). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
+Fecha de ingreso: 19/02/2005
+Episodio: 37124654
+Centro de salud: Centro de Salud Ronda
+Matrícula del coche: 1706QBG
+Modelo: Subaru Outback
+VIN: VSWI678JFGM564342
+
+Informe clínico del paciente: Paciente fumador de 54 años de edad, acompañado de su padre, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+    <TAGS>
+        <NAME id="T1" start="28" end="38" text="José Ángel" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="39" end="52" text="Rviera Alonso" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T3" start="58" end="67" text="75505441Y" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="89" end="99" text="07/02/1951" TYPE="FECHAS" comment=""/>
+        <OTHER id="T5" start="108" end="114" text="Hombre" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T6" start="126" end="150" text="Calle de la Magdalena 72" TYPE="CALLE" comment=""/>
+        <LOCATION id="T7" start="159" end="164" text="Eibar" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T8" start="166" end="174" text="Mallorca" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="176" end="190" text="Islas Baleares" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T10" start="206" end="211" text="07471" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T11" start="219" end="237" text="AizoF928@gmail.com" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <CONTACT id="T12" start="253" end="269" text="+34 971 96 96 23" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T13" start="286" end="302" text="+34 671 73 83 06" TYPE="NUMERO_TELEFONO" comment=""/>
+        <ID id="T14" start="308" end="315" text="6603161" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T15" start="322" end="334" text="301918965027" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <DATE id="T16" start="604" end="614" text="19/02/2005" TYPE="FECHAS" comment=""/>
+        <ID id="T17" start="625" end="633" text="37124654" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
+        <LOCATION id="T18" start="651" end="672" text="Centro de Salud Ronda" TYPE="CENTRO_DE_SALUD" comment=""/>
+        <ID id="T19" start="694" end="701" text="1706QBG" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
+        <ID id="T20" start="730" end="747" text="VSWI678JFGM564342" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
+        <OTHER id="T21" start="788" end="795" text="fumador" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <AGE id="T22" start="799" end="806" text="54 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T23" start="833" end="838" text="padre" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+    </TAGS>
+</MEDDOCAN>

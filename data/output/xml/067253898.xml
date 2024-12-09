@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<MEDDOCAN>
+    <TEXT><![CDATA[Datos del paciente.
+Nombre: Juan Francisco Carrillo Heránndez
+DNI: 69020514K
+Fecha de nacimiento: 14/06/1964
+Género: Hombre
+Domicilio: Calle de la Alameda 54, 3O
+Ciudad: Logroño, Cuenca, Castilla-La Mancha
+Código postal: 16543
+Email: juanfranciscohernandez@uca.es
+Teléfono fijo: +34 969 83 66 19
+FAX: +34 969 71 73 23
+NHC: 9008603
+NASS: 425531623752
+
+Datos asistenciales.
+Médico: Dr. José Ángel Guerrero Rivera. NC 864173180. Especialista en Genética Médica. Instituto de Investigación Biomédica en Red de Enfermedades Raras (CIBERER). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
+Fecha de ingreso: 20/01/1968
+Episodio: 67927873
+Hospital: Hospital Universitario Central de Asturias
+
+Informe clínico del paciente: Paciente musulman de 3 años de edad, acompañado de su hermano, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+    <TAGS>
+        <NAME id="T1" start="28" end="42" text="Juan Francisco" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="43" end="61" text="Carrillo Heránndez" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T3" start="67" end="76" text="69020514K" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="98" end="108" text="14/06/1964" TYPE="FECHAS" comment=""/>
+        <OTHER id="T5" start="117" end="123" text="Hombre" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T6" start="135" end="161" text="Calle de la Alameda 54, 3O" TYPE="CALLE" comment=""/>
+        <LOCATION id="T7" start="170" end="177" text="Logroño" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T8" start="179" end="185" text="Cuenca" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="187" end="205" text="Castilla-La Mancha" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T10" start="221" end="226" text="16543" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T11" start="234" end="263" text="juanfranciscohernandez@uca.es" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <CONTACT id="T12" start="279" end="295" text="+34 969 83 66 19" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T13" start="301" end="317" text="+34 969 71 73 23" TYPE="NUMERO_FAX" comment=""/>
+        <ID id="T14" start="323" end="330" text="9008603" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T15" start="337" end="349" text="425531623752" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <NAME id="T16" start="384" end="410" text="José Ángel Guerrero Rivera" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T17" start="415" end="424" text="864173180" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T18" start="426" end="457" text="Especialista en Genética Médica" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <LOCATION id="T19" start="459" end="534" text="Instituto de Investigación Biomédica en Red de Enfermedades Raras (CIBERER)" TYPE="INSTITUCION" comment=""/>
+        <LOCATION id="T20" start="536" end="565" text="Avenida Monforte de Lemos 3-5" TYPE="CALLE" comment=""/>
+        <LOCATION id="T21" start="567" end="572" text="28029" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T22" start="574" end="580" text="Madrid" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T23" start="582" end="588" text="España" TYPE="PAIS" comment=""/>
+        <DATE id="T24" start="608" end="618" text="20/01/1968" TYPE="FECHAS" comment=""/>
+        <ID id="T25" start="629" end="637" text="67927873" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
+        <LOCATION id="T26" start="648" end="690" text="Hospital Universitario Central de Asturias" TYPE="HOSPITAL" comment=""/>
+        <OTHER id="T27" start="731" end="739" text="musulman" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <AGE id="T28" start="743" end="749" text="3 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T29" start="776" end="783" text="hermano" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+    </TAGS>
+</MEDDOCAN>

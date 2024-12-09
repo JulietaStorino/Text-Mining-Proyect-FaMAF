@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<MEDDOCAN>
+    <TEXT><![CDATA[Datos del paciente.
+Nombre: Agstín Pachecco De la Fuente
+DNI: 39193581V
+Fecha de nacimiento: 13/07/2008
+Género: H
+Domicilio: Calle de Preciados 27
+Ciudad: Teruel, Cuenca, Castilla-La Mancha
+Código postal: 16049
+Email: agustin.pachecodelafuente@gmail.com
+Teléfono fijo: +34 969 13 15 25
+Teléfono móvil: +34 769 39 90 65
+NHC: 0442773
+NASS: 879949958005
+Condición de riesgo: Plomero
+
+Datos asistenciales.
+Médico: Dr. Adrián Ruiz Santiago. NC 487970758. Cardiólogo de Unidad de Cuidados Intensivos. Instituto de Investigación Sanitaria del Hospital 12 de Octubre (Imas12). Avenida de Córdoba, s/n. 28041. Madrid. España.
+Fecha de ingreso: 05/05/2015
+Episodio: 07744605
+Centro de salud: Centro de Salud Ronda
+
+Informe clínico del paciente: Paciente de ascendencia del medio oriente de 6 años de edad, acompañado de su tío, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+    <TAGS>
+        <NAME id="T1" start="28" end="34" text="Agstín" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="35" end="56" text="Pachecco De la Fuente" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T3" start="62" end="71" text="39193581V" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="93" end="103" text="13/07/2008" TYPE="FECHAS" comment=""/>
+        <OTHER id="T5" start="112" end="113" text="H" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T6" start="125" end="146" text="Calle de Preciados 27" TYPE="CALLE" comment=""/>
+        <LOCATION id="T7" start="155" end="161" text="Teruel" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T8" start="163" end="169" text="Cuenca" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="171" end="189" text="Castilla-La Mancha" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T10" start="205" end="210" text="16049" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T11" start="218" end="253" text="agustin.pachecodelafuente@gmail.com" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <CONTACT id="T12" start="269" end="285" text="+34 969 13 15 25" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T13" start="302" end="318" text="+34 769 39 90 65" TYPE="NUMERO_TELEFONO" comment=""/>
+        <ID id="T14" start="324" end="331" text="0442773" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T15" start="338" end="350" text="879949958005" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <PROFESSION id="T16" start="372" end="379" text="Plomero" TYPE="PROFESION" comment=""/>
+        <NAME id="T17" start="414" end="434" text="Adrián Ruiz Santiago" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T18" start="439" end="448" text="487970758" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T19" start="450" end="493" text="Cardiólogo de Unidad de Cuidados Intensivos" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <LOCATION id="T20" start="495" end="567" text="Instituto de Investigación Sanitaria del Hospital 12 de Octubre (Imas12)" TYPE="INSTITUCION" comment=""/>
+        <LOCATION id="T21" start="569" end="592" text="Avenida de Córdoba, s/n" TYPE="CALLE" comment=""/>
+        <LOCATION id="T22" start="594" end="599" text="28041" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T23" start="601" end="607" text="Madrid" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T24" start="609" end="615" text="España" TYPE="PAIS" comment=""/>
+        <DATE id="T25" start="635" end="645" text="05/05/2015" TYPE="FECHAS" comment=""/>
+        <ID id="T26" start="656" end="664" text="07744605" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
+        <LOCATION id="T27" start="682" end="703" text="Centro de Salud Ronda" TYPE="CENTRO_DE_SALUD" comment=""/>
+        <OTHER id="T28" start="747" end="776" text="ascendencia del medio oriente" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <AGE id="T29" start="780" end="786" text="6 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T30" start="813" end="816" text="tío" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+    </TAGS>
+</MEDDOCAN>

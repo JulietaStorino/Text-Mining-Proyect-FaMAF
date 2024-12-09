@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<MEDDOCAN>
+    <TEXT><![CDATA[Datos del paciente.
+Nombre: Rosa María Redondo Sierra
+DNI: 71289595Z
+Fecha de nacimiento: 06/05/2023
+Género: Mujer
+Domicilio: Calle del Prado 27
+Ciudad: Vitoria, Barcelona, Cataluña
+Código postal: 08306
+Email: redondo_sierra@icloud.com
+Teléfono fijo: +34 939 15 17 86
+Teléfono móvil: +34 634 56 64 38
+NHC: 9621479
+NASS: 860055435104
+Condición de riesgo: Técnico de Radiología
+
+Datos asistenciales.
+Médico: Dra. Rosario Silva Espinosa. NC 225341074. Investigadora Clínica en Insuficiencia Cardíaca. Instituto de Investigación Biomédica en Red de Enfermedades Cardiovasculares (CIBERCV). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
+Fecha de ingreso: 09/12/2024
+Hospital: Hospital Universitario Fundació Jiménez Díaz
+
+Informe clínico del paciente: Paciente de tez blanca de un año de edad, acompañado de su tío, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+    <TAGS>
+        <NAME id="T1" start="28" end="38" text="Rosa María" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="39" end="53" text="Redondo Sierra" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T3" start="59" end="68" text="71289595Z" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="90" end="100" text="06/05/2023" TYPE="FECHAS" comment=""/>
+        <OTHER id="T5" start="109" end="114" text="Mujer" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T6" start="126" end="144" text="Calle del Prado 27" TYPE="CALLE" comment=""/>
+        <LOCATION id="T7" start="153" end="160" text="Vitoria" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T8" start="162" end="171" text="Barcelona" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="173" end="181" text="Cataluña" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T10" start="197" end="202" text="08306" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T11" start="210" end="235" text="redondo_sierra@icloud.com" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <CONTACT id="T12" start="251" end="267" text="+34 939 15 17 86" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T13" start="284" end="300" text="+34 634 56 64 38" TYPE="NUMERO_TELEFONO" comment=""/>
+        <ID id="T14" start="306" end="313" text="9621479" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T15" start="320" end="332" text="860055435104" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <PROFESSION id="T16" start="354" end="375" text="Técnico de Radiología" TYPE="PROFESION" comment=""/>
+        <DATE id="T17" start="658" end="668" text="09/12/2024" TYPE="FECHAS" comment=""/>
+        <LOCATION id="T18" start="679" end="723" text="Hospital Universitario Fundació Jiménez Díaz" TYPE="HOSPITAL" comment=""/>
+        <OTHER id="T19" start="767" end="777" text="tez blanca" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <AGE id="T20" start="781" end="787" text="un año" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T21" start="814" end="817" text="tío" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+    </TAGS>
+</MEDDOCAN>

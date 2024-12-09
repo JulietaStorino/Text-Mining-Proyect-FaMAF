@@ -1,66 +1,55 @@
-Datos del paciente.
-Nombre: Rosa María Redondo Sierra
+Datos del Paciente:
+Nombre: Infanta Lucía de la Santa Concepción de Barbados y Ortega
 DNI: 71289595Z
-Fecha de nacimiento: 06/05/2023
-Género: Mujer
-Domicilio: Calle del Prado 27
-Ciudad: Vitoria, Barcelona, Cataluña
-Código postal: 08306
-Email: redondo_sierra@icloud.com
-Teléfono fijo: +34 939 15 17 86
-Teléfono móvil: +34 634 56 64 38
+Fecha de nacimiento: 06/05/2023 (1 año y 7 meses)
+Género: Nena
+Domicilio: Avda Aragó, 271, 22, 08007, Barcelona, España.
+Teléfonos: +34939151786 (fijo), +34634566438 (móvil)
+Email: infanta_lucia@icloud.com
 NHC: 9621479
 NASS: 860055435104
-Condición de riesgo: Técnico de Radiología
+Número de socio: 6156349372
 
-Datos asistenciales.
-Médico: Dra. Rosario Silva Espinosa. NC 225341074. Investigadora Clínica en Insuficiencia Cardíaca. Instituto de Investigación Biomédica en Red de Enfermedades Cardiovasculares (CIBERCV). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
-Fecha de ingreso: 09/12/2024
-Hospital: Hospital Universitario Fundació Jiménez Díaz
+Fecha de ingreso: 09/d/2024
+Hospital Universitario Fundació Jiménez Díaz
 
-Informe clínico del paciente: Paciente de tez blanca de un año de edad, acompañado de su tío, se presenta a la consulta con los siguientes síntomas...
-Datos del Paciente:  
-Nombre: Rosa María Redondo Sierra  
-DNI: 71289595Z  
-Fecha de nacimiento: 06/05/2023 (1 año y 7 meses)  
-Género: Nena  
-Domicilio: Calle Aragó, 271, 08007, Barcelona, España.  
-Teléfonos: +34939151786 (fijo), +34634566438 (móvil)
-Email: redondo_sierra@icloud.com  
-NHC: 9621479  
-NASS: 860055435104  
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://LSCNarbadosOrtega-biotech.com.
 
-Fecha de ingreso: 09/12/2024
-Hospital: Hospital Universitario Fundació Jiménez Díaz
+Antecedentes Clínicos:
+Ingresó en san juan, la niña de 1 año y 7 meses, de tez blanca, residente en Barcelona. Hija de una técnica en radiología, lo que implica una posible exposición a ambientes laborales con agentes ionizantes durante el embarazo. No presenta antecedentes médicos relevantes previos, y su desarrollo físico ha sido acorde a su edad.
 
-Antecedentes Clínicos:  
-Niña de 1 año y 7 meses, de tez blanca, residente en Barcelona. Hija de una técnico en radiología, lo que implica una posible exposición a ambientes laborales con agentes ionizantes durante el embarazo. No presenta antecedentes médicos relevantes previos, y su desarrollo físico ha sido acorde a su edad.  
+Motivo de Consulta:
+La paciente fue llevada a consulta por su madre tras presentar síntomas de dificultad para alimentarse, fatiga durante la actividad mínima y coloración pálida, especialmente notable en la región peribucal. Además, la madre, con experiencia en radiología, notó un leve abombamiento abdominal y describió una aparente aceleración del ritmo respiratorio en reposo, lo que motivó la derivación al servicio de insuficiencia cardíaca para evaluación especializada.
 
-Motivo de Consulta:  
-La paciente fue llevada a consulta por su madre tras presentar síntomas de dificultad para alimentarse, fatiga durante la actividad mínima y coloración pálida, especialmente notable en la región peribucal. Además, la madre, con experiencia en radiología, notó un leve abombamiento abdominal y describió una aparente aceleración del ritmo respiratorio en reposo, lo que motivó la derivación al servicio de insuficiencia cardíaca para evaluación especializada.  
+Examen Físico y Pruebas Complementarias:
+- Peso: 8.5 kg (percentil 15 para su edad).
+- Tensión arterial: 70/50 mmHg.
+- Frecuencia cardíaca: 155 latidos por minuto.
+- Exploración cardiovascular: Soplo sistólico grado II/VI en foco mitral, hepatomegalia leve al tacto y edemas leves en extremidades inferiores.
+- Radiografía de tórax: Cardiomegalia evidente y signos de congestión pulmonar leve.
+- Ecocardiograma: Dilatación ventricular izquierda con fracción de eyección disminuida al 40%, compatible con insuficiencia cardíaca dilatada.
+- Análisis de sangre: Elevación de péptidos natriuréticos tipo B (NT-proBNP: 5600 pg/mL).
 
-Examen Físico y Pruebas Complementarias:  
-- Peso: 8.5 kg (percentil 15 para su edad).  
-- Tensión arterial: 70/50 mmHg.  
-- Frecuencia cardíaca: 155 latidos por minuto.  
-- Exploración cardiovascular: Soplo sistólico grado II/VI en foco mitral, hepatomegalia leve al tacto y edemas leves en extremidades inferiores.  
-- Radiografía de tórax: Cardiomegalia evidente y signos de congestión pulmonar leve.  
-- Ecocardiograma: Dilatación ventricular izquierda con fracción de eyección disminuida al 40%, compatible con insuficiencia cardíaca dilatada.  
-- Análisis de sangre: Elevación de péptidos natriuréticos tipo B (NT-proBNP: 5600 pg/mL).  
+Se realizó un expediente con URL http://HUFJD.com/pacientes/9621479.
 
-Diagnóstico Provisional:  
-Insuficiencia cardíaca secundaria a miocardiopatía dilatada, probablemente de origen idiopático, pero con posible contribución ambiental debido a la ocupación de la madre durante el embarazo.  
+Diagnóstico Provisional:
+Insuficiencia cardíaca secundaria a miocardiopatía dilatada, probablemente de origen idiopático, pero con posible contribución ambiental debido a la ocupación de la madre durante el embarazo.
 
-Plan de Tratamiento:  
-1. Hospitalización inicial: Ingreso para estabilización y monitorización del estado hemodinámico.  
-2. Medicación: Inicio de diuréticos (furosemida IV 1 mg/kg/día) para control de la congestión, inhibidores de la ECA (enalapril 0.1 mg/kg/día) para manejo a largo plazo y betabloqueadores (carvedilol a dosis bajas, 0.05 mg/kg).  
-3. Rehabilitación nutricional: Soporte nutricional para mejorar el estado general y la ganancia ponderal.  
-4. Pruebas complementarias: Resonancia magnética cardíaca para evaluación estructural más detallada, y estudios genéticos para descartar etiología hereditaria.  
+Plan de Tratamiento:
+1. Hospitalización inicial: Ingreso para estabilización y monitorización del estado hemodinámico.
+2. Medicación: Inicio de diuréticos (furosemida IV 1 mg/kg/día) para control de la congestión, inhibidores de la ECA (enalapril 0.1 mg/kg/día) para manejo a largo plazo y betabloqueadores (carvedilol a dosis bajas, 0.05 mg/kg).
+3. Rehabilitación nutricional: Soporte nutricional para mejorar el estado general y la ganancia ponderal.
+4. Pruebas complementarias: Resonancia magnética cardíaca para evaluación estructural más detallada, y estudios genéticos para descartar etiología hereditaria.
 
-Recomendaciones:  
-Se proporcionó orientación a la familia sobre los cuidados necesarios en casa, incluyendo la detección temprana de signos de descompensación. Se planteó la necesidad de un seguimiento cercano en la unidad de insuficiencia cardíaca pediátrica.  
+Recomendaciones:
+Se proporcionó orientación a la madre sobre los cuidados necesarios en casa, incluyendo la detección temprana de signos de descompensación. Se planteó la necesidad de un seguimiento cercano en la unidad de insuficiencia cardíaca pediátrica.
 
-Médico responsable:  
-Dra. Rosario Silva Espinosa n.col 225341074  
-Investigadora Clínica en Insuficiencia Cardíaca.
-Instituto de Investigación Biomédica en Red de Enfermedades Cardiovasculares (CIBERCV). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dra. Rosario Silva Espinosa
+Nº Colegiado 225341074
+Nº Empleado o423492
+Investigadora Clínica en Insuficiencia Cardíaca, CIBERCV
+Instituto de Investigación Biomédica en Red de Enfermedades Cardiovasculares, Avenida Monforte de Lemos 3-5, 28029, Madrid, España

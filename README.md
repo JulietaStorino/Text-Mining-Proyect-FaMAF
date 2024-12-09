@@ -117,8 +117,6 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 Para poder correr el modelo es necesario modificar la segunda linea de código del archivo Train.ipynb:
 from keras.backend.tensorflow_backend import set_session -> from tensorflow.compat.v1.keras.backend import set_session
 
-- **Few-shot NER (Universidad Nacional de Educación a Distancia, España)**: Este modelo preentrenado se basa en la implementación de Keras de "Few-shot Learning for Named Entity Recognition in Medical Text", un modelo LSTM y CNN bidireccional similar a Chiu y Nichols (2016) para los datos de noticias de CoNLL 2003. Es un híbrido Bi-LSTM y CNN que combina la capacidad de Bi-LSTM para capturar el contexto y la capacidad de la red neuronal convolucional (CNN) para capturar características locales. La CNN utiliza filtros convolucionales para extraer características locales de los datos de entrada, permitiendo que el modelo aprenda patrones espaciales en los datos.
-
 ### Conclusiones
 
 ¿Cómo seguirían el proyecto de acá a un año y con 5 personas más? 

@@ -13,7 +13,7 @@ Número de socio: 5381037568.
 Fecha de ingreso: 2/2/22.
 Episodio: 97779607. Hospital General Universitario Reina Sofía.
 
-El servidor para el envío de información desde el cual el usuario se comunica es smtp://AMartinLopez-biotech.com.
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://AMartinLopez-biotech.com. IP asociada 249.36.206.164 - MAC asociada 3D9.E0F.A68.E2A.
 
 Antecedentes Clínicos:
 Niño de 4 años, residente en Valladolid, sin antecedentes médicos de relevancia ni condiciones crónicas de riesgo más allá de su exposición ocasional a entornos de construcción debido a familiar albañil. La vacunación está al día conforme al calendario de Castilla y León.

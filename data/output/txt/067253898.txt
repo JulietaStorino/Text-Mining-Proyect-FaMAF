@@ -14,7 +14,7 @@ Número de socio: 6675927873.
 Fecha de ingreso: 20/01/1968.
 Episodio: 67927873. HU Central de Asturias.
 
-El servidor para el envío de información desde el cual el usuario se comunica es smtp://jfhernandez-biotech.com.
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://jfhernandez-biotech.com. ip asociada 161.241.108.53, mac asociada 36-0F-6E-BC-78-17.
 
 Antecedentes Clínicos:
 Paciente de 60 años, en etapa pre-jubilatoria, residente en Logroño. A principios de los 70' fue diagnosticado con un trastorno genético de carácter leve relacionado con una mutación hereditaria en el gen FBN1, asociado al síndrome de Marfan. Aunque el seguimiento regular no identificó complicaciones graves, se mantuvo vigilancia médica intermitente debido a un riesgo potencial de alteraciones cardiovasculares o esqueléticas propias de esta condición.

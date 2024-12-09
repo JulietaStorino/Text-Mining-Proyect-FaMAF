@@ -1,5 +1,5 @@
 Datos del Paciente:
-Nombre: Juan de Dios Rviera Alonso.
+Nombre: Juan de Dios Rviera-Alonso.
 DNI: 75505441Y.
 Fecha de nacimiento: 07/06/1951 (73 años).
 Género: Hombre.
@@ -13,7 +13,7 @@ Número de socio: 2294739275.
 Fecha de ingreso: 19/02/2005.
 Episodio: 37124654. Centro de Salud Ronda.
 
-El servidor para el envío de información desde el cual el usuario se comunica es smtp:/JDRiveraAlonso-biotech.com.
+El servidor para el envío de información desde el cual el usuario se comunica es smtp:/JDRiveraAlonso-biotech.com, ip asociada 240.184.242.20 y mac asociada 53051691EC98.
 
 Antecedentes Clínicos:
 Paciente musulmán de 73 años, residente en Eibar, con antecedentes de consumo crónico de tabaco (aproximadamente 20 cigarrillos diarios durante 35 años). No presenta antecedentes familiares inmediatos de enfermedades cardiovasculares, pero el paciente refiere un estilo de vida sedentario y antecedentes de hipertensión arterial mal controlada.

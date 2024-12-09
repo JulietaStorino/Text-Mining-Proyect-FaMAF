@@ -13,7 +13,7 @@ Número de socio: 6156349372
 Fecha de ingreso: 09/d/2024
 Hospital Universitario Fundació Jiménez Díaz
 
-El servidor para el envío de información desde el cual el usuario se comunica es smtp://LSCNarbadosOrtega-biotech.com.
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://LSCNarbadosOrtega-biotech.com. ip 239.93.12.215, mac 47 F9 A3 32 AB 41.
 
 Antecedentes Clínicos:
 Ingresó en san juan, la niña de 1 año y 7 meses, de tez blanca, residente en Barcelona. Hija de una técnica en radiología, lo que implica una posible exposición a ambientes laborales con agentes ionizantes durante el embarazo. No presenta antecedentes médicos relevantes previos, y su desarrollo físico ha sido acorde a su edad.

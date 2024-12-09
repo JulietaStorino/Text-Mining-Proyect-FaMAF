@@ -31,7 +31,7 @@ Examen Físico y Pruebas Complementarias:
 - Biometría hemática y marcadores cardíacos: Niveles elevados de troponina I, lo que confirma daño miocárdico post-traumático
 - Radiografía de tórax: Engrosamiento de los ventrículos y signos leves de congestión pulmonar
 
-Se realizó un expediente con URL CSR.com/patients/0442773.
+Se realizó un expediente con URL CSR.com/patients/0442773 ip 236.125.29.228 mac 4E9.D1A.F22.3D0.
 
 Diagnóstico Provisional:
 Disfunción cardiaca post-traumática secundaria a choque traumático, posiblemente desencadenada o agravada por la fibrilación auricular y el estrés hemodinámico.

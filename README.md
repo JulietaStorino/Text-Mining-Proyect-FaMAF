@@ -8,9 +8,10 @@
 2. [Motivación](#motivación)
 3. [Objetivos](#objetivos)
 4. [Trabajos anteriores](#trabajos-anteriores)
-5. [Modelos a testear](#modelos-a-testear)
 6. [DataSet](#dataset)
-7. [Referencias](#referencias)
+7. [Modelos a testear](#modelos-a-testear)
+8. [Conclusiones](#conclusiones)
+9. [Referencias](#referencias)
 
 ### Introducción
 
@@ -91,6 +92,10 @@ Durante el proyecto se desarrollaron diversos modelos entrenados con 500 casos c
 
 Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en un formato predefinido (BRAT o i2b2). La evaluación se basó en la precisión, la exhaustividad y la puntuación F1, junto con las puntuaciones de fuga para medir la cantidad de información sensible que no se identificó.
 
+### DataSet
+
+Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. Utilizamos la herramienta ChatGPT...
+
 ### Modelos a testear
 
 De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 4 proyectos presentados por las siguientes instituciones:
@@ -112,11 +117,9 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 Para poder correr el modelo es necesario modificar la segunda linea de código del archivo Train.ipynb:
 from keras.backend.tensorflow_backend import set_session -> from tensorflow.compat.v1.keras.backend import set_session
 
-- **Few-shot NER (Universidad Nacional de Educación a Distancia, España)**: Este modelo preentrenado se basa en la implementación de Keras de "Few-shot Learning for Named Entity Recognition in Medical Text", un modelo LSTM y CNN bidireccional similar a Chiu y Nichols (2016) para los datos de noticias de CoNLL 2003. Es un híbrido Bi-LSTM y CNN que combina la capacidad de Bi-LSTM para capturar el contexto y la capacidad de la red neuronal convolucional (CNN) para capturar características locales. La CNN utiliza filtros convolucionales para extraer características locales de los datos de entrada, permitiendo que el modelo aprenda patrones espaciales en los datos.
+### Conclusiones
 
-### DataSet
-
-Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. 
+¿Cómo seguirían el proyecto de acá a un año y con 5 personas más? 
 
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.

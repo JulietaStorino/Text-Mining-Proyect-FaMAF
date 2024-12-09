@@ -10,7 +10,8 @@
 4. [Trabajos anteriores](#trabajos-anteriores)
 5. [Modelos a testear](#modelos-a-testear)
 6. [DataSet](#dataset)
-7. [Referencias](#referencias)
+7. [Conclusiones](#conclusiones)
+8. [Referencias](#referencias)
 
 ### Introducción
 
@@ -117,6 +118,10 @@ from keras.backend.tensorflow_backend import set_session -> from tensorflow.comp
 ### DataSet
 
 Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. 
+
+### Conclusiones
+
+¿Cómo seguirían el proyecto de acá a un año y con 5 personas más? 
 
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.

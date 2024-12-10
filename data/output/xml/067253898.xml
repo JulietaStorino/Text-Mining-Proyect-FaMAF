@@ -1,55 +1,103 @@
 <?xml version="1.0" ?>
 <MEDDOCAN>
-    <TEXT><![CDATA[Datos del paciente.
-Nombre: Juan Francisco Carrillo Heránndez
-DNI: 69020514K
-Fecha de nacimiento: 14/06/1964
-Género: Hombre
-Domicilio: Calle de la Alameda 54, 3O
-Ciudad: Logroño, Cuenca, Castilla-La Mancha
-Código postal: 16543
-Email: juanfranciscohernandez@uca.es
-Teléfono fijo: +34 969 83 66 19
-FAX: +34 969 71 73 23
-NHC: 9008603
-NASS: 425531623752
+    <TEXT><![CDATA[Datos del Paciente:
+Nombre: Sr. Juan Fco. Carrillo Heránndez.
+DNI: 69020514K.
+Fecha de nacimiento: 14/06/1964 (60 años).
+Género: Hombre H.
+Domicilio: Calle Isaac Albéniz 57, 4, 2. Logroño, La Rioja. 16543.
+Teléfono fijo: +34 941 83 66 19.
+FAX: +34 941 71 73 23.
+Email: juanfranciscohernandez@uca.es.
+NHC: 9008603.
+NASS: 425531623752.
+Número de socio: 6675927873.
 
-Datos asistenciales.
-Médico: Dr. José Ángel Guerrero Rivera. NC 864173180. Especialista en Genética Médica. Instituto de Investigación Biomédica en Red de Enfermedades Raras (CIBERER). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
-Fecha de ingreso: 20/01/1968
-Episodio: 67927873
-Hospital: Hospital Universitario Central de Asturias
+Fecha de ingreso: 20/01/1968.
+Episodio: 67927873. HU Central de Asturias.
 
-Informe clínico del paciente: Paciente musulman de 3 años de edad, acompañado de su hermano, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://jfhernandez-biotech.com. ip asociada 161.241.108.53, mac asociada 36-0F-6E-BC-78-17.
+
+Antecedentes Clínicos:
+Paciente de 60 años, en etapa pre-jubilatoria, residente en Logroño. A principios de los 70' fue diagnosticado con un trastorno genético de carácter leve relacionado con una mutación hereditaria en el gen FBN1, asociado al síndrome de Marfan. Aunque el seguimiento regular no identificó complicaciones graves, se mantuvo vigilancia médica intermitente debido a un riesgo potencial de alteraciones cardiovasculares o esqueléticas propias de esta condición.
+
+Motivo de Consulta:
+El paciente acude a consulta acompañado por sus dos hijas de 20 años y 35 años debido a la reciente detección de síntomas progresivos que podrían estar relacionados con su condición genética previa. Refiere dolores articulares frecuentes, sobre todo en las rodillas y codos, además de sensación de fatiga crónica y molestias en la región lumbar. También menciona que un examen rutinario, realizado el martes 25 de junio, de su médico de cabecera reveló una dilatación leve de la raíz aórtica, lo que motivó la derivación al Dr. José Ángel Guerrero Rivera, especialista en genética médica, para evaluación y posibles medidas preventivas.
+
+Examen Físico y Pruebas Complementarias:
+- Tensión arterial: 132/86 mmHg.
+- Frecuencia cardíaca: 78 latidos por minuto.
+- Altura: 193 cm (talla alta notable, consistente con la posible manifestación del síndrome de Marfan).
+- Exploración musculoesquelética: Hipermovilidad articular leve, escoliosis de grado bajo detectada.
+- Ecocardiografía: Dilatación de la raíz aórtica (41 mm), sin insuficiencia aórtica significativa.
+- Pruebas genéticas: Confirmación de mutación en el gen FBN1 mediante secuenciación directa (historial previo actualizado).
+
+Se realizó un expediente con URL htt://HUCA.com/pacientes/35610179K.
+
+Diagnóstico Provisional:
+Síndrome de Marfan con manifestaciones cardiovasculares y musculoesqueléticas leves. Dilatación aórtica incipiente que requiere seguimiento estrecho y medidas preventivas.
+
+Plan de Tratamiento:
+1. Seguimiento cardiológico: Derivación a un cardiólogo especializado en enfermedades genéticas para vigilancia periódica de la aorta y manejo preventivo.
+2. Fisioterapia: Rehabilitación dirigida a mejorar la estabilidad articular y reducir la incidencia de dolor musculoesquelético.
+3. Actividad física moderada: Recomendación de evitar deportes de contacto o actividades de alto impacto.
+4. Medicación preventiva: Inicio de betabloqueadores (propranolol 40 mg/día) para reducir la progresión de la dilatación aórtica.
+5. Reevaluación genética: Monitorización periódica de nuevas manifestaciones relacionadas con el síndrome.
+
+Recomendaciones:
+El paciente y su familia recibirán asesoramiento genético para entender la naturaleza del trastorno y sus implicaciones. Se aconseja vigilancia regular con análisis de imagen (ecocardiografía anual) y control de presión arterial.
+
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dr. José Ángel Guerrero Rivera.
+NC 864173180.
+Especialista en Genética Médica.
+Instituto de Investigación Biomédica en Red de Enfermedades Raras. Avenida Monforte de Lemos 3-5. 28029. Madrid. España.]]></TEXT>
     <TAGS>
-        <NAME id="T1" start="28" end="42" text="Juan Francisco" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
-        <NAME id="T2" start="43" end="61" text="Carrillo Heránndez" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T1" start="32" end="41" text="Juan Fco." TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="42" end="60" text="Carrillo Heránndez" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
         <ID id="T3" start="67" end="76" text="69020514K" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <DATE id="T4" start="98" end="108" text="14/06/1964" TYPE="FECHAS" comment=""/>
-        <OTHER id="T5" start="117" end="123" text="Hombre" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
-        <LOCATION id="T6" start="135" end="161" text="Calle de la Alameda 54, 3O" TYPE="CALLE" comment=""/>
-        <LOCATION id="T7" start="170" end="177" text="Logroño" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T8" start="179" end="185" text="Cuenca" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T9" start="187" end="205" text="Castilla-La Mancha" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T10" start="221" end="226" text="16543" TYPE="TERRITORIO" comment=""/>
-        <CONTACT id="T11" start="234" end="263" text="juanfranciscohernandez@uca.es" TYPE="CORREO_ELECTRONICO" comment=""/>
-        <CONTACT id="T12" start="279" end="295" text="+34 969 83 66 19" TYPE="NUMERO_TELEFONO" comment=""/>
-        <CONTACT id="T13" start="301" end="317" text="+34 969 71 73 23" TYPE="NUMERO_FAX" comment=""/>
-        <ID id="T14" start="323" end="330" text="9008603" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <ID id="T15" start="337" end="349" text="425531623752" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <NAME id="T16" start="384" end="410" text="José Ángel Guerrero Rivera" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
-        <ID id="T17" start="415" end="424" text="864173180" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
-        <ID id="T18" start="426" end="457" text="Especialista en Genética Médica" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
-        <LOCATION id="T19" start="459" end="534" text="Instituto de Investigación Biomédica en Red de Enfermedades Raras (CIBERER)" TYPE="INSTITUCION" comment=""/>
-        <LOCATION id="T20" start="536" end="565" text="Avenida Monforte de Lemos 3-5" TYPE="CALLE" comment=""/>
-        <LOCATION id="T21" start="567" end="572" text="28029" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T22" start="574" end="580" text="Madrid" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T23" start="582" end="588" text="España" TYPE="PAIS" comment=""/>
-        <DATE id="T24" start="608" end="618" text="20/01/1968" TYPE="FECHAS" comment=""/>
-        <ID id="T25" start="629" end="637" text="67927873" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
-        <LOCATION id="T26" start="648" end="690" text="Hospital Universitario Central de Asturias" TYPE="HOSPITAL" comment=""/>
-        <OTHER id="T27" start="731" end="739" text="musulman" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
-        <AGE id="T28" start="743" end="749" text="3 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
-        <OTHER id="T29" start="776" end="783" text="hermano" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="99" end="109" text="14/06/1964" TYPE="FECHAS" comment=""/>
+        <AGE id="T5" start="111" end="118" text="60 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T6" start="129" end="137" text="Hombre H" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T7" start="150" end="178" text="Calle Isaac Albéniz 57, 4, 2" TYPE="CALLE" comment=""/>
+        <LOCATION id="T8" start="180" end="187" text="Logroño" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="189" end="197" text="La Rioja" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T10" start="199" end="204" text="16543" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T11" start="222" end="237" text="34 941 83 66 19" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T12" start="245" end="260" text="34 941 71 73 23" TYPE="NUMERO_FAX" comment=""/>
+        <CONTACT id="T13" start="269" end="298" text="juanfranciscohernandez@uca.es" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <ID id="T14" start="305" end="312" text="9008603" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T15" start="320" end="332" text="425531623752" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <ID id="T16" start="351" end="361" text="6675927873" TYPE="NUMERO_IDENTIF" comment=""/>
+        <DATE id="T17" start="382" end="392" text="20/01/1968" TYPE="FECHAS" comment=""/>
+        <ID id="T18" start="404" end="412" text="67927873" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
+        <LOCATION id="T19" start="414" end="436" text="HU Central de Asturias" TYPE="CENTRO_DE_SALUD" comment=""/>
+        <OTHER id="T20" start="520" end="550" text="smtp://jfhernandez-biotech.com" TYPE="DIREC_PROT_INTERNET" comment=""/>
+        <ID id="T21" start="564" end="578" text="161.241.108.53" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <ID id="T22" start="593" end="610" text="36-0F-6E-BC-78-17" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <AGE id="T23" start="648" end="655" text="60 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T24" start="666" end="681" text="pre-jubilatoria" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T25" start="696" end="703" text="Logroño" TYPE="TERRITORIO" comment=""/>
+        <DATE id="T26" start="725" end="728" text="principios de los 70s" TYPE="FECHAS" comment=""/>
+        <OTHER id="T27" start="1161" end="1170" text="dos hijas" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T28" start="1174" end="1181" text="20 años" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T29" start="1184" end="1191" text="35 años" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T30" start="1514" end="1532" text="martes 25 de junio" TYPE="FECHAS" comment=""/>
+        <NAME id="T31" start="1641" end="1667" text="José Ángel Guerrero Rivera" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T32" start="1669" end="1700" text="especialista en genética médica" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <OTHER id="T33" start="2333" end="2367" text="http://HUCA.com/pacientes/35610179K" comment=""/>
+        <ID id="T34" start="3547" end="3558" text="RG545EMR302" comment=""/>
+        <ID id="T35" start="3649" end="3660" text="IK326OYO089" comment=""/>
+        <NAME id="T36" start="3687" end="3713" text="José Ángel Guerrero Rivera" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T37" start="3718" end="3727" text="864173180" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T38" start="3729" end="3760" text="Especialista en Genética Médica" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <LOCATION id="T39" start="3762" end="3827" text="Instituto de Investigación Biomédica en Red de Enfermedades Raras" TYPE="INSTITUCION" comment=""/>
+        <LOCATION id="T40" start="3829" end="3858" text="Avenida Monforte de Lemos 3-5" TYPE="CALLE" comment=""/>   
+        <LOCATION id="T41" start="3860" end="3865" text="28029" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T42" start="3867" end="3873" text="Madrid" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T43" start="3875" end="3881" text="España" TYPE="PAIS" comment=""/>
     </TAGS>
 </MEDDOCAN>

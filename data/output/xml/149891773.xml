@@ -1,62 +1,96 @@
 <?xml version="1.0" ?>
 <MEDDOCAN>
-    <TEXT><![CDATA[Datos del paciente.
-Nombre: José Ángel Conde Velasco
-DNI: 23417141J
-Fecha de nacimiento: 31/03/2020
-Género: M
-Domicilio: Calle de Fuencarral 81
-Ciudad: Béjar, Valladolid, Castilla y León
-Código postal: 47838
-Email: joseangel_conde1094@ub.edu
-Teléfono fijo: +34 983 82 84 99
-Teléfono móvil: +34 683 78 02 65
-NHC: 0913770
-NASS: 801451055749
-Condición de riesgo: Albañil
+    <TEXT><![CDATA[Datos del Paciente:
+Nombre: A. "Spaghetti" Martín López.
+DNI: 23417141J.
+Fecha de nacimiento: 31/03/2020 (4 años).
+Género: Niño.
+Domicilio: Paseo de Zorrilla, 1, quinto a la izquierda, Valladolid, 47001, Castilla y León.
+Teléfonos: Fijo 983 82 84 99, Móvil 683 78 02 65.
+Email: angelfideo_martin_lopez1094@ub.edu.
+NHC: 0913770.
+NASS: 801451055749.
+Número de socio: 5381037568.
 
-Datos asistenciales.
-Médico: Dr. Julián Gómez Soler. NC 906382828. Residente de 4° año en Medicina Interna. Instituto de Investigación Biomédica en Red de Enfermedades Infecciosas (CIBERINFEC). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
-Fecha de ingreso: 02/02/2022
-Episodio: 97779607
-Hospital: Hospital General Universitario Reina Sofía
-Matrícula del coche: 4568YHC
-Modelo: Ram 1500
-VIN: VSWR5JB6JJZ468572
+Fecha de ingreso: 2/2/22.
+Episodio: 97779607. Hospital General Universitario Reina Sofía.
 
-Informe clínico del paciente: Paciente de ascendencia norteamericana de un año de edad, acompañado de su abuela, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://AMartinLopez-biotech.com. IP asociada 249.36.206.164 - MAC asociada 3D9.E0F.A68.E2A.
+
+Antecedentes Clínicos:
+Niño de 4 años, residente en Valladolid, sin antecedentes médicos de relevancia ni condiciones crónicas de riesgo más allá de su exposición ocasional a entornos de construcción debido a familiar albañil. La vacunación está al día conforme al calendario de Castilla y León.
+
+Motivo de Consulta:
+Los Martín López vinieron a consulta tras haber sufrido un accidente automovilístico leve el pasado jueves 30 de enero. Durante el accidente, Ángel, que viajaba como pasajero en una camioneta Ram 1500 (4568YHC - VSWR5JB6JJZ468572), sufrió una abrasión cutánea en la pierna derecha al entrar en contacto con materiales de construcción (cemento y madera) transportados en el vehículo. Días después, la herida muestra signos de inflamación, supuración y fiebre (38.5 °C).
+
+Examen Físico y Pruebas Complementarias:
+- Tensión arterial: 95/60 mmHg (dentro del rango normal para su edad).
+- Temperatura: 38.6 °C.
+- Examen de la herida: Presencia de eritema, calor local y exudado purulento en una laceración de 4 cm en la pierna derecha. No hay signos de celulitis extensa ni linfangitis.
+- Cultivo de la herida: Crecimiento positivo de Staphylococcus aureus (susceptible a meticilina).
+- Análisis de sangre: Leucocitosis moderada (15,200/µL) con neutrofilia (80%). Proteína C reactiva elevada (5.6 mg/dL).
+
+Se realizó un expediente con URL HGURS.com/pacientes/97779607.
+
+Diagnóstico Provisional:
+Infección bacteriana localizada secundaria a Staphylococcus aureus en una herida postraumática. No hay evidencia de infección sistémica o complicaciones severas en este momento.
+
+Plan de Tratamiento:
+1. Antibióticos: Inicio de tratamiento oral con amoxicilina-clavulánico (25 mg/kg/dosis cada 8 horas) durante 10 días.
+2. Cuidado local de la herida: Limpieza diaria con solución salina estéril y aplicación de crema antibiótica tópica. Vendaje estéril para proteger la zona afectada.
+3. Seguimiento: Revisión en 5 días para evaluar la respuesta al tratamiento y descartar progresión de la infección.
+
+Recomendaciones:
+Se instruyó a la madre del paciente sobre la importancia de la higiene adecuada de la herida y de completar el tratamiento antibiótico. Se indicó acudir a urgencias de inmediato si el niño desarrolla fiebre persistente, aumento del dolor o signos de extensión de la infección.
+
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dr. Julián Gómez Soler.
+NC 906382828.
+Residente de 4° año en Medicina Interna - CIBERINFEC.]]></TEXT>
     <TAGS>
-        <NAME id="T1" start="28" end="38" text="José Ángel" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
-        <NAME id="T2" start="39" end="52" text="Conde Velasco" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
-        <ID id="T3" start="58" end="67" text="23417141J" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <DATE id="T4" start="89" end="99" text="31/03/2020" TYPE="FECHAS" comment=""/>
-        <OTHER id="T5" start="108" end="109" text="M" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
-        <LOCATION id="T6" start="121" end="143" text="Calle de Fuencarral 81" TYPE="CALLE" comment=""/>
-        <LOCATION id="T7" start="152" end="157" text="Béjar" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T8" start="159" end="169" text="Valladolid" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T9" start="171" end="186" text="Castilla y León" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T10" start="202" end="207" text="47838" TYPE="TERRITORIO" comment=""/>
-        <CONTACT id="T11" start="215" end="241" text="joseangel_conde1094@ub.edu" TYPE="CORREO_ELECTRONICO" comment=""/>
-        <CONTACT id="T12" start="257" end="273" text="+34 983 82 84 99" TYPE="NUMERO_TELEFONO" comment=""/>
-        <CONTACT id="T13" start="290" end="306" text="+34 683 78 02 65" TYPE="NUMERO_TELEFONO" comment=""/>
-        <ID id="T14" start="312" end="319" text="0913770" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <ID id="T15" start="326" end="338" text="801451055749" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <PROFESSION id="T16" start="360" end="367" text="Albañil" TYPE="PROFESION" comment=""/>
-        <NAME id="T17" start="402" end="420" text="Julián Gómez Soler" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
-        <ID id="T18" start="425" end="434" text="906382828" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
-        <ID id="T19" start="436" end="475" text="Residente de 4° año en Medicina Interna" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
-        <LOCATION id="T20" start="477" end="561" text="Instituto de Investigación Biomédica en Red de Enfermedades Infecciosas (CIBERINFEC)" TYPE="INSTITUCION" comment=""/>
-        <LOCATION id="T21" start="563" end="592" text="Avenida Monforte de Lemos 3-5" TYPE="CALLE" comment=""/>
-        <LOCATION id="T22" start="594" end="599" text="28029" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T23" start="601" end="607" text="Madrid" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T24" start="609" end="615" text="España" TYPE="PAIS" comment=""/>
-        <DATE id="T25" start="635" end="645" text="02/02/2022" TYPE="FECHAS" comment=""/>
-        <ID id="T26" start="656" end="664" text="97779607" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
-        <LOCATION id="T27" start="675" end="717" text="Hospital General Universitario Reina Sofía" TYPE="HOSPITAL" comment=""/>
-        <ID id="T28" start="739" end="746" text="4568YHC" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
-        <ID id="T29" start="769" end="786" text="VSWR5JB6JJZ468572" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
-        <OTHER id="T30" start="830" end="856" text="ascendencia norteamericana" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
-        <AGE id="T31" start="860" end="866" text="un año" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
-        <OTHER id="T32" start="893" end="899" text="abuela" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T1" start="28" end="42" text='A. "Spaghetti"' TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="43" end="55" text="Martín López" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T3" start="62" end="71" text="23417141J" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="94" end="104" text="31/03/2020" TYPE="FECHAS" comment=""/>
+        <AGE id="T5" start="106" end="112" text="4 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T6" start="123" end="127" text="Niño" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T7" start="140" end="183" text="Paseo de Zorrilla, 1, quinto a la izquierda" TYPE="CALLE" comment=""/>
+        <LOCATION id="T8" start="185" end="195" text="Valladolid" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="197" end="202" text="47001" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T10" start="204" end="219" text="Castilla y León" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T11" start="237" end="249" text="983 82 84 99" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T12" start="257" end="269" text="683 78 02 65" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T13" start="278" end="312" text="angelfideo_martin_lopez1094@ub.edu" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <ID id="T14" start="319" end="326" text="0913770" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T15" start="334" end="346" text="801451055749" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <ID id="T16" start="365" end="375" text="5381037568" TYPE="OTRO_NUMERO_IDENTIF" comment=""/>
+        <DATE id="T17" start="396" end="402" text="2/2/22" TYPE="FECHAS" comment=""/>
+        <ID id="T18" start="414" end="422" text="97779607" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
+        <LOCATION id="T19" start="424" end="466" text="Hospital General Universitario Reina Sofía" TYPE="HOSPITAL" comment=""/>
+        <OTHER id="T20" start="550" end="581" text="smtp://AMartinLopez-biotech.com" TYPE="DIREC_PROT_INTERNET" comment=""/>
+        <ID id="T21" start="595" end="609" text="249.36.206.164" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <ID id="T22" start="625" end="640" text="3D9.E0F.A68.E2A" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <OTHER id="T23" start="666" end="670" text="Niño" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <AGE id="T24" start="674" end="680" text="4 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T25" start="695" end="705" text="Valladolid" TYPE="TERRITORIO" comment=""/>
+        <OTHER id="T26" start="852" end="868" text="familiar albañil" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T27" start="922" end="937" text="Castilla y León" TYPE="TERRITORIO" comment=""/>
+        <NAME id="T28" start="964" end="976" text="Martín López" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T29" start="1060" end="1078" text="jueves 30 de enero" TYPE="FECHAS" comment=""/>
+        <NAME id="T30" start="1102" end="1107" text="Ángel" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T31" start="1162" end="1169" text="4568YHC" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <ID id="T32" start="1172" end="1189" text="VSWR5JB6JJZ468572" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <OTHER id="T33" start="1994" end="2022" text="HGURS.com/pacientes/97779607" TYPE="URL_WEB" comment=""/>
+        <OTHER id="T34" start="2685" end="2690" text="madre" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T35" start="2852" end="2856" text="niño" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T36" start="3028" end="3039" text="RG545EMR302" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
+        <ID id="T37" start="3130" end="3141" text="IK326OYO089" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
+        <NAME id="T38" start="3168" end="3186" text="Julián Gómez Soler" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T39" start="3191" end="3200" text="906382828" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T40" start="3202" end="3241" text="Residente de 4° año en Medicina Interna" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <LOCATION id="T41" start="3244" end="3254" text="CIBERINFEC" TYPE="INSTITUCION" comment=""/>
     </TAGS>
 </MEDDOCAN>

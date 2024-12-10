@@ -1,57 +1,106 @@
 <?xml version="1.0" ?>
 <MEDDOCAN>
-    <TEXT><![CDATA[Datos del paciente.
-Nombre: Agstín Pachecco De la Fuente
+    <TEXT><![CDATA[Datos del Paciente:
+Nombre: Agustín Pachecco De la Fuente
 DNI: 39193581V
-Fecha de nacimiento: 13/07/2008
-Género: H
-Domicilio: Calle de Preciados 27
-Ciudad: Teruel, Cuenca, Castilla-La Mancha
-Código postal: 16049
+Fecha de nacimiento: 13/julio/1978 (46 años)
+Género: Varón
+Domicilio: Pz de Preciados 27, Teruel, Cuenca, Castilla-La Mancha, CP: 16049
+Teléfonos: Fijo +34 969131525, Móvil +34 769399065
 Email: agustin.pachecodelafuente@gmail.com
-Teléfono fijo: +34 969 13 15 25
-Teléfono móvil: +34 769 39 90 65
 NHC: 0442773
 NASS: 879949958005
-Condición de riesgo: Plomero
+Número de socio: 5381037568
 
-Datos asistenciales.
-Médico: Dr. Adrián Ruiz Santiago. NC 487970758. Cardiólogo de Unidad de Cuidados Intensivos. Instituto de Investigación Sanitaria del Hospital 12 de Octubre (Imas12). Avenida de Córdoba, s/n. 28041. Madrid. España.
 Fecha de ingreso: 05/05/2015
-Episodio: 07744605
-Centro de salud: Centro de Salud Ronda
+Episodio: 07744605 Centro de Salud Ronda
 
-Informe clínico del paciente: Paciente de ascendencia del medio oriente de 6 años de edad, acompañado de su tío, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://APDeLaFuente.com.
+
+Antecedentes Clínicos:
+Paciente de ascendencia del Medio Oriente de 46 años. Es plomero de oficio, lo que lo expone a riesgos laborales. No presenta antecedentes familiares inmediatos de enfermedades cardiovasculares, aunque su ocupación conlleva estrés físico significativo.
+
+Motivo de Consulta:
+El paciente es traído a consulta tras haber sufrido un accidente automovilístico el 15 de octubre de 2024, en el que su vehículo (Subaru Outback - m 1706QBG - vin VSWI678JFGM564342) colisionó a alta velocidad contra otro automóvil. Posteriormente al accidente, fue ingresado en la unidad de cuidados intensivos debido a una descompensación hemodinámica, shock traumático y una notable alteración de la función cardíaca, con aumento en las cifras de troponinas. Después de su alta hospitalaria, comenzó a experimentar síntomas como dolor torácico persistente, falta de aire al mínimo esfuerzo y palpitaciones frecuentes. Estos síntomas no han mejorado con el tratamiento inicial, lo que ha generado preocupación sobre posibles complicaciones cardiovasculares a largo plazo.
+
+Examen Físico y Pruebas Complementarias:
+- Peso: 92 kg, Talla: 1.80 m
+- Tensión arterial: 145/90 mmHg
+- Frecuencia cardíaca: 110 latidos por minuto, arritmia de tipo fibrilación auricular
+- Exploración cardiovascular: Soplo sistólico moderado en foco mitral, signos de insuficiencia cardíaca derecha con edema en miembros inferiores
+- Electrocardiograma (ECG): Fibrilación auricular con frecuencia ventricular rápida
+- Ecocardiograma: Función ventricular disminuida con fracción de eyección del 40%, signos de dilatación auricular izquierda
+- Biometría hemática y marcadores cardíacos: Niveles elevados de troponina I, lo que confirma daño miocárdico post-traumático
+- Radiografía de tórax: Engrosamiento de los ventrículos y signos leves de congestión pulmonar
+
+Se realizó un expediente con URL CSR.com/patients/0442773 ip 236.125.29.228 mac 4E9.D1A.F22.3D0.
+
+Diagnóstico Provisional:
+Disfunción cardiaca post-traumática secundaria a choque traumático, posiblemente desencadenada o agravada por la fibrilación auricular y el estrés hemodinámico.
+
+Plan de Tratamiento:
+1. Medicación:
+   - Anticoagulantes orales (warfarina 5 mg/día) para el manejo de la fibrilación auricular
+      - Betabloqueadores (metoprolol 50 mg/día) para controlar la frecuencia cardíaca
+      - Diuréticos (furosemida 40 mg/día) para reducir la sobrecarga de líquidos
+      - Inhibidores de la ECA (enalapril 5 mg/día) para la protección miocárdica
+   
+2. Intervención cardiovascular: Evaluación para un posible desfibrilador cardioversor implantable (ICD) dependiendo de la evolución de la función ventricular y los episodios de fibrilación auricular.
+
+3. Rehabilitación cardíaca: En cuanto esté estable, derivación a programa de rehabilitación cardiovascular para mejorar su capacidad funcional y reducir la carga del corazón.
+
+4. Seguimiento: Reevaluación en consulta de cardiología en 4 semanas con ecocardiograma de control y ajuste de tratamiento farmacológico.
+
+Recomendaciones:
+- Evitar actividades físicas extenuantes hasta nueva evaluación
+- Seguir estrictamente el plan de tratamiento y asistir a las consultas de seguimiento para evitar complicaciones adicionales
+- Monitorear la tensión arterial y la frecuencia cardíaca en casa y reportar cualquier alteración significativa
+
+Médico responsable:
+Dr. Adrián Ruiz Santiago #col 487970758 #emp g421143 
+Cardiólogo de Unidad de Cuidados Intensivos
+Instituto de Investigación Sanitaria del Hospital 12 de Octubre
+Avenida de Córdoba, s/n. 28041. Madrid, España]]></TEXT>
     <TAGS>
-        <NAME id="T1" start="28" end="34" text="Agstín" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
-        <NAME id="T2" start="35" end="56" text="Pachecco De la Fuente" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
-        <ID id="T3" start="62" end="71" text="39193581V" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <DATE id="T4" start="93" end="103" text="13/07/2008" TYPE="FECHAS" comment=""/>
-        <OTHER id="T5" start="112" end="113" text="H" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
-        <LOCATION id="T6" start="125" end="146" text="Calle de Preciados 27" TYPE="CALLE" comment=""/>
-        <LOCATION id="T7" start="155" end="161" text="Teruel" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T8" start="163" end="169" text="Cuenca" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T9" start="171" end="189" text="Castilla-La Mancha" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T10" start="205" end="210" text="16049" TYPE="TERRITORIO" comment=""/>
-        <CONTACT id="T11" start="218" end="253" text="agustin.pachecodelafuente@gmail.com" TYPE="CORREO_ELECTRONICO" comment=""/>
-        <CONTACT id="T12" start="269" end="285" text="+34 969 13 15 25" TYPE="NUMERO_TELEFONO" comment=""/>
-        <CONTACT id="T13" start="302" end="318" text="+34 769 39 90 65" TYPE="NUMERO_TELEFONO" comment=""/>
-        <ID id="T14" start="324" end="331" text="0442773" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <ID id="T15" start="338" end="350" text="879949958005" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <PROFESSION id="T16" start="372" end="379" text="Plomero" TYPE="PROFESION" comment=""/>
-        <NAME id="T17" start="414" end="434" text="Adrián Ruiz Santiago" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
-        <ID id="T18" start="439" end="448" text="487970758" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
-        <ID id="T19" start="450" end="493" text="Cardiólogo de Unidad de Cuidados Intensivos" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
-        <LOCATION id="T20" start="495" end="567" text="Instituto de Investigación Sanitaria del Hospital 12 de Octubre (Imas12)" TYPE="INSTITUCION" comment=""/>
-        <LOCATION id="T21" start="569" end="592" text="Avenida de Córdoba, s/n" TYPE="CALLE" comment=""/>
-        <LOCATION id="T22" start="594" end="599" text="28041" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T23" start="601" end="607" text="Madrid" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T24" start="609" end="615" text="España" TYPE="PAIS" comment=""/>
-        <DATE id="T25" start="635" end="645" text="05/05/2015" TYPE="FECHAS" comment=""/>
-        <ID id="T26" start="656" end="664" text="07744605" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
-        <LOCATION id="T27" start="682" end="703" text="Centro de Salud Ronda" TYPE="CENTRO_DE_SALUD" comment=""/>
-        <OTHER id="T28" start="747" end="776" text="ascendencia del medio oriente" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
-        <AGE id="T29" start="780" end="786" text="6 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
-        <OTHER id="T30" start="813" end="816" text="tío" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T1" start="28" end="34" text="Agustín" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="36" end="57" text="Pachecco De la Fuente" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T3" start="63" end="72" text="39193581V" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="94" end="107" text="13/julio/1978" TYPE="FECHAS" comment=""/>
+        <AGE id="T5" start="109" end="116" text="46 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T6" start="126" end="131" text="Varón" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T7" start="143" end="161" text="Pz de Preciados 27" TYPE="CALLE" comment=""/>
+        <LOCATION id="T8" start="163" end="169" text="Teruel" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="171" end="177" text="Cuenca" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T10" start="179" end="197" text="Castilla-La Mancha" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T11" start="203" end="208" text="16049" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T12" start="226" end="238" text="34 969131525" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T13" start="247" end="259" text="34 769399065" TYPE="NUMERO_FAX" comment=""/>
+        <CONTACT id="T14" start="267" end="302" text="agustin.pachecodelafuente@gmail.com" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <ID id="T15" start="308" end="315" text="0442773" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T16" start="322" end="334" text="879949958005" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <ID id="T17" start="352" end="362" text="5381037568" TYPE="NUMERO_IDENTIF" comment=""/>
+        <DATE id="T18" start="382" end="392" text="05/05/2015" TYPE="FECHAS" comment=""/>
+        <ID id="T19" start="403" end="411" text="07744605" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
+        <LOCATION id="T20" start="412" end="433" text="Centro de Salud Ronda" TYPE="CENTRO_DE_SALUD" comment=""/>
+        <OTHER id="T21" start="516" end="539" text="smtp://APDeLaFuente.com" TYPE="DIREC_PROT_INTERNET" comment=""/>
+        <OTHER id="T22" start="577" end="606" text="ascendencia del Medio Oriente" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <AGE id="T23" start="610" end="617" text="46 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <PROFESSION id="T24" start="622" end="629" text="plomero" TYPE="PROFESION" comment=""/>
+        <DATE id="T25" start="923" end="944" text="15 de octubre de 2024" TYPE="FECHAS" comment=""/>
+        <ID id="T26" start="988" end="995" text="1706QBG" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
+        <ID id="T27" start="1002" end="1019" text="VSWI678JFGM564342" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
+        <URL id="T28" start="2409" end="2433" text="CSR.com/patients/0442773" TYPE="URL_WEB" comment=""/>
+        <ID id="T29" start="2437" end="2451" text="236.125.29.228" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <ID id="T30" start="2456" end="2471" text="4E9.D1A.F22.3D0" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <NAME id="T31" start="3901" end="3921" text="Adrián Ruiz Santiago" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T32" start="3927" end="3936" text="487970758" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T33" start="3942" end="3949" text="g421143" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T34" start="3951" end="3994" text="Cardiólogo de Unidad de Cuidados Intensivos" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <LOCATION id="T35" start="3995" end="4031" text="Instituto de Investigación Sanitaria" TYPE="INSTITUCION" comment=""/>
+        <LOCATION id="T36" start="4036" end="4058" text="Hospital 12 de Octubre" TYPE="HOSPITAL" comment=""/>
+        <LOCATION id="T37" start="4059" end="4082" text="Avenida de Córdoba, s/n" TYPE="CALLE" comment=""/>
+        <LOCATION id="T38" start="4084" end="4089" text="28041" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T39" start="4091" end="4097" text="Madrid" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T40" start="4099" end="4104" text="España" TYPE="PAIS" comment=""/>
     </TAGS>
 </MEDDOCAN>

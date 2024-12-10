@@ -1,47 +1,92 @@
 <?xml version="1.0" ?>
 <MEDDOCAN>
-    <TEXT><![CDATA[Datos del paciente.
-Nombre: Rosa María Redondo Sierra
+    <TEXT><![CDATA[Datos del Paciente:
+Nombre: Infanta Lucía de la Santa Concepción Barbados Ortega
 DNI: 71289595Z
-Fecha de nacimiento: 06/05/2023
-Género: Mujer
-Domicilio: Calle del Prado 27
-Ciudad: Vitoria, Barcelona, Cataluña
-Código postal: 08306
-Email: redondo_sierra@icloud.com
-Teléfono fijo: +34 939 15 17 86
-Teléfono móvil: +34 634 56 64 38
+Fecha de nacimiento: 06/05/2023 (1 año y 7 meses)
+Género: Nena
+Domicilio: Avda Aragó, 271, 22, 08007, Barcelona, España.
+Teléfonos: +34939151786 (fijo), +34634566438 (móvil)
+Email: infanta_lucia@icloud.com
 NHC: 9621479
 NASS: 860055435104
-Condición de riesgo: Técnico de Radiología
+Número de socio: 6156349372
 
-Datos asistenciales.
-Médico: Dra. Rosario Silva Espinosa. NC 225341074. Investigadora Clínica en Insuficiencia Cardíaca. Instituto de Investigación Biomédica en Red de Enfermedades Cardiovasculares (CIBERCV). Avenida Monforte de Lemos 3-5. 28029. Madrid. España.
-Fecha de ingreso: 09/12/2024
-Hospital: Hospital Universitario Fundació Jiménez Díaz
+Fecha de ingreso: 09/d/2024
+Hospital Universitario Fundació Jiménez Díaz
 
-Informe clínico del paciente: Paciente de tez blanca de un año de edad, acompañado de su tío, se presenta a la consulta con los siguientes síntomas...]]></TEXT>
+El servidor para el envío de información desde el cual el usuario se comunica es smtp:/LSCNBarbadosYOrtega-biotechcom. ip 239.93.12.215, mac 47 F9 A3 32 AB 41.
+
+Antecedentes Clínicos:
+Paciente de tez blanca, ingresó en san juan, con 1 año y 7 meses. No presenta antecedentes médicos relevantes previos, y su desarrollo físico ha sido acorde a su edad.
+
+Motivo de Consulta:
+Paciente llevado a consulta por su madre tras presentar síntomas de dificultad para alimentarse, fatiga durante la actividad mínima y coloración pálida, especialmente notable en la región peribucal. Además, se notó un leve abombamiento abdominal y una aparente aceleración del ritmo respiratorio en reposo, lo que motivó la derivación al servicio de insuficiencia cardíaca para evaluación especializada.
+
+Examen Físico y Pruebas Complementarias:
+- Peso: 8.5 kg.
+- Tensión arterial: 70/50 mmHg.
+- Frecuencia cardíaca: 155 latidos por minuto.
+- Exploración cardiovascular: Soplo sistólico grado II/VI en foco mitral, hepatomegalia leve al tacto y edemas leves en extremidades inferiores.
+- Radiografía de tórax: Cardiomegalia evidente y signos de congestión pulmonar leve.
+- Ecocardiograma: Dilatación ventricular izquierda con fracción de eyección disminuida al 40%, compatible con insuficiencia cardíaca dilatada.
+- Análisis de sangre: Elevación de péptidos natriuréticos tipo B (NT-proBNP: 5600 pg/mL).
+
+Se realizó un expediente con URL http://HUFJD.com/pacientes/9621479.
+
+Diagnóstico Provisional:
+Insuficiencia cardíaca secundaria a miocardiopatía dilatada, probablemente de origen idiopático.
+
+Plan de Tratamiento:
+1. Hospitalización inicial: Ingreso para estabilización y monitorización del estado hemodinámico.
+2. Medicación: Inicio de diuréticos (furosemida IV 1 mg/kg/día) para control de la congestión, inhibidores de la ECA (enalapril 0.1 mg/kg/día) para manejo a largo plazo y betabloqueadores (carvedilol a dosis bajas, 0.05 mg/kg).
+3. Rehabilitación nutricional: Soporte nutricional para mejorar el estado general y la ganancia ponderal.
+4. Pruebas complementarias: Resonancia magnética cardíaca para evaluación estructural más detallada, y estudios genéticos para descartar etiología hereditaria.
+
+Recomendaciones:
+Se proporcionó orientación a su madre sobre los cuidados necesarios en casa, incluyendo la detección temprana de signos de descompensación. Se planteó la necesidad de un seguimiento cercano en la unidad de insuficiencia cardíaca pediátrica.
+
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dra. Rosario Silva Espinosa
+Nº Colegiado 225341074
+Nº Empleado o423492
+Investigadora Clínica en Insuficiencia Cardíaca, CIBERCV]]></TEXT>
     <TAGS>
-        <NAME id="T1" start="28" end="38" text="Rosa María" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
-        <NAME id="T2" start="39" end="53" text="Redondo Sierra" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
-        <ID id="T3" start="59" end="68" text="71289595Z" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <DATE id="T4" start="90" end="100" text="06/05/2023" TYPE="FECHAS" comment=""/>
-        <OTHER id="T5" start="109" end="114" text="Mujer" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
-        <LOCATION id="T6" start="126" end="144" text="Calle del Prado 27" TYPE="CALLE" comment=""/>
-        <LOCATION id="T7" start="153" end="160" text="Vitoria" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T8" start="162" end="171" text="Barcelona" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T9" start="173" end="181" text="Cataluña" TYPE="TERRITORIO" comment=""/>
-        <LOCATION id="T10" start="197" end="202" text="08306" TYPE="TERRITORIO" comment=""/>
-        <CONTACT id="T11" start="210" end="235" text="redondo_sierra@icloud.com" TYPE="CORREO_ELECTRONICO" comment=""/>
-        <CONTACT id="T12" start="251" end="267" text="+34 939 15 17 86" TYPE="NUMERO_TELEFONO" comment=""/>
-        <CONTACT id="T13" start="284" end="300" text="+34 634 56 64 38" TYPE="NUMERO_TELEFONO" comment=""/>
-        <ID id="T14" start="306" end="313" text="9621479" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
-        <ID id="T15" start="320" end="332" text="860055435104" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <PROFESSION id="T16" start="354" end="375" text="Técnico de Radiología" TYPE="PROFESION" comment=""/>
-        <DATE id="T17" start="658" end="668" text="09/12/2024" TYPE="FECHAS" comment=""/>
-        <LOCATION id="T18" start="679" end="723" text="Hospital Universitario Fundació Jiménez Díaz" TYPE="HOSPITAL" comment=""/>
-        <OTHER id="T19" start="767" end="777" text="tez blanca" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
-        <AGE id="T20" start="781" end="787" text="un año" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
-        <OTHER id="T21" start="814" end="817" text="tío" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T1" start="28" end="64" text="Infanta Lucía de la Santa Concepción" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <NAME id="T2" start="65" end="80" text="Barbados Ortega" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T3" start="86" end="95" text="71289595Z" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T4" start="117" end="127" text="06/05/2023" TYPE="FECHAS" comment=""/>
+        <AGE id="T5" start="129" end="144" text="1 año y 7 meses" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T6" start="154" end="158" text="Nena" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+        <LOCATION id="T7" start="170" end="196" text="Avda Aragó, 271, 22, 08007" TYPE="CALLE" comment=""/>
+        <LOCATION id="T8" start="198" end="207" text="Barcelona" TYPE="TERRITORIO" comment=""/>
+        <LOCATION id="T9" start="209" end="215" text="España" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T10" start="229" end="240" text="34939151786" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T11" start="250" end="261" text="34634566438" TYPE="NUMERO_TELEFONO" comment=""/>
+        <CONTACT id="T12" start="277" end="301" text="infanta_lucia@icloud.com" TYPE="CORREO_ELECTRONICO" comment=""/>
+        <ID id="T13" start="307" end="314" text="9621479" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T14" start="321" end="333" text="860055435104" TYPE="ID_ASEGURAMIENTO" comment=""/>
+        <ID id="T15" start="351" end="361" text="6156349372" TYPE="NUMERO_IDENTIF" comment=""/>
+        <DATE id="T16" start="381" end="390" text="09/d/2024" TYPE="FECHAS" comment=""/>
+        <LOCATION id="T17" start="391" end="435" text="Hospital Universitario Fundació Jiménez Díaz" TYPE="HOSPITAL" comment=""/>
+        <OTHER id="T18" start="518" end="554" text="smtp:/LSCNBarbadosYOrtega-biotechcom" TYPE="DIREC_PROT_INTERNET" comment=""/>
+        <ID id="T19" start="559" end="572" text="239.93.12.215" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <ID id="T20" start="578" end="595" text="47 F9 A3 32 AB 41" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
+        <OTHER id="T21" start="633" end="643" text="tez blanca" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
+        <DATE id="T22" start="656" end="664" text="san juan" TYPE="FECHAS" comment=""/>
+        <AGE id="T23" start="670" end="685" text="1 año y 7 meses" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T24" start="845" end="850" text="madre" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <OTHER id="T25" start="1258" end="1265" text="http://HUFJD.com/pacientes/9621479" TYPE="DIREC_PROT_INTERNET" comment=""/>
+        <OTHER id="T26" start="1859" end="1893" text="madre" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
+        <ID id="T27" start="2963" end="2974" text="RG545EMR302" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
+        <ID id="T28" start="3065" end="3076" text="IK326OYO089" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
+        <NAME id="T29" start="3104" end="3126" text="Rosario Silva Espinosa" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T30" start="3140" end="3149" text="225341074" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T31" start="3162" end="3169" text="o423492" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <ID id="T32" start="3170" end="3217" text="Investigadora Clínica en Insuficiencia Cardíaca" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
+        <LOCATION id="T33" start="3219" end="3226" text="CIBERCV" TYPE="INSTITUCION" comment=""/>
     </TAGS>
 </MEDDOCAN>

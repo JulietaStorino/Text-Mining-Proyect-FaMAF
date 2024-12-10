@@ -16,10 +16,10 @@ Episodio: 37124654. Centro de Salud Ronda.
 El servidor para el envío de información desde el cual el usuario se comunica es smtp:/JDRiveraAlonso-biotech.com, ip asociada 240.184.242.20 y mac asociada 53051691EC98.
 
 Antecedentes Clínicos:
-Paciente musulmán de 73 años, residente en Eibar, con antecedentes de consumo crónico de tabaco (aproximadamente 20 cigarrillos diarios durante 35 años). No presenta antecedentes familiares inmediatos de enfermedades cardiovasculares, pero el paciente refiere un estilo de vida sedentario y antecedentes de hipertensión arterial mal controlada.
+Paciente musluman de 73 años, residente en Eibar, con antecedentes de consumo crónico de tabaco (aproximadamente 20 cigarrillos diarios durante 35 años). No presenta antecedentes familiares inmediatos de enfermedades cardiovasculares, pero el paciente refiere un estilo de vida sedentario y antecedentes de hipertensión arterial mal controlada.
 
 Motivo de Consulta:
-El paciente, fumador activo, es traído a consulta por su padre debido a la aparición reciente de disnea en reposo y al realizar esfuerzos menores. También reporta dolor torácico opresivo intermitente, que dura entre 5 y 10 minutos, asociado a sudoración y sensación de mareo. Además, menciona un aumento de la fatiga en las últimas semanas, lo que lo ha preocupado por la posible implicancia cardiológica debido a su historial de tabaquismo. Dado que el paciente presenta estos síntomas junto con factores de riesgo cardiovascular, se deriva al servicio de cardiología para su evaluación.
+El paciente, es traído a consulta por su padre debido a la aparición reciente de disnea en reposo y al realizar esfuerzos menores. También reporta dolor torácico opresivo intermitente, que dura entre 5 y 10 minutos, asociado a sudoración y sensación de mareo. Además, menciona un aumento de la fatiga en las últimas semanas, lo que lo ha preocupado por la posible implicancia cardiológica debido a su historial de tabaquismo. Dado que el paciente presenta estos síntomas junto con factores de riesgo cardiovascular, se deriva al servicio de cardiología para su evaluación.
 
 Examen Físico y Pruebas Complementarias:
 - Peso: 85 kg, Talla: 1.75 m
@@ -30,7 +30,7 @@ Examen Físico y Pruebas Complementarias:
 - Ecocardiograma: Fracción de eyección disminuida al 35%, con evidencia de insuficiencia mitral leve a moderada y dilatación ventricular izquierda
 - Análisis de sangre: Colesterol total elevado (240 mg/dL), LDL elevado (160 mg/dL), triglicéridos en el límite superior (180 mg/dL)
 
-Se realizó un expediente con URL http://CSR.com/pacientes/6603161.
+Se realizó un expediente con URL CSRcom/pacientes/6603161.
 
 Diagnóstico Provisional:
 Enfermedad arterial coronaria, probablemente con componente de insuficiencia cardíaca congestiva y fibrilación auricular, exacerbado por el consumo crónico de tabaco.

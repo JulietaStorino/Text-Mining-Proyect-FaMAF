@@ -1,5 +1,5 @@
 Datos del Paciente:
-Nombre: Sr. Juan Fco. Carrillo Hernández.
+Nombre: Sr. Juan Fco. Carrillo Heránndez.
 DNI: 69020514K.
 Fecha de nacimiento: 14/06/1964 (60 años).
 Género: Hombre H.
@@ -20,7 +20,7 @@ Antecedentes Clínicos:
 Paciente de 60 años, en etapa pre-jubilatoria, residente en Logroño. A principios de los 70' fue diagnosticado con un trastorno genético de carácter leve relacionado con una mutación hereditaria en el gen FBN1, asociado al síndrome de Marfan. Aunque el seguimiento regular no identificó complicaciones graves, se mantuvo vigilancia médica intermitente debido a un riesgo potencial de alteraciones cardiovasculares o esqueléticas propias de esta condición.
 
 Motivo de Consulta:
-El paciente acude a consulta acompañado por sus dos hijas de 20 y 35 años debido a la reciente detección de síntomas progresivos que podrían estar relacionados con su condición genética previa. Refiere dolores articulares frecuentes, sobre todo en las rodillas y codos, además de sensación de fatiga crónica y molestias en la región lumbar. También menciona que un examen rutinario, realizado el martes 25 de junio, de su médico de cabecera reveló una dilatación leve de la raíz aórtica, lo que motivó la derivación al Dr. José Ángel Guerrero Rivera, especialista en genética médica, para evaluación y posibles medidas preventivas.
+El paciente acude a consulta acompañado por sus dos hijas de 20 años y 35 años debido a la reciente detección de síntomas progresivos que podrían estar relacionados con su condición genética previa. Refiere dolores articulares frecuentes, sobre todo en las rodillas y codos, además de sensación de fatiga crónica y molestias en la región lumbar. También menciona que un examen rutinario, realizado el martes 25 de junio, de su médico de cabecera reveló una dilatación leve de la raíz aórtica, lo que motivó la derivación al Dr. José Ángel Guerrero Rivera, especialista en genética médica, para evaluación y posibles medidas preventivas.
 
 Examen Físico y Pruebas Complementarias:
 - Tensión arterial: 132/86 mmHg.

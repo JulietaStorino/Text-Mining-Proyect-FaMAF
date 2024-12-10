@@ -8,8 +8,8 @@
 2. [Motivación](#motivación)
 3. [Objetivos](#objetivos)
 4. [Trabajos anteriores](#trabajos-anteriores)
-6. [DataSet](#dataset)
-7. [Modelos a testear](#modelos-a-testear)
+6. [Modelos a testear](#modelos-a-testear)
+7. [DataSet](#dataset)
 8. [Conclusiones](#conclusiones)
 9. [Referencias](#referencias)
 
@@ -92,10 +92,6 @@ Durante el proyecto se desarrollaron diversos modelos entrenados con 500 casos c
 
 Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en un formato predefinido (BRAT o i2b2). La evaluación se basó en la precisión, la exhaustividad y la puntuación F1, junto con las puntuaciones de fuga para medir la cantidad de información sensible que no se identificó.
 
-### DataSet
-
-Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. Utilizamos la herramienta ChatGPT...
-
 ### Modelos a testear
 
 De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 4 proyectos presentados por las siguientes instituciones:
@@ -116,6 +112,10 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 - **NeuroNer (Carlos III University of Madrid, España)**: Este modelo se basa en la herramienta NeuroNer, que utiliza una arquitectura de aprendizaje profundo (deep learning) que combina dos capas bidireccionales de memoria a corto plazo (BiLSTM) con una capa final de campos aleatorios condicionales (CRF). Se utiliza una segunda capa BiLSTM para obtener la secuencia de probabilidades para cada token de pertenecer a una etiqueta específica. La capa CRF se utiliza para modelar las dependencias entre las etiquetas y obtener la secuencia de etiquetas más probable.
 Para poder correr el modelo es necesario modificar la segunda linea de código del archivo Train.ipynb:
 from keras.backend.tensorflow_backend import set_session -> from tensorflow.compat.v1.keras.backend import set_session
+
+### DataSet
+
+Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. Para ello, utilizamos la herramienta ChatGPT, que permitió automatizar la creación de archivos en formato .ann (brat notation), simplificando la generación de datasets estructurados y etiquetados.
 
 ### Conclusiones
 

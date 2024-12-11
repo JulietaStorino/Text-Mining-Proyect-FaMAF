@@ -123,6 +123,15 @@ Para llevar a cabo la comparación de los modelos seleccionados se utilizará el
 
 En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos seleccionados al conjunto de datos, explicando las modificaciones necesarias y los ajustes realizados durante su implementación. Cada modelo tuvo sus desafíos por cuestiones de compatibilidad, diferencias en las versiones de las bibliotecas utilizadas y requerimientos particulares. A continuación, describimos los aspectos más relevantes de la ejecución y configuración de cada modelo:
 - **CLIN-X**:
+  a) Actualizar el comando para ejecutar train_our_model_architecture.py:
+  python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models ->
+  python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name model_name --storage_path models
+  
+  b) Para usar la CPU (y no GPU de nvidia) hay que hacer ciertas modificaciones en el archivo create_data_splits.py:
+  model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path)
+  input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long()
+  doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024)
+    
 - **BiLSTM-CRF**:
 - **NeuroNer**:
   

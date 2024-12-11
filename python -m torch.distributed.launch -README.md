@@ -10,7 +10,7 @@
 4. [Trabajos anteriores](#trabajos-anteriores)
 6. [Modelos a testear](#modelos-a-testear)
 7. [DataSet](#dataset)
-8. [Ejecución de los modelos](#ejecucion-de-los-modelos)
+8. [Ejecución de los modelos](#ejecución-de-los-modelos)
 9. [Comparación y análisis de los resultados](#comparación-y-análisis-de-los-resultados)
 10. [Conclusiones](#conclusiones)
 11. [Referencias](#referencias)
@@ -114,14 +114,17 @@ Para llevar a cabo la comparación de los modelos seleccionados se utilizará el
 
 En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos seleccionados al conjunto de datos, explicando las modificaciones necesarias y los ajustes realizados durante su implementación. Cada modelo tuvo sus desafíos por cuestiones de compatibilidad, diferencias en las versiones de las bibliotecas utilizadas y requerimientos particulares. A continuación, describimos los aspectos más relevantes de la ejecución y configuración de cada modelo:
 - **CLIN-X**:
+1) Crear la carpeta 'data' que contenga los archivos .ann y .txt (10 en total).
+2) Crear la carpeta 'bio_files' y ejecutar el comando: python tokenize_files.py --input_path data/ --output_path bio_files/ . En la carpeta 'bio_files' se generarán 5 archivos.
+3) Crear la carpeta 'split_files' y ejecutar el comando: python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
+En caso de hacer uso de la cpu hacer los siguientes cambios en las líneas de código:
+Línea 79:     doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024).to('cpu')
+Línea 86:     input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long().to('cpu')
+Línea 124:    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path).to('cpu')
+4) Para entrenar el modelo, crear la carpeta 'models' y ejecutar el comando: python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
   a) Actualizar el comando para ejecutar train_our_model_architecture.py:
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models ->
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name model_name --storage_path models
-  
-  b) Para usar la CPU (y no GPU de nvidia) hay que hacer ciertas modificaciones en el archivo create_data_splits.py:
-  model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path)
-  input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long()
-  doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024)
     
 - **BiLSTM-CRF**:
 - **NeuroNer**:

@@ -10,8 +10,8 @@
 4. [Trabajos anteriores](#trabajos-anteriores)
 6. [Modelos a testear](#modelos-a-testear)
 7. [DataSet](#dataset)
-8. [Ejecución de los modelos](#ejecucion)
-9. [Comparación y análisis de los resultados](#analisis)
+8. [Ejecución de los modelos](#ejecucion-de-los-modelos)
+9. [Comparación y análisis de los resultados](#comparación-y-análisis-de-los-resultados)
 10. [Conclusiones](#conclusiones)
 11. [Referencias](#referencias)
 
@@ -99,15 +99,6 @@ Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en u
 De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 4 proyectos presentados por las siguientes instituciones:
 
 - **CLIN-X (Bosch Center for Artificial Intelligence - Spoken Language Systems, Saarland University, Alemania)**: El modelo CLIN-X es un modelo preentrenado basado en el transformador multilingüe XLM-R, entrenado en 100 idiomas. Para adaptarlo al dominio clínico español, se entrenó con un corpus de 790MB de documentos del archivo Scielo y los recursos MeSpEn, utilizando el objetivo de modelado de lenguaje enmascarado (MLM). Aunque el modelo se adaptó al español, sigue siendo multilingüe y se puede aplicar a tareas en inglés.
-
-    Notar que el comando para ejecutar train_our_model_architecture.py:
-     python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file 
-     random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models
-    tiene un error: hay que reemplazar --model xlm-roberta-large-spanish-clinical por --model llange/xlm-roberta-large-spanish-clinical. 
-    Para usar la CPU (y no GPU de NVIDIA) hay que hacer ciertas modificaciones en el archivo create_data_splits.py:
-    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path)
-    input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long()
-    doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024)
 
 - **BiLSTM-CRF (University of Pennsylvania, Estados Unidos)**: Este modelo es una red neuronal que combina Bi-LSTM para capturar el contexto y CRF para la decodificación de etiquetas. Bi-LSTM (memoria bidireccional a largo y corto plazo) es un tipo de red neuronal recurrente (RNN) que procesa datos secuenciales tanto en dirección directa como inversa. Combina la potencia de LSTM con el procesamiento bidireccional, lo que permite que el modelo capture el contexto pasado y futuro de la secuencia de entrada. Por otro lado, CRF (campo aleatorio condicional) es un modelo estocástico utilizado para modelar secuencias de etiquetas en problemas de aprendizaje supervisado.
 

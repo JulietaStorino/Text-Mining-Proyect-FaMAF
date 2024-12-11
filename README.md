@@ -10,8 +10,10 @@
 4. [Trabajos anteriores](#trabajos-anteriores)
 6. [Modelos a testear](#modelos-a-testear)
 7. [DataSet](#dataset)
-8. [Conclusiones](#conclusiones)
-9. [Referencias](#referencias)
+8. [Ejecución de los modelos](#ejecucion)
+9. [Comparación y análisis de los resultados](#analisis)
+10. [Conclusiones](#conclusiones)
+11. [Referencias](#referencias)
 
 ### Introducción
 
@@ -116,6 +118,15 @@ from keras.backend.tensorflow_backend import set_session -> from tensorflow.comp
 ### DataSet
 
 Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. Para ello, utilizamos la herramienta ChatGPT, que permitió automatizar la creación de archivos en formato .ann (brat notation), simplificando la generación de datasets estructurados y etiquetados.
+
+### Ejecución de los modelos
+
+En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos seleccionados al conjunto de datos, explicando las modificaciones necesarias y los ajustes realizados durante su implementación. Cada modelo tuvo sus desafíos por cuestiones de compatibilidad, diferencias en las versiones de las bibliotecas utilizadas y requerimientos particulares. A continuación, describimos los aspectos más relevantes de la ejecución y configuración de cada modelo:
+- **CLIN-X**:
+- **BiLSTM-CRF**:
+- **NeuroNer**:
+  
+### Comparación y análisis de los resultados
 
 ### Conclusiones
 

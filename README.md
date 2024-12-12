@@ -211,10 +211,10 @@ from keras.backend.tensorflow_backend import set_session -> from tensorflow.comp
 
 ### DataSet
 
-Para llevar a cabo la comparación de los modelos seleccionados se generaron nuevos conjuntos de datos de textos médicos en español, obtenidos a partir del módulo [Synthetic Patient Generator](./Synthetic-Patient-Generation/). Este módulo permite la generación de datos sintéticos de pacientes, incluyendo información de salud protegida (PHI), como nombres, direcciones, fechas de nacimiento, números de teléfono, entre otros. Los datos generados se almacenan en formato txt, ann y xml.
+Para llevar a cabo la comparación de los modelos seleccionados se generaron nuevos [conjuntos de datos de textos](./data/) médicos en español, obtenidos a partir del módulo [Synthetic Patient Generator](./Synthetic-Patient-Generation/). Este módulo permite la generación de datos sintéticos de pacientes, incluyendo información de salud protegida (PHI), como nombres, direcciones, fechas de nacimiento, números de teléfono, entre otros. Los datos generados se almacenan en formato txt, ann y xml.
 Luego, para generar el informe que contiene los datos sintéticos de los pacientes, se utilizó GPT-4o, un transformador generativo multimodal y multilingüe preentrenado, diseñado por OpenAI, que destaca por su capacidad para generar texto coherente y relevante en diferentes idiomas. De esta manera, se obtubieron informes médicos con texto sensible de manera semi-esctructurada.
 Seguido de esto, se agregaron errores ortográficos y gramaticales a los informes médicos generados, para simular la variabilidad y complejidad de los datos reales. A demás se incluyeron notaciones especificadas en la guía de anotación de MEDDOCAN, como abreviaturas e iniciales de nombres, apodos, titulos nobiliarios, menciones seguidas del género, distintas notaciones de fechas, entre otros.
-Por último, se modificaron las notaciones de los datos dados por el generador para que coincidieran con las modificaciones realizadas de manera manual, calculando las posiciones de las entidades con el un [programa en Python](./data/output/txt/procesar_texto.py).
+Por último, se modificaron las notaciones de los datos dados por el generador para que coincidieran con las modificaciones realizadas de manera manual, calculando las posiciones de las entidades con el un [programa en Python](./data/brat/procesar-texto.py).
 
 ### Ejecución de los modelos
 

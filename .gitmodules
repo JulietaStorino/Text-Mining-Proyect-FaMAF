@@ -4,9 +4,6 @@
 [submodule "models/NeuroNer"]
     path = models/NeuroNer
     url = https://github.com/ccolonruiz/MEDDOCAN
-[submodule "models/Few-shot-NER"]
-    path = models/Few-shot-NER
-    url = https://github.com/alicialara/lsi2_uned_at_MEDDOCAN2019
 [submodule "models/CLIN_X"]
     path = models/CLIN_X
     url = https://github.com/boschresearch/clin_x

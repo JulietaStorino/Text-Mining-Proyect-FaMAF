@@ -35,11 +35,11 @@ def contar_menciones():
     }
 
     archivos ={
-        "067253898.ann",
-        "149891773.ann",
-        "387802160.ann",
-        "486642396.ann",
-        "572018553.ann",
+        "brat/067253898.ann",
+        "brat/149891773.ann",
+        "brat/387802160.ann",
+        "brat/486642396.ann",
+        "brat/572018553.ann",
     }
 
     for archivo in archivos:

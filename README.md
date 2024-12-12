@@ -282,6 +282,27 @@ python train_standard_model_architecture.py --data_path bio_files/ --model llang
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models ->
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name model_name --storage_path models
 ```
+Modificar el código: 
+
+trainer = ModelTrainer(tagger, corpus)
+
+# Crear el optimizador
+optimizer = torch.optim.AdamW(tagger.parameters(), lr=args.learning_rate)
+
+# Crear el scheduler
+scheduler = OneCycleLR(optimizer, max_lr=args.learning_rate, total_steps=len(corpus.train) // args.mini_batch_size * args.max_epochs)
+
+# Entrenamiento sin la necesidad de usar un optimizador dentro de train()
+trainer.train(
+    args.storage_path + args.name,
+    mini_batch_size=args.mini_batch_size,
+    mini_batch_chunk_size=args.mini_batch_chunk_size,
+    max_epochs=args.max_epochs,
+    embeddings_storage_mode='none',
+    weight_decay=0.,
+    monitor_test=True,
+    train_with_dev=args.train_wth_dev
+)
 
 #### BiLSTM-CRF:
 #### NeuroNer:

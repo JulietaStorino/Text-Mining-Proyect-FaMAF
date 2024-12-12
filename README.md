@@ -303,7 +303,7 @@ trainer.train(
     monitor_test=True,
     train_with_dev=args.train_wth_dev
 )
-``` python
+```
 
 #### BiLSTM-CRF:
 #### NeuroNer:

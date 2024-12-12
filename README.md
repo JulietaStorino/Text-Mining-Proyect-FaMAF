@@ -28,21 +28,124 @@ Esto plantea retos en cuanto a la protección de la privacidad de los datos de l
 
 ### Objetivos
 
-El presente informe tiene como objetivo principal comparar la dependencia de datos presenre en diferentes aproximaciones para la anonimización de textos médicos en español. Para ello, se establecen los siguientes objetivos específicos:
+El presente informe tiene como objetivo principal comparar la dependencia de datos presente en diferentes aproximaciones para la anonimización de textos médicos en español. Para ello, se establecen los siguientes objetivos específicos:
 - **Evaluar el rendimiento de modelos ya existentes**: los datos usados para el desarrollo, entrenamiento y validación de los modelos de anonimización de textos médicos en español, provienen de una fuente específica, desarrollados por un equipo en particular, con una estructura y contenido bien definidos, lo que puede afectar su rendimiento en contextos diferentes de la vida real, porque un problema común en el aprendizaje automático es que los modelos no generalizan bien a datos que no han visto antes (overfitting). Por ello, buscamos conocer su verdadera eficacia en la tarea de anonimización de textos, donde la notación de textos médicos pueden variar en su estructura y contenido, analizando la eficacia de los modelos seleccionados, con datos que no fueron utilizados en su entrenamiento y creados a partir de diferentes fuentes.
 - **Comparar el rendimiento de los modelos**: buscaremos determinar en qué aspectos los modelos se destacan o presentan deficiencias al realizar la tarea de anonimización en distintos conjuntos de datos.
 - **Fomentar la colaboración interdisciplinaria**: el trabajo será en parte guiado por las críticas de nuestros compañeros, por lo que habrá un intercambio de conocimientos dado por la colaboración entre los diferentes equipos.
 
 ### Trabajos anteriores
 
-Este trabajo se centra en la campaña “Medical Document Anonymization (MEDDOCAN)” desarrollado por el Plan de Impulso de las tecnologías del Lenguaje del Gobierno de España. En el marco de esta campaña, se creó un corpus sintético de 1000 registros clínicos con información de salud protegida (PHI, por sus siglas en inglés), denominado “Corpus MEDDOCAN”. Este corpus se distribuyó en texto plano con codificación UTF-8, donde cada caso clínico se almacena como un único archivo de texto y las anotaciones PHI se publican en formato BRAT para su visualización y evaluación.
+Este trabajo se centra en la campaña “Medical Document Anonymization (MEDDOCAN)” desarrollado por el Plan de Impulso de las tecnologías del Lenguaje del Gobierno de España. En el marco de esta campaña, se creó un corpus sintético de 1000 registros clínicos con información de salud protegida (PHI, por sus siglas en inglés), denominado [Corpus MEDDOCAN](./SPACCC_MEDDOCAN/corpus/). Este corpus se distribuyó en texto plano con codificación UTF-8, donde cada caso clínico se almacena como un único archivo de texto y las anotaciones PHI se publican en formato BRAT e i2b2 para su visualización y evaluación.
 
-<p align="center">
-  <img width="auto" height="500" src="https://temu.bsc.es/meddocan/wp-content/uploads/2019/03/image-1-768x692.png">
-  <figcaption align="center">Figura 1: Un ejemplo de anotación MEDDOCAN visualizada utilizando la interfaz de anotación BRAT.</figcaption>
-</p>
+```plaintext
+Datos del paciente.
+Nombre:  Pedro.
+Apellidos: De Miguel Rivera.
+NHC: 2569870.
+Domicilio: Calle Carmen Romero, 23, 1D.
+Localidad/ Provincia: Madrid.
+CP: 28035.
+Datos asistenciales.
+Fecha de nacimiento: 10/10/1963.
+País: España.
+Edad: 53 años Sexo: H.
+Fecha de Ingreso: 17/06/2016.
+Médico: Estefanía Romero Selas  NºCol: 28 28 20943.
+Informe clínico del paciente: varón de 53 años sin antecedentes de interés que ingresa procedente de urgencias con un cuadro de tromboembolismo pulmonar.
+Ante la sospecha de neoplasia oculta y la presencia de hematuria no evidenciada previamente se procede a la realización de Ecografía abdominal donde se evidencia una masa renal derecha y se completa el estudio con TAC y RM..
+Ambos estudios confirman la presencia de una tumoración heterogénea que infiltra los dos tercios inferiores del riñón derecho de aproximadamente 10x10 cms. con afectación del seno e hilio renal objetivándose también trombosis tumoral de la vena renal derecha y cava infrahepática. No se evidenciaban adenopatías ni metástasis.
+Es intervenido quirúrgicamente realizándosele por vía anterior, una nefrectomía radical con cavotomía para la exéresis del trombo y una extensa linfadenectomía aorto-cava derecha.
+El resultado anatomo-patológico fue de carcinoma de células renales claras grado 2 de Fuhrman de 9 cm. con invasión de hilio renal, grasa perinéfrica y vena renal, sin afectación metastásica de ganglios ni de los bordes de dicha grasa ni del hilio, así como uréter libres. (Estadio III, T3N0M0). El paciente fue dado de alta hospitalaria al sexto día.
+A los 3 meses de la intervención el paciente refiere leve dolor e induración en el pene de reciente aparición. A la palpación se objetiva una masa indurada.
+Se le realiza RM de pelvis que nos informa de la existencia de una masa que ocupa y expande el cuerpo cavernoso izquierdo, compatible con metástasis de carcinoma renal previo..
+Se toma biopsia de dicha lesión, cuyo resultado nos confirma la sospecha evidenciándose en los cortes histológicos nidos aislados de células tumorales compatibles con metástasis de carcinoma de células claras.
+Ante este diagnóstico, nos planteamos cuál sería la mejor actitud terapéutica para el paciente, y tuvimos en cuenta para ello, el incremento progresivo del dolor local, la edad del paciente y su buen estado general. Por ello, se optó por una penectomía total hasta confirmar intraoperatoriamente un borde quirúrgico libre de enfermedad.
+Una semana después del alta ingresa en el servicio de Oncología con un cuadro de obnubilación y alteración motora y sensitiva, y presenta en el TC craneal lesiones en cerebelo y hemisferio cerebral derecho compatible con metástasis. Se realiza un TC torácico y aparecen también múltiples nódulos pulmonares y microadenopatías paratraqueales bilaterales en relación con metástasis.
+El paciente fallece a los nueve meses de la primera intervención de su carcinoma renal, es decir seis meses después del diagnóstico de las metástasis en pene.
+Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
+```
+<div align="center">
+  <figcaption> Figura 1: Ejemplo de texto médico del corpus MEDDOCAN.</figcaption>
+</div>
 
-Para llevar a cabo la anotación manual, se construyeron las primeras pautas públicas para PHI en español, a manera de proporcionar un conjunto claro y conciso de reglas y directrices para la identificación y clasificación de información sensible dentro de los historiales clínicos en español, asegurando la coherencia y la precisión en la anotación de PHI en todo el corpus MEDDOCAN. La guía se basó en la especificaciones del Reglamento General de Protección de Datos (GDPR) de la Unión Europea para garantizar que el corpus anotado cumpliera con las normas de privacidad de datos. Se consideraron las directrices de anotación de los proyectos de desidentificación i2b2, basados en la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA) de los Estados Unidos. Esto permitió la adaptación de sistemas y enfoques utilizados para textos en inglés al contexto del español. Las pautas de anotación de MEDDOCAN definieron un total de 29 tipos de entidades. La Tabla 1 resume la lista de tipos de entidades sensibles definidos para el seguimiento de MEDDOCAN y la cantidad de ocurrencias entre los conjuntos de entrenamiento, desarrollo y prueba.
+``` ann
+T1	CORREO_ELECTRONICO 3042 3063	eromeroselas@yahoo.es
+T2	SEXO_SUJETO_ASISTENCIA 363 368	varón
+T3	EDAD_SUJETO_ASISTENCIA 372 379	53 años
+T4	ID_TITULACION_PERSONAL_SANITARIO 320 331	28 28 20943
+T5	NOMBRE_PERSONAL_SANITARIO 3011 3033	Estefanía Romero Selas
+T6	NOMBRE_PERSONAL_SANITARIO 289 311	Estefanía Romero Selas
+T7	FECHAS 269 279	17/06/2016
+T8	PAIS 220 226	España
+T9	SEXO_SUJETO_ASISTENCIA 248 249	H
+T10	EDAD_SUJETO_ASISTENCIA 234 241	53 años
+T11	FECHAS 202 212	10/10/1963
+T12	TERRITORIO 153 158	28035
+T13	TERRITORIO 141 147	Madrid
+T14	CALLE 90 117	Calle Carmen Romero, 23, 1D
+T15	ID_SUJETO_ASISTENCIA 70 77	2569870
+T16	NOMBRE_SUJETO_ASISTENCIA 47 63	De Miguel Rivera
+T17	NOMBRE_SUJETO_ASISTENCIA 29 34	Pedro
+```
+<div align="center">
+  <figcaption> Figura 1: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en BRAT (.ann) </figcaption>
+</div>
+
+``` xml
+<?xml version='1.0' encoding='UTF-8'?>
+<MEDDOCAN>
+  <TEXT><![CDATA[Datos del paciente.
+Nombre:  Pedro.
+Apellidos: De Miguel Rivera.
+NHC: 2569870.
+Domicilio: Calle Carmen Romero, 23, 1D.
+Localidad/ Provincia: Madrid.
+CP: 28035.
+Datos asistenciales.
+Fecha de nacimiento: 10/10/1963.
+País: España.
+Edad: 53 años Sexo: H.
+Fecha de Ingreso: 17/06/2016.
+Médico: Estefanía Romero Selas  NºCol: 28 28 20943.
+Informe clínico del paciente: varón de 53 años sin antecedentes de interés que ingresa procedente de urgencias con un cuadro de tromboembolismo pulmonar.
+Ante la sospecha de neoplasia oculta y la presencia de hematuria no evidenciada previamente se procede a la realización de Ecografía abdominal donde se evidencia una masa renal derecha y se completa el estudio con TAC y RM..
+Ambos estudios confirman la presencia de una tumoración heterogénea que infiltra los dos tercios inferiores del riñón derecho de aproximadamente 10x10 cms. con afectación del seno e hilio renal objetivándose también trombosis tumoral de la vena renal derecha y cava infrahepática. No se evidenciaban adenopatías ni metástasis.
+Es intervenido quirúrgicamente realizándosele por vía anterior, una nefrectomía radical con cavotomía para la exéresis del trombo y una extensa linfadenectomía aorto-cava derecha.
+El resultado anatomo-patológico fue de carcinoma de células renales claras grado 2 de Fuhrman de 9 cm. con invasión de hilio renal, grasa perinéfrica y vena renal, sin afectación metastásica de ganglios ni de los bordes de dicha grasa ni del hilio, así como uréter libres. (Estadio III, T3N0M0). El paciente fue dado de alta hospitalaria al sexto día.
+A los 3 meses de la intervención el paciente refiere leve dolor e induración en el pene de reciente aparición. A la palpación se objetiva una masa indurada.
+Se le realiza RM de pelvis que nos informa de la existencia de una masa que ocupa y expande el cuerpo cavernoso izquierdo, compatible con metástasis de carcinoma renal previo..
+Se toma biopsia de dicha lesión, cuyo resultado nos confirma la sospecha evidenciándose en los cortes histológicos nidos aislados de células tumorales compatibles con metástasis de carcinoma de células claras.
+Ante este diagnóstico, nos planteamos cuál sería la mejor actitud terapéutica para el paciente, y tuvimos en cuenta para ello, el incremento progresivo del dolor local, la edad del paciente y su buen estado general. Por ello, se optó por una penectomía total hasta confirmar intraoperatoriamente un borde quirúrgico libre de enfermedad.
+Una semana después del alta ingresa en el servicio de Oncología con un cuadro de obnubilación y alteración motora y sensitiva, y presenta en el TC craneal lesiones en cerebelo y hemisferio cerebral derecho compatible con metástasis. Se realiza un TC torácico y aparecen también múltiples nódulos pulmonares y microadenopatías paratraqueales bilaterales en relación con metástasis.
+El paciente fallece a los nueve meses de la primera intervención de su carcinoma renal, es decir seis meses después del diagnóstico de las metástasis en pene.
+Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
+]]></TEXT>
+  <TAGS>
+    <NAME id="T17" start="29" end="34" text="Pedro" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+    <NAME id="T16" start="47" end="63" text="De Miguel Rivera" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
+    <ID id="T15" start="70" end="77" text="2569870" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
+    <LOCATION id="T14" start="90" end="117" text="Calle Carmen Romero, 23, 1D" TYPE="CALLE" comment=""/>
+    <LOCATION id="T13" start="141" end="147" text="Madrid" TYPE="TERRITORIO" comment=""/>
+    <LOCATION id="T12" start="153" end="158" text="28035" TYPE="TERRITORIO" comment=""/>
+    <DATE id="T11" start="202" end="212" text="10/10/1963" TYPE="FECHAS" comment=""/>
+    <LOCATION id="T8" start="220" end="226" text="España" TYPE="PAIS" comment=""/>
+    <AGE id="T10" start="234" end="241" text="53 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+    <OTHER id="T9" start="248" end="249" text="H" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+    <DATE id="T7" start="269" end="279" text="17/06/2016" TYPE="FECHAS" comment=""/>
+    <NAME id="T6" start="289" end="311" text="Estefanía Romero Selas" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+    <ID id="T4" start="320" end="331" text="28 28 20943" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
+    <OTHER id="T2" start="363" end="368" text="varón" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
+    <AGE id="T3" start="372" end="379" text="53 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
+    <NAME id="T5" start="3011" end="3033" text="Estefanía Romero Selas" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
+    <CONTACT id="T1" start="3042" end="3063" text="eromeroselas@yahoo.es" TYPE="CORREO_ELECTRONICO" comment=""/>
+  </TAGS>
+</MEDDOCAN>
+```
+<div align="center">
+  <figcaption> Figura 1: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en i2b2 (.xml) </figcaption>
+</div>
+
+Para llevar a cabo la anotación manual, se construyeron las primeras [pautas públicas para PHI en español](./SPACCC_MEDDOCAN/guidelines/guías-de-anotación-de-información-de-salud-protegida.pdf), a manera de proporcionar un conjunto claro y conciso de reglas y directrices para la identificación y clasificación de información sensible dentro de los historiales clínicos en español, asegurando la coherencia y la precisión en la anotación de PHI en todo el corpus MEDDOCAN. La guía se basó en la especificaciones del Reglamento General de Protección de Datos (GDPR) de la Unión Europea para garantizar que el corpus anotado cumpliera con las normas de privacidad de datos. Se consideraron las directrices de anotación de los proyectos de desidentificación i2b2, basados en la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA) de los Estados Unidos. Esto permitió la adaptación de sistemas y enfoques utilizados para textos en inglés al contexto del español. Las pautas de anotación de MEDDOCAN definieron un total de 29 tipos de entidades. La Tabla 1 resume la lista de tipos de entidades sensibles definidos para el seguimiento de MEDDOCAN y la cantidad de ocurrencias entre los conjuntos de entrenamiento, desarrollo y prueba.
 
 <div align="center">
   <table>
@@ -96,7 +199,7 @@ Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en u
 
 ### Modelos a testear
 
-De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 4 proyectos presentados por las siguientes instituciones:
+De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 3 proyectos de código abierto que presentaron un rendimiento destacado en la tarea de anonimización de textos médicos en español. Los modelos seleccionados son los siguientes:
 
 - **CLIN-X (Bosch Center for Artificial Intelligence - Spoken Language Systems, Saarland University, Alemania)**: El modelo CLIN-X es un modelo preentrenado basado en el transformador multilingüe XLM-R, entrenado en 100 idiomas. Para adaptarlo al dominio clínico español, se entrenó con un corpus de 790MB de documentos del archivo Scielo y los recursos MeSpEn, utilizando el objetivo de modelado de lenguaje enmascarado (MLM). Aunque el modelo se adaptó al español, sigue siendo multilingüe y se puede aplicar a tareas en inglés.
 
@@ -108,26 +211,44 @@ from keras.backend.tensorflow_backend import set_session -> from tensorflow.comp
 
 ### DataSet
 
-Para llevar a cabo la comparación de los modelos seleccionados se utilizará el conjunto de datos obtenidos a partir del módulo "Synthetic Patient Generator" que genera datos de pacientes en formato txt, xml y brat a partir de listas de datos. Para ello, utilizamos la herramienta ChatGPT, que permitió automatizar la creación de archivos en formato .ann (brat notation), simplificando la generación de datasets estructurados y etiquetados.
+Para llevar a cabo la comparación de los modelos seleccionados se generaron nuevos conjuntos de datos de textos médicos en español, obtenidos a partir del módulo [Synthetic Patient Generator](./Synthetic-Patient-Generation/). Este módulo permite la generación de datos sintéticos de pacientes, incluyendo información de salud protegida (PHI), como nombres, direcciones, fechas de nacimiento, números de teléfono, entre otros. Los datos generados se almacenan en formato txt, ann y xml.
+Luego, para generar el informe que contiene los datos sintéticos de los pacientes, se utilizó GPT-4o, un transformador generativo multimodal y multilingüe preentrenado, diseñado por OpenAI, que destaca por su capacidad para generar texto coherente y relevante en diferentes idiomas. De esta manera, se obtubieron informes médicos con texto sensible de manera semi-esctructurada.
+Seguido de esto, se agregaron errores ortográficos y gramaticales a los informes médicos generados, para simular la variabilidad y complejidad de los datos reales. A demás se incluyeron notaciones especificadas en la guía de anotación de MEDDOCAN, como abreviaturas e iniciales de nombres, apodos, titulos nobiliarios, menciones seguidas del género, distintas notaciones de fechas, entre otros.
+Por último, se modificaron las notaciones de los datos dados por el generador para que coincidieran con las modificaciones realizadas de manera manual, calculando las posiciones de las entidades con el un [programa en Python](./data/output/txt/procesar_texto.py).
 
 ### Ejecución de los modelos
 
 En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos seleccionados al conjunto de datos, explicando las modificaciones necesarias y los ajustes realizados durante su implementación. Cada modelo tuvo sus desafíos por cuestiones de compatibilidad, diferencias en las versiones de las bibliotecas utilizadas y requerimientos particulares. A continuación, describimos los aspectos más relevantes de la ejecución y configuración de cada modelo:
-- **CLIN-X**:
-1) Crear la carpeta 'data' que contenga los archivos .ann y .txt (10 en total).
-2) Crear la carpeta 'bio_files' y ejecutar el comando: python tokenize_files.py --input_path data/ --output_path bio_files/ . En la carpeta 'bio_files' se generarán 5 archivos.
-3) Crear la carpeta 'split_files' y ejecutar el comando: python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
+#### CLIN-X:
+1) Crear la carpeta *data* que contenga los archivos *.ann* y *.txt* (10 en total).
+2) Crear la carpeta *bio_files* y ejecutar el siguiente comando:
+``` bash
+python tokenize_files.py --input_path data/ --output_path bio_files/
+```
+En la carpeta *bio_files* se generarán 5 archivos.
+3) Crear la carpeta *split_files* y ejecutar el comando:
+``` bash
+python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
+```
 En caso de hacer uso de la cpu hacer los siguientes cambios en las líneas de código:
+``` python
 Línea 79:     doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024).to('cpu')
 Línea 86:     input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long().to('cpu')
 Línea 124:    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path).to('cpu')
-4) Para entrenar el modelo, crear la carpeta 'models' y ejecutar el comando: python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
-  a) Actualizar el comando para ejecutar train_our_model_architecture.py:
+```
+4) Para entrenar el modelo, crear la carpeta *models* y ejecutar el comando:
+``` bash
+python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
+```
+
+5) Actualizar el comando para ejecutar train_our_model_architecture.py:
+``` bash
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models ->
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name model_name --storage_path models
-    
-- **BiLSTM-CRF**:
-- **NeuroNer**:
+```
+
+#### BiLSTM-CRF:
+#### NeuroNer:
   
 ### Comparación y análisis de los resultados
 

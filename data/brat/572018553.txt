@@ -1,5 +1,5 @@
 Datos del Paciente:
-Nombre: Agustín Pachecco De la Fuente
+Nombre: Agusitn acheccco De la Fuente
 DNI: 39193581V
 Fecha de nacimiento: 13/julio/1978 (46 años)
 Género: Varón

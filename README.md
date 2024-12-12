@@ -283,7 +283,7 @@ python train_standard_model_architecture.py --data_path bio_files/ --model llang
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name model_name --storage_path models
 ```
 Modificar el código: 
-
+``` python
 trainer = ModelTrainer(tagger, corpus)
 
 # Crear el optimizador
@@ -303,6 +303,7 @@ trainer.train(
     monitor_test=True,
     train_with_dev=args.train_wth_dev
 )
+``` python
 
 #### BiLSTM-CRF:
 #### NeuroNer:

@@ -212,9 +212,45 @@ from keras.backend.tensorflow_backend import set_session -> from tensorflow.comp
 ### DataSet
 
 Para llevar a cabo la comparación de los modelos seleccionados se generaron nuevos [conjuntos de datos de textos](./data/) médicos en español, obtenidos a partir del módulo [Synthetic Patient Generator](./Synthetic-Patient-Generation/). Este módulo permite la generación de datos sintéticos de pacientes, incluyendo información de salud protegida (PHI), como nombres, direcciones, fechas de nacimiento, números de teléfono, entre otros. Los datos generados se almacenan en formato txt, ann y xml.
+
 Luego, para generar el informe que contiene los datos sintéticos de los pacientes, se utilizó GPT-4o, un transformador generativo multimodal y multilingüe preentrenado, diseñado por OpenAI, que destaca por su capacidad para generar texto coherente y relevante en diferentes idiomas. De esta manera, se obtubieron informes médicos con texto sensible de manera semi-esctructurada.
-Seguido de esto, se agregaron errores ortográficos y gramaticales a los informes médicos generados, para simular la variabilidad y complejidad de los datos reales. A demás se incluyeron notaciones especificadas en la guía de anotación de MEDDOCAN, como abreviaturas e iniciales de nombres, apodos, titulos nobiliarios, menciones seguidas del género, distintas notaciones de fechas, entre otros.
-Por último, se modificaron las notaciones de los datos dados por el generador para que coincidieran con las modificaciones realizadas de manera manual, calculando las posiciones de las entidades con el un [programa en Python](./data/brat/procesar-texto.py).
+
+Seguido de esto, se agregaron errores ortográficos y gramaticales a los informes médicos generados, como **Agusitn acheccco De la Fuente** en lugar de **Agustín Pachecco De la Fuente** y **smtp:/LSCNBarbadosYOrtega-biotechcom** en lugar de **smtp://LSCNBarbadosYOrtega-biotech.com**, para simular la variabilidad y complejidad de los datos reales. A demás se incluyeron notaciones especificadas en la guía de anotación de MEDDOCAN, como abreviaturas e iniciales de nombres , apodos, titulos nobiliarios, menciones seguidas del género, distintas notaciones de fechas, entre otros.
+
+Por último, se modificaron las notaciones de los datos dados por el generador para que coincidieran con las modificaciones realizadas de manera manual, calculando las posiciones de las entidades con un [programa en Python](./data/brat/procesar-texto.py).
+
+De esta manera, la cantidad de ocurrencias de cada tipo de entidad en el conjunto de datos generado es la siguiente:
+* TERRITORIO: 26
+* FECHAS: 16
+* EDAD_SUJETO_ASISTENCIA: 9
+* NOMBRE_SUJETO_ASISTENCIA: 12
+* NOMBRE_PERSONAL_SANITARIO: 6
+* SEXO_SUJETO_ASISTENCIA: 7
+* CALLE: 8
+* PAIS: 3
+* ID_SUJETO_ASISTENCIA: 10
+* CORREO_ELECTRONICO: 5
+* ID_TITULACION_PERSONAL_SANITARIO: 4
+* ID_ASEGURAMIENTO: 5
+* HOSPITAL: 3
+* FAMILIARES_SUJETO_ASISTENCIA: 6
+* INSTITUCION: 5
+* ID_CONTACTO_ASISTENCIAL: 4
+* NUMERO_TELEFONO: 7
+* PROFESION: 1
+* NUMERO_FAX: 3
+* OTROS_SUJETO_ASISTENCIA: 5
+* CENTRO_SALUD: 3
+* ID_EMPLEO_PERSONAL_SANITARIO: 10
+* IDENTIF_VEHICULOS_NRSERIE_PLACAS: 4
+* IDENTIF_DISPOSITIVOS_NRSERIE: 10
+* NUMERO_BENEF_PLAN_SALUD: 0
+* URL_WEB: 3
+* DIREC_PROT_INTERNET: 7
+* IDENTF_BIOMETRICOS: 8
+* OTRO_NUMERO_IDENTIF: 5
+
+Siendo un total de 195 entidades en el conjunto de datos generado.
 
 ### Ejecución de los modelos
 

@@ -267,7 +267,7 @@ En la carpeta *bio_files* se generarán 5 archivos.
 3. Crear la carpeta *split_files* y hacer las siguientes modificaciones en el archivo datasplits.py: 
 ``` python
 Línea 35:     from sklearn.cluster.k_means_ import _init_centroids -> from sklearn.cluster import KMeans
-Línea 448:        centroids = _init_centroids(X, n_clusters, init_kmeans, random_state=initializations[current_round]) -> centroids =  KMeans(X, n_clusters, init_kmeans, random_state=initializations[current_round])
+Línea 448:    centroids = _init_centroids(X, n_clusters, init_kmeans, random_state=initializations[current_round]) -> centroids =  KMeans(X, n_clusters, init_kmeans, random_state=initializations[current_round])
 ``` 
 Estos cambios se deben a cuestiones de compatibilidad ya que la versiones nuevas de Scikit-learn han dejado de utilizar la función _init_centroids para inicializar los centroides en algoritmos de clustering. 
 

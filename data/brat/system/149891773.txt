@@ -1,0 +1,50 @@
+Datos del Paciente:
+Nombre: A. "Spaghetti" Martín López.
+DNI: 23417141J.
+Fecha de nacimiento: 31/03/2020 (4 años).
+Género: Niño.
+Domicilio: Paseo de Zorrilla, 1, quinto a la izquierda, Valladolid, 47001, Castilla y León.
+Teléfonos: Fijo 983 82 84 99, Móvil 683 78 02 65.
+Email: angelfideo_martin_lopez1094@ub.edu.
+NHC: 0913770.
+NASS: 801451055749.
+Número de socio: 5381037568.
+
+Fecha de ingreso: 2/2/22.
+Episodio: 97779607. Hospital General Universitario Reina Sofía.
+
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://AMartinLopez-biotech.com. IP asociada 249.36.206.164 - MAC asociada 3D9.E0F.A68.E2A.
+
+Antecedentes Clínicos:
+Niño de 4 años, residente en Valladolid, sin antecedentes médicos de relevancia ni condiciones crónicas de riesgo más allá de su exposición ocasional a entornos de construcción debido a familiar albañil. La vacunación está al día conforme al calendario de Castilla y León.
+
+Motivo de Consulta:
+Los Martín López vinieron a consulta tras haber sufrido un accidente automovilístico leve el pasado jueves 30 de enero. Durante el accidente, Ángel, que viajaba como pasajero en una camioneta Ram 1500 (4568YHC - VSWR5JB6JJZ468572), sufrió una abrasión cutánea en la pierna derecha al entrar en contacto con materiales de construcción (cemento y madera) transportados en el vehículo. Días después, la herida muestra signos de inflamación, supuración y fiebre (38.5 °C).
+
+Examen Físico y Pruebas Complementarias:
+- Tensión arterial: 95/60 mmHg (dentro del rango normal para su edad).
+- Temperatura: 38.6 °C.
+- Examen de la herida: Presencia de eritema, calor local y exudado purulento en una laceración de 4 cm en la pierna derecha. No hay signos de celulitis extensa ni linfangitis.
+- Cultivo de la herida: Crecimiento positivo de Staphylococcus aureus (susceptible a meticilina).
+- Análisis de sangre: Leucocitosis moderada (15,200/µL) con neutrofilia (80%). Proteína C reactiva elevada (5.6 mg/dL).
+
+Se realizó un expediente con URL HGURS.com/pacientes/97779607.
+
+Diagnóstico Provisional:
+Infección bacteriana localizada secundaria a Staphylococcus aureus en una herida postraumática. No hay evidencia de infección sistémica o complicaciones severas en este momento.
+
+Plan de Tratamiento:
+1. Antibióticos: Inicio de tratamiento oral con amoxicilina-clavulánico (25 mg/kg/dosis cada 8 horas) durante 10 días.
+2. Cuidado local de la herida: Limpieza diaria con solución salina estéril y aplicación de crema antibiótica tópica. Vendaje estéril para proteger la zona afectada.
+3. Seguimiento: Revisión en 5 días para evaluar la respuesta al tratamiento y descartar progresión de la infección.
+
+Recomendaciones:
+Se instruyó a la madre del paciente sobre la importancia de la higiene adecuada de la herida y de completar el tratamiento antibiótico. Se indicó acudir a urgencias de inmediato si el niño desarrolla fiebre persistente, aumento del dolor o signos de extensión de la infección.
+
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dr. Julián Gómez Soler.
+NC 906382828.
+Residente de 4° año en Medicina Interna - CIBERINFEC.

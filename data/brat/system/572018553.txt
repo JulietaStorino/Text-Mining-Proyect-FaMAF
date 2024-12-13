@@ -1,0 +1,61 @@
+Datos del Paciente:
+Nombre: Agusitn acheccco De la Fuente
+DNI: 39193581V
+Fecha de nacimiento: 13/julio/1978 (46 años)
+Género: Varón
+Domicilio: Pz de Preciados 27, Teruel, Cuenca, Castilla-La Mancha, CP: 16049
+Teléfonos: Fijo +34 969131525, Móvil +34 769399065
+Email: agustin.pachecodelafuente@gmail.com
+NHC: 0442773
+NASS: 879949958005
+Número de socio: 5381037568
+
+Fecha de ingreso: 05/05/2015
+Episodio: 07744605 Centro de Salud Ronda
+
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://APDeLaFuente.com.
+
+Antecedentes Clínicos:
+Paciente de ascendencia del Medio Oriente de 46 años. Es plomero de oficio, lo que lo expone a riesgos laborales. No presenta antecedentes familiares inmediatos de enfermedades cardiovasculares, aunque su ocupación conlleva estrés físico significativo.
+
+Motivo de Consulta:
+El paciente es traído a consulta tras haber sufrido un accidente automovilístico el 15 de octubre de 2024, en el que su vehículo (Subaru Outback - m 1706QBG - vin VSWI678JFGM564342) colisionó a alta velocidad contra otro automóvil. Posteriormente al accidente, fue ingresado en la unidad de cuidados intensivos debido a una descompensación hemodinámica, shock traumático y una notable alteración de la función cardíaca, con aumento en las cifras de troponinas. Después de su alta hospitalaria, comenzó a experimentar síntomas como dolor torácico persistente, falta de aire al mínimo esfuerzo y palpitaciones frecuentes. Estos síntomas no han mejorado con el tratamiento inicial, lo que ha generado preocupación sobre posibles complicaciones cardiovasculares a largo plazo.
+
+Examen Físico y Pruebas Complementarias:
+- Peso: 92 kg, Talla: 1.80 m
+- Tensión arterial: 145/90 mmHg
+- Frecuencia cardíaca: 110 latidos por minuto, arritmia de tipo fibrilación auricular
+- Exploración cardiovascular: Soplo sistólico moderado en foco mitral, signos de insuficiencia cardíaca derecha con edema en miembros inferiores
+- Electrocardiograma (ECG): Fibrilación auricular con frecuencia ventricular rápida
+- Ecocardiograma: Función ventricular disminuida con fracción de eyección del 40%, signos de dilatación auricular izquierda
+- Biometría hemática y marcadores cardíacos: Niveles elevados de troponina I, lo que confirma daño miocárdico post-traumático
+- Radiografía de tórax: Engrosamiento de los ventrículos y signos leves de congestión pulmonar
+
+Se realizó un expediente con URL CSR.com/patients/0442773 ip 236.125.29.228 mac 4E9.D1A.F22.3D0.
+
+Diagnóstico Provisional:
+Disfunción cardiaca post-traumática secundaria a choque traumático, posiblemente desencadenada o agravada por la fibrilación auricular y el estrés hemodinámico.
+
+Plan de Tratamiento:
+1. Medicación:
+   - Anticoagulantes orales (warfarina 5 mg/día) para el manejo de la fibrilación auricular
+      - Betabloqueadores (metoprolol 50 mg/día) para controlar la frecuencia cardíaca
+      - Diuréticos (furosemida 40 mg/día) para reducir la sobrecarga de líquidos
+      - Inhibidores de la ECA (enalapril 5 mg/día) para la protección miocárdica
+   
+2. Intervención cardiovascular: Evaluación para un posible desfibrilador cardioversor implantable (ICD) dependiendo de la evolución de la función ventricular y los episodios de fibrilación auricular.
+
+3. Rehabilitación cardíaca: En cuanto esté estable, derivación a programa de rehabilitación cardiovascular para mejorar su capacidad funcional y reducir la carga del corazón.
+
+4. Seguimiento: Reevaluación en consulta de cardiología en 4 semanas con ecocardiograma de control y ajuste de tratamiento farmacológico.
+
+Recomendaciones:
+- Evitar actividades físicas extenuantes hasta nueva evaluación
+- Seguir estrictamente el plan de tratamiento y asistir a las consultas de seguimiento para evitar complicaciones adicionales
+- Monitorear la tensión arterial y la frecuencia cardíaca en casa y reportar cualquier alteración significativa
+
+Médico responsable:
+Dr. Adrián Ruiz Santiago #col 487970758 #emp g421143 
+Cardiólogo de Unidad de Cuidados Intensivos
+Instituto de Investigación Sanitaria del Hospital 12 de Octubre
+Avenida de Córdoba, s/n. 28041. Madrid, España

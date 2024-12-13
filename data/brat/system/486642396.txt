@@ -1,0 +1,53 @@
+Datos del Paciente:
+Nombre: Juan de Dios Rviera-Alonso.
+DNI: 75505441Y.
+Fecha de nacimiento: 07/06/1951 (73 años).
+Género: Hombre.
+Domicilio: Paseo de la Magdalena 72, 163 y 22 Eibar, Mallorca, Islas Baleares. CP07471.
+Teléfonos: Fijo +34 971969623, Móvil +34 671738306.
+Email: JDD928@gmail.com.
+NHC: 6603161.
+NASS: 301918965027.
+Número de socio: 2294739275.
+
+Fecha de ingreso: 19/02/2005.
+Episodio: 37124654. Centro de Salud Ronda.
+
+El servidor para el envío de información desde el cual el usuario se comunica es smtp:/JDRiveraAlonso-biotech.com, ip asociada 240.184.242.20 y mac asociada 53051691EC98.
+
+Antecedentes Clínicos:
+Paciente musluman de 73 años, residente en Eibar, con antecedentes de consumo crónico de tabaco (aproximadamente 20 cigarrillos diarios durante 35 años). No presenta antecedentes familiares inmediatos de enfermedades cardiovasculares, pero el paciente refiere un estilo de vida sedentario y antecedentes de hipertensión arterial mal controlada.
+
+Motivo de Consulta:
+El paciente, es traído a consulta por su padre debido a la aparición reciente de disnea en reposo y al realizar esfuerzos menores. También reporta dolor torácico opresivo intermitente, que dura entre 5 y 10 minutos, asociado a sudoración y sensación de mareo. Además, menciona un aumento de la fatiga en las últimas semanas, lo que lo ha preocupado por la posible implicancia cardiológica debido a su historial de tabaquismo. Dado que el paciente presenta estos síntomas junto con factores de riesgo cardiovascular, se deriva al servicio de cardiología para su evaluación.
+
+Examen Físico y Pruebas Complementarias:
+- Peso: 85 kg, Talla: 1.75 m
+- Tensión arterial: 150/95 mmHg
+- Frecuencia cardíaca: 95 latidos por minuto, irregular
+- Exploración cardiovascular: Soplo sistólico en foco mitral y rítmica irregularidad en los latidos. Edema leve en extremidades inferiores
+- Electrocardiograma (ECG): Signos de hipertrofia ventricular izquierda con fibrilación auricular paroxística
+- Ecocardiograma: Fracción de eyección disminuida al 35%, con evidencia de insuficiencia mitral leve a moderada y dilatación ventricular izquierda
+- Análisis de sangre: Colesterol total elevado (240 mg/dL), LDL elevado (160 mg/dL), triglicéridos en el límite superior (180 mg/dL)
+
+Se realizó un expediente con URL CSRcom/pacientes/6603161.
+
+Diagnóstico Provisional:
+Enfermedad arterial coronaria, probablemente con componente de insuficiencia cardíaca congestiva y fibrilación auricular, exacerbado por el consumo crónico de tabaco.
+
+Plan de Tratamiento:
+1. Medicación: Inicio de tratamiento con anticoagulantes orales (warfarina 5 mg/día), betabloqueadores (metoprolol 50 mg/día) para control de la fibrilación auricular, y diuréticos (furosemida 20 mg/día) para reducir la retención de líquidos.
+2. Cambio en el estilo de vida: Se recomienda el abandono inmediato del tabaco, aumento de la actividad física de manera gradual y control de la dieta con énfasis en la reducción de sal y grasas saturadas.
+3. Seguimiento: Reevaluación en 4 semanas con ecocardiograma y análisis de función renal. Se recomienda el uso de un monitor de presión arterial y seguimiento mensual para ajustes en la medicación.
+
+Recomendaciones:
+El paciente debe seguir de manera estricta las indicaciones médicas para prevenir complicaciones cardiovasculares graves, como el infarto de miocardio. También se sugiere acudir a sesiones de rehabilitación cardiovascular para mejorar la capacidad física y reducir el riesgo cardiovascular a largo plazo.
+
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dra. Claudia Alarcon Miguel (nc 833695456 - nro empleado l758437).
+Residente de 4° año en Cardiología.
+Instituto de Investigación Biomédica de Enfermedades Cardiovasculares.
+Avenida Monforte de Lemos 3-5, 28029, Madrid, España.

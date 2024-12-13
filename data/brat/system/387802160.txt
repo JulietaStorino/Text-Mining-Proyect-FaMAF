@@ -1,0 +1,54 @@
+Datos del Paciente:
+Nombre: Infanta Lucía de la Santa Concepción Barbados Ortega
+DNI: 71289595Z
+Fecha de nacimiento: 06/05/2023 (1 año y 7 meses)
+Género: Nena
+Domicilio: Avda Aragó, 271, 22, 08007, Barcelona, España.
+Teléfonos: +34939151786 (fijo), +34634566438 (móvil)
+Email: infanta_lucia@icloud.com
+NHC: 9621479
+NASS: 860055435104
+Número de socio: 6156349372
+
+Fecha de ingreso: 09/d/2024
+Hospital Universitario Fundació Jiménez Díaz
+
+El servidor para el envío de información desde el cual el usuario se comunica es smtp:/LSCNBarbadosYOrtega-biotechcom. ip 239.93.12.215, mac 47 F9 A3 32 AB 41.
+
+Antecedentes Clínicos:
+Paciente de tez blanca, ingresó en san juan, con 1 año y 7 meses. No presenta antecedentes médicos relevantes previos, y su desarrollo físico ha sido acorde a su edad.
+
+Motivo de Consulta:
+Paciente llevado a consulta por su madre tras presentar síntomas de dificultad para alimentarse, fatiga durante la actividad mínima y coloración pálida, especialmente notable en la región peribucal. Además, se notó un leve abombamiento abdominal y una aparente aceleración del ritmo respiratorio en reposo, lo que motivó la derivación al servicio de insuficiencia cardíaca para evaluación especializada.
+
+Examen Físico y Pruebas Complementarias:
+- Peso: 8.5 kg.
+- Tensión arterial: 70/50 mmHg.
+- Frecuencia cardíaca: 155 latidos por minuto.
+- Exploración cardiovascular: Soplo sistólico grado II/VI en foco mitral, hepatomegalia leve al tacto y edemas leves en extremidades inferiores.
+- Radiografía de tórax: Cardiomegalia evidente y signos de congestión pulmonar leve.
+- Ecocardiograma: Dilatación ventricular izquierda con fracción de eyección disminuida al 40%, compatible con insuficiencia cardíaca dilatada.
+- Análisis de sangre: Elevación de péptidos natriuréticos tipo B (NT-proBNP: 5600 pg/mL).
+
+Se realizó un expediente con URL http://HUFJD.com/pacientes/9621479.
+
+Diagnóstico Provisional:
+Insuficiencia cardíaca secundaria a miocardiopatía dilatada, probablemente de origen idiopático.
+
+Plan de Tratamiento:
+1. Hospitalización inicial: Ingreso para estabilización y monitorización del estado hemodinámico.
+2. Medicación: Inicio de diuréticos (furosemida IV 1 mg/kg/día) para control de la congestión, inhibidores de la ECA (enalapril 0.1 mg/kg/día) para manejo a largo plazo y betabloqueadores (carvedilol a dosis bajas, 0.05 mg/kg).
+3. Rehabilitación nutricional: Soporte nutricional para mejorar el estado general y la ganancia ponderal.
+4. Pruebas complementarias: Resonancia magnética cardíaca para evaluación estructural más detallada, y estudios genéticos para descartar etiología hereditaria.
+
+Recomendaciones:
+Se proporcionó orientación a su madre sobre los cuidados necesarios en casa, incluyendo la detección temprana de signos de descompensación. Se planteó la necesidad de un seguimiento cercano en la unidad de insuficiencia cardíaca pediátrica.
+
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dra. Rosario Silva Espinosa
+Nº Colegiado 225341074
+Nº Empleado o423492
+Investigadora Clínica en Insuficiencia Cardíaca, CIBERCV

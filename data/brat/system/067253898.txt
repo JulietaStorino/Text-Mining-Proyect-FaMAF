@@ -1,0 +1,55 @@
+Datos del Paciente:
+Nombre: Sr. Juan Fco. Carrillo Heránndez.
+DNI: 69020514K.
+Fecha de nacimiento: 14/06/1964 (60 años).
+Género: Hombre H.
+Domicilio: Calle Isaac Albéniz 57, 4, 2. Logroño, La Rioja. 16543.
+Teléfono fijo: +34 941 83 66 19.
+FAX: +34 941 71 73 23.
+Email: juanfranciscohernandez@uca.es.
+NHC: 9008603.
+NASS: 425531623752.
+Número de socio: 6675927873.
+
+Fecha de ingreso: 20/01/1968.
+Episodio: 67927873. HU Central de Asturias.
+
+El servidor para el envío de información desde el cual el usuario se comunica es smtp://jfhernandez-biotech.com. ip asociada 161.241.108.53, mac asociada 36-0F-6E-BC-78-17.
+
+Antecedentes Clínicos:
+Paciente de 60 años, en etapa pre-jubilatoria, residente en Logroño. A principios de los 70' fue diagnosticado con un trastorno genético de carácter leve relacionado con una mutación hereditaria en el gen FBN1, asociado al síndrome de Marfan. Aunque el seguimiento regular no identificó complicaciones graves, se mantuvo vigilancia médica intermitente debido a un riesgo potencial de alteraciones cardiovasculares o esqueléticas propias de esta condición.
+
+Motivo de Consulta:
+El paciente acude a consulta acompañado por sus dos hijas de 20 años y 35 años debido a la reciente detección de síntomas progresivos que podrían estar relacionados con su condición genética previa. Refiere dolores articulares frecuentes, sobre todo en las rodillas y codos, además de sensación de fatiga crónica y molestias en la región lumbar. También menciona que un examen rutinario, realizado el martes 25 de junio, de su médico de cabecera reveló una dilatación leve de la raíz aórtica, lo que motivó la derivación al Dr. José Ángel Guerrero Rivera, especialista en genética médica, para evaluación y posibles medidas preventivas.
+
+Examen Físico y Pruebas Complementarias:
+- Tensión arterial: 132/86 mmHg.
+- Frecuencia cardíaca: 78 latidos por minuto.
+- Altura: 193 cm (talla alta notable, consistente con la posible manifestación del síndrome de Marfan).
+- Exploración musculoesquelética: Hipermovilidad articular leve, escoliosis de grado bajo detectada.
+- Ecocardiografía: Dilatación de la raíz aórtica (41 mm), sin insuficiencia aórtica significativa.
+- Pruebas genéticas: Confirmación de mutación en el gen FBN1 mediante secuenciación directa (historial previo actualizado).
+
+Se realizó un expediente con URL htt://HUCA.com/pacientes/35610179K.
+
+Diagnóstico Provisional:
+Síndrome de Marfan con manifestaciones cardiovasculares y musculoesqueléticas leves. Dilatación aórtica incipiente que requiere seguimiento estrecho y medidas preventivas.
+
+Plan de Tratamiento:
+1. Seguimiento cardiológico: Derivación a un cardiólogo especializado en enfermedades genéticas para vigilancia periódica de la aorta y manejo preventivo.
+2. Fisioterapia: Rehabilitación dirigida a mejorar la estabilidad articular y reducir la incidencia de dolor musculoesquelético.
+3. Actividad física moderada: Recomendación de evitar deportes de contacto o actividades de alto impacto.
+4. Medicación preventiva: Inicio de betabloqueadores (propranolol 40 mg/día) para reducir la progresión de la dilatación aórtica.
+5. Reevaluación genética: Monitorización periódica de nuevas manifestaciones relacionadas con el síndrome.
+
+Recomendaciones:
+El paciente y su familia recibirán asesoramiento genético para entender la naturaleza del trastorno y sus implicaciones. Se aconseja vigilancia regular con análisis de imagen (ecocardiografía anual) y control de presión arterial.
+
+Se registró una sesión de escaneo retiniano, el código obtenido para revisarla es RG545EMR302.
+Se registró también una sesión de escaneo del iris, el código obtenido para revisarla es IK326OYO089.
+
+Médico responsable:
+Dr. José Ángel Guerrero Rivera.
+NC 864173180.
+Especialista en Genética Médica.
+Instituto de Investigación Biomédica en Red de Enfermedades Raras. Avenida Monforte de Lemos 3-5. 28029. Madrid. España.

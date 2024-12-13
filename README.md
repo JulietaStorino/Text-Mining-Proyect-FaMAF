@@ -264,6 +264,7 @@ En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos 
 python tokenize_files.py --input_path data/ --output_path bio_files/
 ```
 En la carpeta *bio_files* se generarán 5 archivos.
+
 3. Crear la carpeta *split_files* y hacer las siguientes modificaciones en el archivo datasplits.py: 
 ``` python
 Línea 35:     from sklearn.cluster.k_means_ import _init_centroids -> from sklearn.cluster import KMeans
@@ -278,11 +279,13 @@ Línea 86:     input_ids = torch.stack(input_ids).long().cuda() -> input_ids = t
 Línea 124:    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path).to('cpu')
 ```
 En caso contrario, no modificar este archivo. 
+
 4. Una vez realizados estos cambios, ejecutar el comando:
 ``` bash
 python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
 ```
 En la carpeta *split_files* se generarán 7 archivos.
+
 5. Para entrenar el modelo sin hacer uso de un optimizador dentro de la función train() crear la carpeta *models* y modificar el código contenido desde la línea 139 hasta la 152 del archivo train_standard_model_architecture.py: 
 ``` python
 trainer = ModelTrainer(tagger, corpus)
@@ -304,6 +307,7 @@ trainer.train(
     train_with_dev=args.train_wth_dev
 )
 ```
+
 6. Ejecutar el comando:
 ``` bash
 python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
@@ -428,7 +432,7 @@ python evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 
 ### Conclusiones
 
-¿Cómo seguirían el proyecto de acá a un año y con 5 personas más? 
+Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año contando con un equipo de cinco empleados, podríamos optamizar varios aspectos. Entre ellos, sería fundamental obtener un dataset más extenso y representativo, lo cual permitiría que los resultados de los modelos fueran más precisos y fiables. Por otra parte, deberíamos mejorar los algoritmos utilizados, ya sea optimizando los actuales o explorando nuevas arquitecturas que se adapten mejor a la naturaleza de los datos. 
 
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.

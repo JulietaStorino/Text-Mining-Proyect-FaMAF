@@ -264,27 +264,26 @@ En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos 
 python tokenize_files.py --input_path data/ --output_path bio_files/
 ```
 En la carpeta *bio_files* se generarán 5 archivos.
-3. Crear la carpeta *split_files* y ejecutar el comando:
-``` bash
-python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
-```
-En caso de hacer uso de la cpu hacer los siguientes cambios en las líneas de código:
+3. Crear la carpeta *split_files* y hacer las siguientes modificaciones en el archivo datasplits.py: 
+``` python
+Línea 35:     from sklearn.cluster.k_means_ import _init_centroids -> from sklearn.cluster import KMeans
+Línea 448:        centroids = _init_centroids(X, n_clusters, init_kmeans, random_state=initializations[current_round]) -> centroids =  KMeans(X, n_clusters, init_kmeans, random_state=initializations[current_round])
+``` 
+Estos cambios se deben a cuestiones de compatibilidad ya que la versiones nuevas de Scikit-learn han dejado de utilizar la función _init_centroids para inicializar los centroides en algoritmos de clustering. 
+
+Por otro lado, en caso de hacer uso de la cpu hacer los siguientes cambios en el archivo create_data_splits.py en las líneas de código:
 ``` python
 Línea 79:     doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024).to('cpu')
 Línea 86:     input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long().to('cpu')
 Línea 124:    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path).to('cpu')
 ```
-4. Para entrenar el modelo, crear la carpeta *models* y ejecutar el comando:
+En caso contrario, no modificar este archivo. 
+4. Una vez realizados estos cambios, ejecutar el comando:
 ``` bash
-python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
+python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
 ```
-
-5. Actualizar el comando para ejecutar train_our_model_architecture.py:
-``` bash
-  python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models ->
-  python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name model_name --storage_path models
-```
-Modificar el código: 
+En la carpeta *split_files* se generarán 7 archivos.
+5. Para entrenar el modelo sin hacer uso de un optimizador dentro de la función train() crear la carpeta *models* y modificar el código contenido desde la línea 139 hasta la 152 del archivo train_standard_model_architecture.py: 
 ``` python
 trainer = ModelTrainer(tagger, corpus)
 
@@ -294,7 +293,6 @@ optimizer = torch.optim.AdamW(tagger.parameters(), lr=args.learning_rate)
 # Crear el scheduler
 scheduler = OneCycleLR(optimizer, max_lr=args.learning_rate, total_steps=len(corpus.train) // args.mini_batch_size * args.max_epochs)
 
-# Entrenamiento sin la necesidad de usar un optimizador dentro de train()
 trainer.train(
     args.storage_path + args.name,
     mini_batch_size=args.mini_batch_size,
@@ -306,6 +304,11 @@ trainer.train(
     train_with_dev=args.train_wth_dev
 )
 ```
+6. Ejecutar el comando:
+``` bash
+python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
+```
+En la carpeta *models/clin_x_experiment* se generarán 5 archivos.
 
 #### BiLSTM-CRF:
 1. Descargar e inicializar los repositorios de los modelos:

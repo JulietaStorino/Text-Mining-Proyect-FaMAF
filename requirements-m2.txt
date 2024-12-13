@@ -1,0 +1,9 @@
+tensorflow==1.14.0
+numpy
+scikit-learn
+spicy
+Cython
+spacy
+nltk
+matplotlib
+gast==0.2.2

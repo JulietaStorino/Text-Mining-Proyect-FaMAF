@@ -255,14 +255,16 @@ Siendo un total de 195 entidades en el conjunto de datos generado.
 ### Ejecución de los modelos
 
 En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos seleccionados al conjunto de datos, explicando las modificaciones necesarias y los ajustes realizados durante su implementación. Cada modelo tuvo sus desafíos por cuestiones de compatibilidad, diferencias en las versiones de las bibliotecas utilizadas y requerimientos particulares. A continuación, describimos los aspectos más relevantes de la ejecución y configuración de cada modelo:
+
 #### CLIN-X:
-1) Crear la carpeta *data* que contenga los archivos *.ann* y *.txt* (10 en total).
-2) Crear la carpeta *bio_files* y ejecutar el siguiente comando:
+
+1. Crear la carpeta *data* que contenga los archivos *.ann* y *.txt* (10 en total).
+2. Crear la carpeta *bio_files* y ejecutar el siguiente comando:
 ``` bash
 python tokenize_files.py --input_path data/ --output_path bio_files/
 ```
 En la carpeta *bio_files* se generarán 5 archivos.
-3) Crear la carpeta *split_files* y ejecutar el comando:
+3. Crear la carpeta *split_files* y ejecutar el comando:
 ``` bash
 python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
 ```
@@ -272,12 +274,12 @@ Línea 79:     doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024)
 Línea 86:     input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long().to('cpu')
 Línea 124:    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path).to('cpu')
 ```
-4) Para entrenar el modelo, crear la carpeta *models* y ejecutar el comando:
+4. Para entrenar el modelo, crear la carpeta *models* y ejecutar el comando:
 ``` bash
 python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
 ```
 
-5) Actualizar el comando para ejecutar train_our_model_architecture.py:
+5. Actualizar el comando para ejecutar train_our_model_architecture.py:
 ``` bash
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model xlm-roberta-large-spanish-clinical --name model_name --storage_path models ->
   python3 train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name model_name --storage_path models
@@ -306,6 +308,117 @@ trainer.train(
 ```
 
 #### BiLSTM-CRF:
+1. Descargar e inicializar los repositorios de los modelos:
+``` bash
+git clone --recurse-submodules "https://github.com/JulietaStorino/Text-Mining-Proyect-FaMAF.git"
+cd Text-Mining-Proyect-FaMAF/SPACCC_MEDDOCAN
+git clone "https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN.git" .
+```
+2. Descomprimir y reestructurar los datos de entrenamiento
+``` bash
+cd ../models/BiLSTM-CRF
+unzip data.zip
+mv data/train .
+mv data/dev .
+mkdir output
+mv data/test output
+```
+3. Crear el entorno virtual
+``` bash
+python -m venv .env
+source .env/bin/activate
+```
+4. Instalar las dependencias
+``` bash
+pip install -r requirements-m1.txt
+```
+
+5. Descargar pipeline en español optimizado para CPU
+``` bash
+python -m spacy download es_core_news_sm
+```
+6. Reemplaza todas las instancias de spacy.load('es') por spacy.load('es_core_news_sm')
+``` bash
+cd code
+sed -i "s/spacy.load('es')/spacy.load('es_core_news_sm')/g" preprocessing.py
+```
+7. Descargar los recursos necesarios
+``` bash
+python
+```
+``` python
+import nltk
+nltk.download('cess_esp')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('punkt_tab')
+quit()
+```
+8. Preprocesar los datos
+``` bash
+python preprocessing.py --dataDir ../train/gold --train
+python preprocessing.py --dataDir ../dev/gold --dev
+python preprocessing.py --dataDir ../test/gold --test
+```
+9. Descarga el embedding de palabras necesario
+``` bash
+cd Extension2
+wget -O wiki.es.vec https://dl.fbaipublicfiles.com/fasttext/vectors-wiki/wiki.es.vec
+```
+10. Genera los archivos necesarios por el modelo neuronal
+``` bash
+python create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
+```
+11. Crear directorios para guardar el modelo y los confusion plots
+``` bash
+mkdir models
+mkdir plots
+cd Code
+```
+12. Actualizar la notación para la nueva versión de tensorflow
+``` bash
+tf_upgrade_v2 --infile model.py --outfile model.py --reportfile report.txt
+```
+13. Correr el modelo
+``` bash
+python train.py
+```
+14. Evaluar el modelo con los datos del MEDDOCAN
+``` bash
+python evaluate.py brat ner ../train/gold ../train/system
+python evaluate.py brat ner ../dev/gold ../dev/system
+python evaluate.py brat ner ../output/test/gold ../output/test/system
+```
+15. Preprocesar los datos nuevos
+``` bash
+python preprocessing.py --dataDir ../train/gold --train
+python preprocessing.py --dataDir ../dev/gold --dev
+python preprocessing.py --dataDir ../../../data/brat/gold --test
+```
+16. Genera los archivos necesarios por el modelo neuronal
+``` bash
+cd Extension2
+python create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
+```
+17. Modificar el código con la ubicación de los nuevos modelos
+``` bash
+cd Code
+sed -i 's|\.\./\.\./\.\./output/test/system/|\.\./\.\./\.\./\.\./\.\./data/brat/system/|g' train.py
+```
+18. Correr el modelo
+``` bash
+python train.py
+```
+19. Evaluar los datos nuevos
+``` bash
+cd ../..
+python evaluate.py brat ner ../train/gold ../train/system
+python evaluate.py brat ner ../dev/gold ../dev/system
+python evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
+```
+
 #### NeuroNer:
   
 ### Comparación y análisis de los resultados

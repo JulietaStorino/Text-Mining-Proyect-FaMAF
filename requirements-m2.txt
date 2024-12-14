@@ -1,8 +1,9 @@
 tensorflow==1.14.0
 numpy
+sklearn
 scikit-learn
-spicy
-Cython
+scipy
+cython
 spacy
 nltk
 matplotlib

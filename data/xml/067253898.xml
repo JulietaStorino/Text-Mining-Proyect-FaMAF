@@ -71,7 +71,7 @@ Instituto de Investigación Biomédica en Red de Enfermedades Raras. Avenida Mon
         <CONTACT id="T13" start="269" end="298" text="juanfranciscohernandez@uca.es" TYPE="CORREO_ELECTRONICO" comment=""/>
         <ID id="T14" start="305" end="312" text="9008603" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
         <ID id="T15" start="320" end="332" text="425531623752" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <ID id="T16" start="351" end="361" text="6675927873" TYPE="NUMERO_IDENTIF" comment=""/>
+        <ID id="T16" start="351" end="361" text="6675927873" TYPE="OTRO_NUMERO_IDENTIF" comment=""/>
         <DATE id="T17" start="382" end="392" text="20/01/1968" TYPE="FECHAS" comment=""/>
         <ID id="T18" start="404" end="412" text="67927873" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
         <LOCATION id="T19" start="414" end="436" text="HU Central de Asturias" TYPE="CENTRO_DE_SALUD" comment=""/>
@@ -88,9 +88,9 @@ Instituto de Investigación Biomédica en Red de Enfermedades Raras. Avenida Mon
         <DATE id="T30" start="1514" end="1532" text="martes 25 de junio" TYPE="FECHAS" comment=""/>
         <NAME id="T31" start="1641" end="1667" text="José Ángel Guerrero Rivera" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
         <ID id="T32" start="1669" end="1700" text="especialista en genética médica" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>
-        <OTHER id="T33" start="2333" end="2367" text="http://HUCA.com/pacientes/35610179K" comment=""/>
-        <ID id="T34" start="3547" end="3558" text="RG545EMR302" comment=""/>
-        <ID id="T35" start="3649" end="3660" text="IK326OYO089" comment=""/>
+        <OTHER id="T33" start="2333" end="2367" text="http://HUCA.com/pacientes/35610179K" TYPE="DIREC_PROT_INTERNET" comment=""/>
+        <ID id="T34" start="3547" end="3558" text="RG545EMR302" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
+        <ID id="T35" start="3649" end="3660" text="IK326OYO089" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
         <NAME id="T36" start="3687" end="3713" text="José Ángel Guerrero Rivera" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>
         <ID id="T37" start="3718" end="3727" text="864173180" TYPE="ID_TITULACION_PERSONAL_SANITARIO" comment=""/>
         <ID id="T38" start="3729" end="3760" text="Especialista en Genética Médica" TYPE="ID_EMPLEO_PERSONAL_SANITARIO" comment=""/>

@@ -70,17 +70,17 @@ Avenida Monforte de Lemos 3-5, 28029, Madrid, España.]]></TEXT>
         <CONTACT id="T14" start="278" end="294" text="JDD928@gmail.com" TYPE="CORREO_ELECTRONICO" comment=""/>
         <ID id="T15" start="301" end="308" text="6603161" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
         <ID id="T16" start="316" end="328" text="301918965027" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <ID id="T17" start="347" end="357" text="2294739275" TYPE="NUMERO_IDENTIF" comment=""/>
+        <ID id="T17" start="347" end="357" text="2294739275" TYPE="OTRO_NUMERO_IDENTIF" comment=""/>
         <DATE id="T18" start="378" end="388" text="19/02/2005" TYPE="FECHAS" comment=""/>
         <ID id="T19" start="400" end="408" text="37124654" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
-        <LOCATION id="T20" start="410" end="431" text="Centro de Salud Ronda" TYPE="CENTRO_DE_SALUD" comment=""/>
+        <LOCATION id="T20" start="410" end="431" text="Centro de Salud Ronda" TYPE="CENTRO_SALUD" comment=""/>
         <OTHER id="T21" start="515" end="547" text="smtp:/JDRiveraAlonso-biotech.com" TYPE="DIREC_PROT_INTERNET" comment=""/>
         <ID id="T22" start="561" end="575" text="240.184.242.2" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
         <ID id="T23" start="581" end="603" text="53051691EC98" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
         <OTHER id="T24" start="638" end="646" text="musluman" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
         <AGE id="T25" start="650" end="657" text="73 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
-        <OTHER id="T26" start="672" end="677" text="Eibar" TYPE="TERRITORIO" comment=""/>
-        <URL id="T27" start="2290" end="2314" text="CSRcom/pacientes/6603161" TYPE="URL_WEB" comment=""/>
+        <LOCATION id="T26" start="672" end="677" text="Eibar" TYPE="TERRITORIO" comment=""/>
+        <CONTACT id="T27" start="2290" end="2314" text="CSRcom/pacientes/6603161" TYPE="URL_WEB" comment=""/>
         <ID id="T28" start="3584" end="3595" text="RG545EMR302" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
         <ID id="T29" start="3686" end="3697" text="IK326OYO089" TYPE="IDENTIF_BIOMETRICOS" comment=""/>
         <NAME id="T30" start="3725" end="3747" text="Claudia Alarcon Miguel" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>

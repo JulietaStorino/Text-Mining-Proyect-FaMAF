@@ -83,7 +83,7 @@ Residente de 4° año en Medicina Interna - CIBERINFEC.]]></TEXT>
         <NAME id="T30" start="1102" end="1107" text="Ángel" TYPE="NOMBRE_SUJETO_ASISTENCIA" comment=""/>
         <ID id="T31" start="1162" end="1169" text="4568YHC" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
         <ID id="T32" start="1172" end="1189" text="VSWR5JB6JJZ468572" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
-        <OTHER id="T33" start="1994" end="2022" text="HGURS.com/pacientes/97779607" TYPE="URL_WEB" comment=""/>
+        <CONTACT id="T33" start="1994" end="2022" text="HGURS.com/pacientes/97779607" TYPE="URL_WEB" comment=""/>
         <OTHER id="T34" start="2685" end="2690" text="madre" TYPE="FAMILIARES_SUJETO_ASISTENCIA" comment=""/>
         <OTHER id="T35" start="2852" end="2856" text="niño" TYPE="SEXO_SUJETO_ASISTENCIA" comment=""/>
         <ID id="T36" start="3028" end="3039" text="RG545EMR302" TYPE="IDENTIF_BIOMETRICOS" comment=""/>

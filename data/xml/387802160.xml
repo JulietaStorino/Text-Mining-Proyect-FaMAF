@@ -69,7 +69,7 @@ Investigadora Clínica en Insuficiencia Cardíaca, CIBERCV]]></TEXT>
         <CONTACT id="T12" start="277" end="301" text="infanta_lucia@icloud.com" TYPE="CORREO_ELECTRONICO" comment=""/>
         <ID id="T13" start="307" end="314" text="9621479" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
         <ID id="T14" start="321" end="333" text="860055435104" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <ID id="T15" start="351" end="361" text="6156349372" TYPE="NUMERO_IDENTIF" comment=""/>
+        <ID id="T15" start="351" end="361" text="6156349372" TYPE="OTRO_NUMERO_IDENTIF" comment=""/>
         <DATE id="T16" start="381" end="390" text="09/d/2024" TYPE="FECHAS" comment=""/>
         <LOCATION id="T17" start="391" end="435" text="Hospital Universitario Fundació Jiménez Díaz" TYPE="HOSPITAL" comment=""/>
         <OTHER id="T18" start="518" end="554" text="smtp:/LSCNBarbadosYOrtega-biotechcom" TYPE="DIREC_PROT_INTERNET" comment=""/>

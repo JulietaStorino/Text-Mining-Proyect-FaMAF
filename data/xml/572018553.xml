@@ -78,10 +78,10 @@ Avenida de Córdoba, s/n. 28041. Madrid, España]]></TEXT>
         <CONTACT id="T14" start="267" end="302" text="agustin.pachecodelafuente@gmail.com" TYPE="CORREO_ELECTRONICO" comment=""/>
         <ID id="T15" start="308" end="315" text="0442773" TYPE="ID_SUJETO_ASISTENCIA" comment=""/>
         <ID id="T16" start="322" end="334" text="879949958005" TYPE="ID_ASEGURAMIENTO" comment=""/>
-        <ID id="T17" start="352" end="362" text="5381037568" TYPE="NUMERO_IDENTIF" comment=""/>
+        <ID id="T17" start="352" end="362" text="5381037568" TYPE="OTRO_NUMERO_IDENTIF" comment=""/>
         <DATE id="T18" start="382" end="392" text="05/05/2015" TYPE="FECHAS" comment=""/>
         <ID id="T19" start="403" end="411" text="07744605" TYPE="ID_CONTACTO_ASISTENCIAL" comment=""/>
-        <LOCATION id="T20" start="412" end="433" text="Centro de Salud Ronda" TYPE="CENTRO_DE_SALUD" comment=""/>
+        <LOCATION id="T20" start="412" end="433" text="Centro de Salud Ronda" TYPE="CENTRO_SALUD" comment=""/>
         <OTHER id="T21" start="516" end="539" text="smtp://APDeLaFuente.com" TYPE="DIREC_PROT_INTERNET" comment=""/>
         <OTHER id="T22" start="577" end="606" text="ascendencia del Medio Oriente" TYPE="OTROS_SUJETO_ASISTENCIA" comment=""/>
         <AGE id="T23" start="610" end="617" text="46 años" TYPE="EDAD_SUJETO_ASISTENCIA" comment=""/>
@@ -89,7 +89,7 @@ Avenida de Córdoba, s/n. 28041. Madrid, España]]></TEXT>
         <DATE id="T25" start="923" end="944" text="15 de octubre de 2024" TYPE="FECHAS" comment=""/>
         <ID id="T26" start="988" end="995" text="1706QBG" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
         <ID id="T27" start="1002" end="1019" text="VSWI678JFGM564342" TYPE="IDENTIF_VEHICULOS_NRSERIE_PLACAS" comment=""/>
-        <URL id="T28" start="2409" end="2433" text="CSR.com/patients/0442773" TYPE="URL_WEB" comment=""/>
+        <CONTACT id="T28" start="2409" end="2433" text="CSR.com/patients/0442773" TYPE="URL_WEB" comment=""/>
         <ID id="T29" start="2437" end="2451" text="236.125.29.228" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
         <ID id="T30" start="2456" end="2471" text="4E9.D1A.F22.3D0" TYPE="IDENTIF_DISPOSITIVOS_NRSERIE" comment=""/>
         <NAME id="T31" start="3901" end="3921" text="Adrián Ruiz Santiago" TYPE="NOMBRE_PERSONAL_SANITARIO" comment=""/>

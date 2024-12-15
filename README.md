@@ -1,7 +1,7 @@
-# Trabajo de presentación para el curso: "Minería de Datos para Textos" (Text Mining)
+# Trabajo de presentación para el curso "Minería de Datos para Textos" (Text Mining)
 ## Impacto de la Dependencia de Datos en Modelos de Fine-Tuning para la anonimización de textos de ciencias de la vida
-**Profesores**: Laura Alonso Alemany, Matias Eduardo Bordone Carranza, Milagro Teruel  
-**Alumnos**: Brunello Florencia, Storino Julieta Paola, Troiano Santiago.
+**Profesores**: Alemany Laura Alonso, Bordone Carranza Matias Eduardo, Teruel Milagro
+**Alumnos**: Brunello Florencia, Storino Julieta Paola, Troiano Santiago
 
 ### Índice
 1. [Introducción](#introducción)
@@ -17,8 +17,7 @@
 
 ### Introducción
 
-El texto (lenguaje natural) es el camino más natural para codificar el conocimiento humano. Como resultado, la mayor parte del conocimiento humano se codifica en forma de datos de texto. Por ejemplo, el conocimiento científico existe casi exclusivamente en la literatura científica, mientras que los manuales técnicos contienen explicaciones detalladas sobre cómo operar los dispositivos.
-El texto es, con diferencia, el tipo de información más común con el que se encuentran las personas. De hecho, la mayor parte de la información que una persona produce y consume a diario está en forma de texto. [ChengXiang Zhai & Sean Masung 2016] 
+El texto (lenguaje natural) es el camino más natural para codificar el conocimiento humano. Como resultado, la mayor parte del conocimiento humano se codifica en forma de datos de texto. Por ejemplo, el conocimiento científico existe casi exclusivamente en la literatura científica, mientras que los manuales técnicos contienen explicaciones detalladas sobre cómo operar los dispositivos. El texto es, con diferencia, el tipo de información más común con el que se encuentran las personas. De hecho, la mayor parte de la información que una persona produce y consume a diario está en forma de texto. [ChengXiang Zhai & Sean Masung 2016] 
 
 ### Motivación
 
@@ -29,13 +28,15 @@ Esto plantea retos en cuanto a la protección de la privacidad de los datos de l
 ### Objetivos
 
 El presente informe tiene como objetivo principal comparar la dependencia de datos presente en diferentes aproximaciones para la anonimización de textos médicos en español. Para ello, se establecen los siguientes objetivos específicos:
-- **Evaluar el rendimiento de modelos ya existentes**: los datos usados para el desarrollo, entrenamiento y validación de los modelos de anonimización de textos médicos en español, provienen de una fuente específica, desarrollados por un equipo en particular, con una estructura y contenido bien definidos, lo que puede afectar su rendimiento en contextos diferentes de la vida real, porque un problema común en el aprendizaje automático es que los modelos no generalizan bien a datos que no han visto antes (overfitting). Por ello, buscamos conocer su verdadera eficacia en la tarea de anonimización de textos, donde la notación de textos médicos pueden variar en su estructura y contenido, analizando la eficacia de los modelos seleccionados, con datos que no fueron utilizados en su entrenamiento y creados a partir de diferentes fuentes.
-- **Comparar el rendimiento de los modelos**: buscaremos determinar en qué aspectos los modelos se destacan o presentan deficiencias al realizar la tarea de anonimización en distintos conjuntos de datos.
+- **Evaluar el rendimiento de modelos ya existentes**: los datos usados para el desarrollo, entrenamiento y validación de los modelos de anonimización de textos médicos en español provienen de una fuente específica, desarrollados por un equipo en particular, con una estructura y contenido bien definidos, lo que puede afectar su rendimiento en contextos diferentes de la vida real, porque un problema común en el aprendizaje automático es que los modelos no generalizan bien a datos que no han visto antes (overfitting). Por ello, buscamos conocer su verdadera eficacia en la tarea de anonimización de textos, donde la notación de textos médicos pueden variar en su estructura y contenido, analizando la eficacia de los modelos seleccionados con datos que no fueron utilizados en su entrenamiento.
+- **Comparar el rendimiento de los modelos**: buscaremos determinar en qué aspectos los modelos se destacan o presentan deficiencias al realizar la tarea de anonimización en el conjunto de datos.
 - **Fomentar la colaboración interdisciplinaria**: el trabajo será en parte guiado por las críticas de nuestros compañeros, por lo que habrá un intercambio de conocimientos dado por la colaboración entre los diferentes equipos.
 
 ### Trabajos anteriores
 
-Este trabajo se centra en la campaña “Medical Document Anonymization (MEDDOCAN)” desarrollado por el Plan de Impulso de las tecnologías del Lenguaje del Gobierno de España. En el marco de esta campaña, se creó un corpus sintético de 1000 registros clínicos con información de salud protegida (PHI, por sus siglas en inglés), denominado [Corpus MEDDOCAN](./SPACCC_MEDDOCAN/corpus/). Este corpus se distribuyó en texto plano con codificación UTF-8, donde cada caso clínico se almacena como un único archivo de texto y las anotaciones PHI se publican en formato BRAT e i2b2 para su visualización y evaluación.
+#### Campaña “Medical Document Anonymization" - MEDDOCAN
+
+Este trabajo se centra en la campaña “Medical Document Anonymization (MEDDOCAN)” desarrollado por el Plan de Impulso de las tecnologías del Lenguaje del Gobierno de España. En el marco de esta campaña, se creó un corpus sintético de 1000 registros clínicos con información de salud protegida (PHI, por sus siglas en inglés), denominado [Corpus MEDDOCAN](./SPACCC_MEDDOCAN/corpus/). Este corpus se distribuyó en texto plano con codificación UTF-8, donde cada caso clínico se almacena como un único archivo de texto y las anotaciones PHI se publican en formato BRAT e i2b2 para su visualización y evaluación. A continuación mostramos un ejemplo de un texto médico del corpus MEDDOCAN y su correspodiente notación de entidades en formato BRAT e i2b2: 
 
 ```plaintext
 Datos del paciente.
@@ -145,6 +146,8 @@ Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
   <figcaption> Figura 1: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en i2b2 (.xml) </figcaption>
 </div>
 
+#### Distribución de las entidades en el conjunto de datos
+
 Para llevar a cabo la anotación manual, se construyeron las primeras [pautas públicas para PHI en español](./SPACCC_MEDDOCAN/guidelines/guías-de-anotación-de-información-de-salud-protegida.pdf), a manera de proporcionar un conjunto claro y conciso de reglas y directrices para la identificación y clasificación de información sensible dentro de los historiales clínicos en español, asegurando la coherencia y la precisión en la anotación de PHI en todo el corpus MEDDOCAN. La guía se basó en la especificaciones del Reglamento General de Protección de Datos (GDPR) de la Unión Europea para garantizar que el corpus anotado cumpliera con las normas de privacidad de datos. Se consideraron las directrices de anotación de los proyectos de desidentificación i2b2, basados en la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA) de los Estados Unidos. Esto permitió la adaptación de sistemas y enfoques utilizados para textos en inglés al contexto del español. Las pautas de anotación de MEDDOCAN definieron un total de 29 tipos de entidades. La Tabla 1 resume la lista de tipos de entidades sensibles definidos para el seguimiento de MEDDOCAN y la cantidad de ocurrencias entre los conjuntos de entrenamiento, desarrollo y prueba.
 
 <div align="center">
@@ -187,13 +190,15 @@ Para llevar a cabo la anotación manual, se construyeron las primeras [pautas p�
   <figcaption>Tabla 1: Distribución del tipo de entidad entre los conjuntos de datos.</figcaption>
 </div>
 
+#### Evaluación de los modelos 
+
 Durante el proyecto se desarrollaron diversos modelos entrenados con 500 casos clínicos del corpus, seleccionados aleatoriamente, siendo los casos restantes utilizados para desarrollo y prueba. Para evaluar el rendimiento de los sistemas de desidentificación, el proyecto definió dos subtareas o categorías principales que constribuyeron al objetivo general del proyecto:
 
-1. *NER offset and entity type classification*: Reconocimiento de entidades nombradas, posición y clasificación del tipo de entidad. Esta subtarea se centró en la identificación y clasificación precisa de la información sensible dentro de los textos médicos. Los sistemas participantes debían identificar las entidades de PHI, como nombres de pacientes, teléfonos, direcciones, etc., y clasificarlas correctamente según su tipo específico (NOMBRE_SUJETO_ASISTENCIA, ID ASEGURAMIENTO, ...).
+1. NER offset and entity type classification: reconocimiento de entidades nombradas, posición y clasificación del tipo de entidad. Esta subtarea se centró en la identificación y clasificación precisa de la información sensible dentro de los textos médicos. Los sistemas participantes debían identificar las entidades de PHI, como nombres de pacientes, teléfonos, direcciones, etc., y clasificarlas correctamente según su tipo específico (NOMBRE_SUJETO_ASISTENCIA, ID ASEGURAMIENTO, ...).
 
-2. *Sensitive span detection*: Detección de segmento sensible. Esta subtarea se enfocó en la detección general de tramos de texto sensibles, sin necesidad de clasificarlos por tipo. El objetivo principal era identificar y enmascarar los datos confidenciales para su divulgación segura. La subtarea 2 se dividió en dos escenarios, que reflejan diferentes niveles de granularidad en la identificación:
-    * *Sensitive token detection with strict spans:*  Detección de tokens sensibles con tramos estrictos. Los sistemas debían identificar los tramos de texto sensibles con precisión, sin fusionar tramos adyacentes.
-    * *Sensitive token detection with merged spans:* Detección de tokens sensibles con tramos fusionados. Se permitía la fusión de tramos de PHI conectados por caracteres no alfanuméricos, lo que refleja un escenario más práctico de desidentificación. 
+2. Sensitive span detection: detección de segmento sensible. Esta subtarea se enfocó en la detección general de tramos de texto sensibles, sin necesidad de clasificarlos por tipo. El objetivo principal era identificar y enmascarar los datos confidenciales para su divulgación segura. La subtarea 2 se dividió en dos escenarios, que reflejan diferentes niveles de granularidad en la identificación:
+    * Sensitive token detection with strict spans:  Detección de tokens sensibles con tramos estrictos. Los sistemas debían identificar los tramos de texto sensibles con precisión, sin fusionar tramos adyacentes.
+    * Sensitive token detection with merged spans: Detección de tokens sensibles con tramos fusionados. Se permitía la fusión de tramos de PHI conectados por caracteres no alfanuméricos, lo que refleja un escenario más práctico de desidentificación. 
 
 Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en un formato predefinido (BRAT o i2b2). La evaluación se basó en la precisión, la exhaustividad y la puntuación F1, junto con las puntuaciones de fuga para medir la cantidad de información sensible que no se identificó.
 

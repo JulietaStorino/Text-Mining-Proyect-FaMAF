@@ -337,7 +337,7 @@ source .env/bin/activate
 ```
 4. Instalar las dependencias
 ``` bash
-pip install -r requirements-m1.txt
+pip install -r ../../requirements-m2.txt
 ```
 
 5. Descargar pipeline en español optimizado para CPU
@@ -351,17 +351,7 @@ sed -i "s/spacy.load('es')/spacy.load('es_core_news_sm')/g" preprocessing.py
 ```
 7. Descargar los recursos necesarios
 ``` bash
-python
-```
-``` python
-import nltk
-nltk.download('cess_esp')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('averaged_perceptron_tagger_eng')
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('punkt_tab')
-quit()
+python requirements-m2.py
 ```
 8. Preprocesar los datos
 ``` bash
@@ -384,46 +374,68 @@ mkdir models
 mkdir plots
 cd Code
 ```
-12. Actualizar la notación para la nueva versión de tensorflow
-``` bash
-tf_upgrade_v2 --infile model.py --outfile model.py --reportfile report.txt
-```
-13. Correr el modelo
+12. Correr el modelo
 ``` bash
 python train.py
 ```
-14. Evaluar el modelo con los datos del MEDDOCAN
+13. Evaluar el modelo con los datos del MEDDOCAN
 ``` bash
-python evaluate.py brat ner ../train/gold ../train/system
-python evaluate.py brat ner ../dev/gold ../dev/system
+cd ../..
 python evaluate.py brat ner ../output/test/gold ../output/test/system
 ```
-15. Preprocesar los datos nuevos
+14. Preprocesar los datos nuevos
 ``` bash
-python preprocessing.py --dataDir ../train/gold --train
-python preprocessing.py --dataDir ../dev/gold --dev
 python preprocessing.py --dataDir ../../../data/brat/gold --test
 ```
-16. Genera los archivos necesarios por el modelo neuronal
+15. Genera los archivos necesarios por el modelo neuronal
 ``` bash
 cd Extension2
 python create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
 ```
-17. Modificar el código con la ubicación de los nuevos modelos
+16. Modificar el código con la ubicación de los nuevos modelos
 ``` bash
 cd Code
 sed -i 's|\.\./\.\./\.\./output/test/system/|\.\./\.\./\.\./\.\./\.\./data/brat/system/|g' train.py
 ```
-18. Correr el modelo
+17. Correr el modelo
 ``` bash
 python train.py
 ```
-19. Evaluar los datos nuevos
+18. Evaluar los datos nuevos
 ``` bash
 cd ../..
-python evaluate.py brat ner ../train/gold ../train/system
-python evaluate.py brat ner ../dev/gold ../dev/system
 python evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
+```
+
+#### NeuroNer:
+  
+### Comparación y análisis de los resultados
+
+#### CLIN-X:
+
+#### BiLSTM-CRF:
+``` bash
+(.env) [jstorino@mendieta code]$ python evaluate.py brat ner ../output/test/gold ../output/test/system
+                                                                      
+Report (SYSTEM: system):
+------------------------------------------------------------
+SubTrack 1 [NER]                   Measure        Micro               
+------------------------------------------------------------
+Total (156 docs)                   Precision      0.8918              
+                                   Recall         0.8337              
+                                   F1             0.8618              
+------------------------------------------------------------
+
+(.env) [jstorino@mendieta code]$ python evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
+                                                                      
+Report (SYSTEM: system):
+------------------------------------------------------------
+SubTrack 1 [NER]                   Measure        Micro               
+------------------------------------------------------------
+Total (5 docs)                     Precision      0.3871              
+                                   Recall         0.3077              
+                                   F1             0.3429              
+------------------------------------------------------------
 ```
 
 #### NeuroNer:

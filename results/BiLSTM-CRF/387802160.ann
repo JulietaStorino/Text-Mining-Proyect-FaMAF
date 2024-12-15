@@ -1,0 +1,25 @@
+T1	NOMBRE_SUJETO_ASISTENCIA 28 80	Infanta Lucía de la Santa Concepción Barbados Ortega
+T2	ID_CONTACTO_ASISTENCIAL 86 95	71289595Z
+T3	FECHAS 117 127	06/05/2023
+T4	FECHAS 129 144	1 año y 7 meses
+T5	NOMBRE_PERSONAL_SANITARIO 154 158	Nena
+T6	CALLE 170 189	Avda Aragó, 271, 22
+T7	TERRITORIO 191 196	08007
+T8	TERRITORIO 198 207	Barcelona
+T9	PAIS 209 215	España
+T10	CORREO_ELECTRONICO 277 301	infanta_lucia@icloud.com
+T11	ID_SUJETO_ASISTENCIA 307 314	9621479
+T12	ID_ASEGURAMIENTO 321 333	860055435104
+T13	ID_CONTACTO_ASISTENCIAL 351 361	6156349372
+T14	FECHAS 381 390	09/d/2024
+T15	HOSPITAL 391 505	Hospital Universitario Fundació Jiménez Díaz
+T16	CALLE 556 595	ip 239.93.12.215, mac 47 F9 A3 32 AB 41
+T17	ID_SUJETO_ASISTENCIA 633 643	tez blanca
+T18	FECHAS 656 664	san juan
+T19	FECHAS 670 685	1 año y 7 meses
+T20	FAMILIARES_SUJETO_ASISTENCIA 845 2924	madre tras presentar síntomas de dificultad para alimentarse, fatiga durante la actividad mínima y coloración pálida, especialmente notable en la región peribucal. Además, se notó un leve abombamiento abdominal y una aparente aceleración del ritmo respiratorio en reposo, lo que motivó la derivación al servicio de insuficiencia cardíaca para evaluación especializada.
+T21	ID_SUJETO_ASISTENCIA 2926 3076	el código obtenido para revisarla es RG545EMR302.
+T22	NOMBRE_PERSONAL_SANITARIO 3104 3126	Rosario Silva Espinosa
+T23	FECHAS 3130 3149	Colegiado 225341074
+T24	ID_CONTACTO_ASISTENCIAL 3162 3169	o423492
+T25	EDAD_SUJETO_ASISTENCIA 3219 3226	CIBERCV

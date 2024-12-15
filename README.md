@@ -256,37 +256,39 @@ Siendo un total de 195 entidades en el conjunto de datos generado.
 
 En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos seleccionados al conjunto de datos, explicando las modificaciones necesarias y los ajustes realizados durante su implementación. Cada modelo tuvo sus desafíos por cuestiones de compatibilidad, diferencias en las versiones de las bibliotecas utilizadas y requerimientos particulares. A continuación, describimos los aspectos más relevantes de la ejecución y configuración de cada modelo:
 
-#### CLIN-X:
-
-1. Crear la carpeta *data* que contenga los archivos *.ann* y *.txt* (10 en total).
-2. Crear la carpeta *bio_files* y ejecutar el siguiente comando:
+1. Descargar e inicializar los repositorios de los modelos:
 ``` bash
-python tokenize_files.py --input_path data/ --output_path bio_files/
+git clone --recurse-submodules "https://github.com/JulietaStorino/Text-Mining-Proyect-FaMAF.git"
+cd Text-Mining-Proyect-FaMAF/SPACCC_MEDDOCAN
+git clone "https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN.git" .
+cd ..
 ```
-En la carpeta *bio_files* se generarán 5 archivos.
 
-3. Crear la carpeta *split_files* y hacer las siguientes modificaciones en el archivo datasplits.py: 
-``` python
-Línea 35:     from sklearn.cluster.k_means_ import _init_centroids -> from sklearn.cluster import KMeans
-Línea 448:    centroids = _init_centroids(X, n_clusters, init_kmeans, random_state=initializations[current_round]) -> centroids =  KMeans(X, n_clusters, init_kmeans, random_state=initializations[current_round])
-``` 
-Estos cambios se deben a cuestiones de compatibilidad ya que la versiones nuevas de Scikit-learn han dejado de utilizar la función _init_centroids para inicializar los centroides en algoritmos de clustering. 
-
-Por otro lado, en caso de hacer uso de la cpu hacer los siguientes cambios en el archivo create_data_splits.py en las líneas de código:
-``` python
-Línea 79:     doc_vec = torch.zeros(1024).cuda() -> doc_vec = torch.zeros(1024).to('cpu')
-Línea 86:     input_ids = torch.stack(input_ids).long().cuda() -> input_ids = torch.stack(input_ids).long().to('cpu')
-Línea 124:    model = AutoModel.from_pretrained(args.model_path).cuda() -> model = AutoModel.from_pretrained(args.model_path).to('cpu')
+#### CLIN-X:
+2. Crear el entorno virtual
+``` bash
+cd models/CLIN-X
+conda create -n clin-x python==3.8.5
+conda activate clin-x
 ```
-En caso contrario, no modificar este archivo. 
-
-4. Una vez realizados estos cambios, ejecutar el comando:
+3. Instalar las dependencias
+``` bash
+pip3 install -r ../../requirements-m1.txt
+```
+4. Crear las carpetas *bio_files* y *split_files*
+``` bash
+mkdir bio_files
+mkdir split_files
+```
+5. En caso de no tener una GPU disponible, modificar el archivo *create_data_splits.py*
+``` bash
+sed -i 's/.cuda()/.to("cpu")/g' create_data_splits.py
+```
+6. Tokenizar los archivos de texto médico en español
 ``` bash
 python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
 ```
-En la carpeta *split_files* se generarán 7 archivos.
-
-5. Para entrenar el modelo sin hacer uso de un optimizador dentro de la función train() crear la carpeta *models* y modificar el código contenido desde la línea 139 hasta la 152 del archivo train_standard_model_architecture.py: 
+7. Para entrenar el modelo sin hacer uso de un optimizador dentro de la función train() crear la carpeta *models* y modificar el código contenido desde la línea 139 hasta la 152 del archivo train_standard_model_architecture.py: 
 ``` python
 trainer = ModelTrainer(tagger, corpus)
 
@@ -307,23 +309,16 @@ trainer.train(
     train_with_dev=args.train_wth_dev
 )
 ```
-
-6. Ejecutar el comando:
+8. Ejecutar el comando:
 ``` bash
 python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
 ```
 En la carpeta *models/clin_x_experiment* se generarán 5 archivos.
 
 #### BiLSTM-CRF:
-1. Descargar e inicializar los repositorios de los modelos:
-``` bash
-git clone --recurse-submodules "https://github.com/JulietaStorino/Text-Mining-Proyect-FaMAF.git"
-cd Text-Mining-Proyect-FaMAF/SPACCC_MEDDOCAN
-git clone "https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN.git" .
-```
 2. Descomprimir y reestructurar los datos de entrenamiento
 ``` bash
-cd ../models/BiLSTM-CRF
+cd models/BiLSTM-CRF
 unzip data.zip
 mv data/train .
 mv data/dev .
@@ -332,17 +327,17 @@ mv data/test output
 ```
 3. Crear el entorno virtual
 ``` bash
-python -m venv .env
+python3 -m venv .env
 source .env/bin/activate
 ```
 4. Instalar las dependencias
 ``` bash
-pip install -r ../../requirements-m2.txt
+pip3 install -r ../../requirements-m2.txt
 ```
 
 5. Descargar pipeline en español optimizado para CPU
 ``` bash
-python -m spacy download es_core_news_sm
+python3 -m spacy download es_core_news_sm
 ```
 6. Reemplaza todas las instancias de spacy.load('es') por spacy.load('es_core_news_sm')
 ``` bash
@@ -351,13 +346,13 @@ sed -i "s/spacy.load('es')/spacy.load('es_core_news_sm')/g" preprocessing.py
 ```
 7. Descargar los recursos necesarios
 ``` bash
-python requirements-m2.py
+python3 requirements-m2.py
 ```
 8. Preprocesar los datos
 ``` bash
-python preprocessing.py --dataDir ../train/gold --train
-python preprocessing.py --dataDir ../dev/gold --dev
-python preprocessing.py --dataDir ../test/gold --test
+python3 preprocessing.py --dataDir ../train/gold --train
+python3 preprocessing.py --dataDir ../dev/gold --dev
+python3 preprocessing.py --dataDir ../test/gold --test
 ```
 9. Descarga el embedding de palabras necesario
 ``` bash
@@ -366,7 +361,7 @@ wget -O wiki.es.vec https://dl.fbaipublicfiles.com/fasttext/vectors-wiki/wiki.es
 ```
 10. Genera los archivos necesarios por el modelo neuronal
 ``` bash
-python create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
+python3 create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
 ```
 11. Crear directorios para guardar el modelo y los confusion plots
 ``` bash
@@ -376,21 +371,21 @@ cd Code
 ```
 12. Correr el modelo
 ``` bash
-python train.py
+python3 train.py
 ```
 13. Evaluar el modelo con los datos del MEDDOCAN
 ``` bash
 cd ../..
-python evaluate.py brat ner ../output/test/gold ../output/test/system
+python3 evaluate.py brat ner ../output/test/gold ../output/test/system
 ```
 14. Preprocesar los datos nuevos
 ``` bash
-python preprocessing.py --dataDir ../../../data/brat/gold --test
+python3 preprocessing.py --dataDir ../../../data/brat/gold --test
 ```
 15. Genera los archivos necesarios por el modelo neuronal
 ``` bash
 cd Extension2
-python create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
+python3 create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
 ```
 16. Modificar el código con la ubicación de los nuevos modelos
 ``` bash
@@ -399,12 +394,12 @@ sed -i 's|\.\./\.\./\.\./output/test/system/|\.\./\.\./\.\./\.\./\.\./data/brat/
 ```
 17. Correr el modelo
 ``` bash
-python train.py
+python3 train.py
 ```
 18. Evaluar los datos nuevos
 ``` bash
 cd ../..
-python evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
+python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 ```
 
 #### NeuroNer:
@@ -415,7 +410,7 @@ python evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 
 #### BiLSTM-CRF:
 ``` bash
-(.env) [jstorino@mendieta code]$ python evaluate.py brat ner ../output/test/gold ../output/test/system
+(.env) [jstorino@mendieta code]$ python3 evaluate.py brat ner ../output/test/gold ../output/test/system
                                                                       
 Report (SYSTEM: system):
 ------------------------------------------------------------
@@ -426,7 +421,7 @@ Total (156 docs)                   Precision      0.8918
                                    F1             0.8618              
 ------------------------------------------------------------
 
-(.env) [jstorino@mendieta code]$ python evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
+(.env) [jstorino@mendieta code]$ python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
                                                                       
 Report (SYSTEM: system):
 ------------------------------------------------------------

@@ -8,11 +8,11 @@
 1. [Introducción](#introducción)
 2. [Motivación](#motivación)
 3. [Objetivos](#objetivos)
-4. [Trabajos anteriores](#trabajos-anteriores)
-6. [Modelos a testear](#modelos-a-testear)
-7. [DataSet](#dataset)
+4. [Trabajos previos](#trabajos-previos)
+6. [Modelos a evaluar](#modelos-a-evaluar)
+7. [Conjunto de datos](#conjunto-de-datos)
 8. [Ejecución de los modelos](#ejecución-de-los-modelos)
-9. [Comparación y análisis de los resultados](#comparación-y-análisis-de-los-resultados)
+9. [Análisis y comparación de los resultados](#análisis-y-comparación-de-los-resultados)
 10. [Conclusiones](#conclusiones)
 11. [Referencias](#referencias)
 
@@ -33,7 +33,7 @@ El presente informe tiene como objetivo principal comparar la dependencia de dat
 - **Comparar el rendimiento de los modelos**: buscaremos determinar en qué aspectos los modelos se destacan o presentan deficiencias al realizar la tarea de anonimización en el conjunto de datos.
 - **Fomentar la colaboración interdisciplinaria**: el trabajo será en parte guiado por las críticas de nuestros compañeros, por lo que habrá un intercambio de conocimientos dado por la colaboración entre los diferentes equipos.
 
-### Trabajos anteriores
+### Trabajos previos
 
 #### Campaña “Medical Document Anonymization" - MEDDOCAN
 
@@ -203,7 +203,7 @@ Durante el proyecto se desarrollaron diversos modelos entrenados con 500 casos c
 
 Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en un formato predefinido (BRAT o i2b2). La evaluación se basó en la precisión, la exhaustividad y la puntuación F1, junto con las puntuaciones de fuga para medir la cantidad de información sensible que no se identificó.
 
-### Modelos a testear
+### Modelos a evaluar
 
 De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 3 proyectos de código abierto que presentaron un rendimiento destacado en la tarea de anonimización de textos médicos en español. Los modelos seleccionados son los siguientes:
 
@@ -215,7 +215,7 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 Para poder correr el modelo es necesario modificar la segunda linea de código del archivo Train.ipynb:
 from keras.backend.tensorflow_backend import set_session -> from tensorflow.compat.v1.keras.backend import set_session
 
-### DataSet
+### Conjunto de datos
 
 Para llevar a cabo la comparación de los modelos seleccionados se generaron nuevos [conjuntos de datos de textos](./data/) médicos en español, obtenidos a partir del módulo [Synthetic Patient Generator](./Synthetic-Patient-Generation/). Este módulo permite la generación de datos sintéticos de pacientes, incluyendo información de salud protegida (PHI), como nombres, direcciones, fechas de nacimiento, números de teléfono, entre otros. Los datos generados se almacenan en formato txt, ann y xml.
 
@@ -439,7 +439,7 @@ python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 
 #### NeuroNer:
   
-### Comparación y análisis de los resultados
+### Análisis y comparación de los resultados
 
 #### CLIN-X:
 

@@ -472,9 +472,14 @@ Total (5 docs)                     Precision      0.3871
   
 ### Comparación y análisis de los resultados
 
+En relación con el primer modelo, BiLSTM-CRF, se observa que su desempeño en la detección de entidades y posiciones es inconsistente. Aunque logra identificar correctamente las entidades más comunes y típicas del conjunto de datos original, presenta dificultades al tratar casos más complejos. Por ejemplo, al añadir números aleatorios a las direcciones, siguiendo las guías de notacion, el modelo no logra reconocerlos adecuadamente, lo que afecta su rendimiento. Asimismo, algunos números de teléfono no son detectados, lo que impide su anonimización y, por ende, podría resultar en la identificación de las personas a partir de esos datos.
+
+Además, el modelo mostró un deterioro significativo en su desempeño al evaluar datos no vistos, con una precisión del 0.3871 y una recuperación de 0.3077. Esto sugiere que ha sufrido de sobreajuste al conjunto de entrenamiento, lo que limita su capacidad de generalización a nuevos contextos. Aunque fue capaz de identificar correctamente las entidades comunes en el conjunto original, tuvo dificultades con información menos frecuente y con errores ortográficos intencionales que se introdujeron en los datos generados. Esta falta de reconocimiento de variantes en nombres, direcciones y números de teléfono indica que el modelo necesita una mayor robustez para adaptarse a la variabilidad natural del lenguaje.
+
 ### Conclusiones
 
-Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año contando con un equipo de cinco empleados, podríamos optamizar varios aspectos. Entre ellos, sería fundamental obtener un dataset más extenso y representativo, lo cual permitiría que los resultados de los modelos fueran más precisos y fiables. Por otra parte, deberíamos mejorar los algoritmos utilizados, ya sea optimizando los actuales o explorando nuevas arquitecturas que se adapten mejor a la naturaleza de los datos. 
+Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año, contando con un equipo de cinco empleados, podríamos optamizar diversos aspectos clave. En primer lugar, sería fundamental obtener un dataset más amplio y representativo, lo que permitiría mejorar la precisión y fiabilidad de los resultados obtenidos por los modelos. 
+Asimismo, sería necesario mejorar los algoritmos utilizados, ya sea optimizando los existentes o explorando nuevas arquitecturas que se adapten mejor a la naturaleza específica de los datos. Esto incluiría mejorar algunos de los modelos existentes para garantizar que se ajusten adecuadamente a las particularidades del lenguaje y los contextos clínicos representados.
 
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.

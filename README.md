@@ -476,6 +476,17 @@ En relación con el primer modelo, BiLSTM-CRF, se observa que su desempeño en l
 
 Además, el modelo mostró un deterioro significativo en su desempeño al evaluar datos no vistos, con una precisión del 0.3871 y una recuperación de 0.3077. Esto sugiere que ha sufrido de sobreajuste al conjunto de entrenamiento, lo que limita su capacidad de generalización a nuevos contextos. Aunque fue capaz de identificar correctamente las entidades comunes en el conjunto original, tuvo dificultades con información menos frecuente y con errores ortográficos intencionales que se introdujeron en los datos generados. Esta falta de reconocimiento de variantes en nombres, direcciones y números de teléfono indica que el modelo necesita una mayor robustez para adaptarse a la variabilidad natural del lenguaje.
 
+Si comparamos los cinco casos clínicos podemos observar las siguientes diferencias entre el texto anonimizado generado por el modelo y la versión correcta, siguiendo las guías de notación:
+
+* Fragmentación incorrecta de entidades: T8	TERRITORIO 204 212	Castilla T9	TERRITORIO 213 214	y T10	TERRITORIO 215 219	León
+* Etiquetado incorrecto de datos: T9	CALLE 221 234	+34 941 83 66
+* Desajuste en las posiciones de las etiquetas: T25	NOMBRE_PERSONAL_SANITARIO 3687 3713	José Ángel Guerrero Rivera en vez de T31	NOMBRE_PERSONAL_SANITARIO 1641 1667	José Ángel Guerrero Rivera
+* Inclusión de información irrelevante: T20	ID_SUJETO_ASISTENCIA 1142 1215	acompañado por sus dos hijas de 20 años y 35 años debido a la reciente de
+* Omisión de etiquetas: T36	IDENTF_BIOMETRICOS 3028 3039	RG545EMR302 la etiqueta para los identificadores biométricos no fue reconocida ni aplicada.
+* Errores al combinar información de diferentes categorías en una única etiqueta: T6	CALLE 140 195	Paseo de Zorrilla, 1, quinto a la izquierda, Valladolid o T11	ID_ASEGURAMIENTO 232 269	Fijo 983 82 84 99, Móvil 683 78 02 65
+* Inconsistencia en el etiquetado de datos: T19	ID_SUJETO_ASISTENCIA 586 640	asociada 249.36.206.164 - MAC asociada 3D9.E0F.A68.E2A
+* Formato incorrecto al etiquetar datos: T32	ID_SUJETO_ASISTENCIA 3191 3221	906382828.
+
 ### Conclusiones
 
 Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año, contando con un equipo de cinco empleados, podríamos optamizar diversos aspectos clave. En primer lugar, sería fundamental obtener un dataset más amplio y representativo, lo que permitiría mejorar la precisión y fiabilidad de los resultados obtenidos por los modelos. 

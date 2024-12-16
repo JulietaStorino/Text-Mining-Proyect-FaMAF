@@ -438,7 +438,39 @@ python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 ```
 
 #### NeuroNer:
-  
+2. Clonar el siguiente repositorio:
+``` bash
+git clone https://github.com/Franck-Dernoncourt/NeuroNER.git
+```
+3. Crear un entorno virtual con Python 3.7.17:
+``` bash
+python3.7 -m venv NOMBRE_DEL_ENV
+```
+4. Activar el entorno virtual:
+``` bash
+source NOMBRE_DEL_ENV/bin/activate
+```
+5. Ejecutar el siguiente comando:
+``` bash
+pip install keras==2.3.1
+``` 
+6. Realizar las siguientes modificaciones en el archivo requirements.txt para resolver problemas de compatibilidad de TensorFlow, NumPy y SciPy:
+``` bash
+matplotlib==3.0.2
+networkx==2.2
+pycorenlp==0.3.0
+scikit-learn==0.20.2
+scipy==1.2.2
+spacy==2.0.18
+tensorflow==1.15.0
+numpy==1.16.4
+# tensorflow-gpu==1.1.0
+```
+7. Desde la carpeta NeuroNer ejecutar:
+``` bash
+pip install -r requirements.txt
+```
+
 ### Análisis y comparación de los resultados
 
 #### CLIN-X:

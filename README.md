@@ -284,71 +284,29 @@ pip3 install -r ../../requirements-m1.txt
 4. Crear las carpetas *bio_files*, *split_files*, *models*, *predictions*, *models/clin_x_experiment* y *predictions/clin_x_experiment*
 ``` bash
 mkdir bio_files
+mkdir bio_files/train
+mkdir bio_files/dev
+mkdir bio_files/test_m
+mkdir bio_files/test_o
 mkdir split_files
 mkdir models
 mkdir predictions
-mkdir models/clin_x_experiment
-mkdir predictions/clin_x_experiment
 ```
 5. En caso de no tener una GPU disponible, modificar el archivo *create_data_splits.py*
 ``` bash
 sed -i 's/.cuda()/.to("cpu")/g' create_data_splits.py
 ```
-6. Tokenizar los archivos de texto médico en español
+6. Tokenizar los archivos de entrennamiento, desarrollo y prueba (del corpus MEDDOCAN y nuevos), convirtiéndolos en archivos BIO con el formato requerido
 ``` bash
-python create_data_splits.py --train_files bio_files/ --method random --output_dir split_files/
+python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/train/brat/ --output_path bio_files/train/
+python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/dev/brat/ --output_path bio_files/dev/
+python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/test/brat/ --output_path bio_files/test_m/
+python tokenize_files.py --input_path ../../data/brat/gold/ --output_path bio_files/test_o/
 ```
-7. Para entrenar el modelo sin hacer uso de un optimizador dentro de la función train() crear la carpeta *models* y modificar el código contenido desde la línea 139 hasta la 152 del archivo train_standard_model_architecture.py: 
-``` python
-trainer = ModelTrainer(tagger, corpus)
-
-# Crear el optimizador
-optimizer = torch.optim.AdamW(tagger.parameters(), lr=args.learning_rate)
-
-# Crear el scheduler
-scheduler = OneCycleLR(optimizer, max_lr=args.learning_rate, total_steps=len(corpus.train) // args.mini_batch_size * args.max_epochs)
-
-trainer.train(
-    args.storage_path + args.name,
-    mini_batch_size=args.mini_batch_size,
-    mini_batch_chunk_size=args.mini_batch_chunk_size,
-    max_epochs=args.max_epochs,
-    embeddings_storage_mode='none',
-    weight_decay=0.,
-    monitor_test=True,
-    train_with_dev=args.train_wth_dev
-)
-```
-8. Ejecutar el comando:
+7. Dividir los datos tokenizados de entranamiento y desarrollo en varias partes de manera aleatoria
 ``` bash
-python train_standard_model_architecture.py --data_path bio_files/ --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models/ --language es --task ner
+python create_data_splits.py --train_files bio_files/train/ --dev_files bio_files/dev/ --method random --output_dir split_files/
 ```
-En la carpeta *models/clin_x_experiment* se generarán 5 archivos.
-
-9. Realizar las siguiente modificaciones en la línea 68 del archivo utils.py:
-``` python
-    corpus = ColumnCorpus(
-        data_path, columns, 
-        train_file=train_file,
-        dev_file=train_file,
-        test_file=train_file,
-        document_separator_token='<DOCSTART>'
-    )
-```
-10. Realizar la siguiente modificación en la línea 107 del archivo get_test_predictions.py:
-``` python
-for doc in tqdm(docs):
-        sents = load_file_as_flair_corpus(doc.replace(conll_path, ''), conll_path)
-        y_gold = [[token.get_labels(tag_type)[0].value for token in sent if token.get_labels(tag_type)] for sent in sents]
-        model.predict(sents, mini_batch_size=mini_batch_size)
-        y_pred = [[token.get_labels(tag_type)[0].value for token in sent if token.get_labels(tag_type)] for sent in sents]
-        tokens = [[token for token in sent] for sent in sents]
-```
-11. Ejecutar el comando
-``` bash
-python get_test_predictions.py --name models/clin_x_experiment --conll_path bio_files/ --out_path predictions/clin_x_experiment/
-```
-En la carpeta *predictions/clin_x_experiment* se generarán 5 archivos.
 
 #### BiLSTM-CRF:
 2. Descomprimir y reestructurar los datos de entrenamiento

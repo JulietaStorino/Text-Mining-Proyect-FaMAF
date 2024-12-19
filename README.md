@@ -396,7 +396,7 @@ python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 ```
 
 #### NeuroNer:
-2. Clonar el siguiente repositorio:
+2. Clonar el siguiente repositorio dentro de la carpeta models/Neuroner:
 ``` bash
 git clone https://github.com/Franck-Dernoncourt/NeuroNER.git
 ```
@@ -408,7 +408,7 @@ python3.7 -m venv NOMBRE_DEL_ENV
 ``` bash
 source NOMBRE_DEL_ENV/bin/activate
 ```
-5. Ejecutar el siguiente comando:
+5. Ejecutar el siguiente comando dentro del entorno:
 ``` bash
 pip install keras==2.3.1
 ``` 

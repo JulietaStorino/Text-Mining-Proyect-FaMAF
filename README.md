@@ -258,7 +258,8 @@ De esta manera, la cantidad de ocurrencias de cada tipo de entidad en el conjunt
 * IDENTF_BIOMETRICOS: 8
 * OTRO_NUMERO_IDENTIF: 5
 
-Siendo un total de 195 entidades en el conjunto de datos generado.
+Siendo un total de 195 entidades en el conjunto de datos generado, incluídas entidades de tipos que no habían sido utilizados en los datos del corpus original, como ID_EMPLEO_PERSONAL_SANITARIO, IDENTIF_VEHICULOS_NRSERIE_PLACAS, IDENTIF_DISPOSITIVOS_NRSERIE, URL_WEB, DIREC_PROT_INTERNET, IDENTF_BIOMETRICOS y OTRO_NUMERO_IDENTIF.
+Cabe aclarar que no se agregaron entidades de tipo NUMERO_BENEF_PLAN_SALUD ya que, a pesar de que se encuentra listada como una entidad sensible en la presentación del proyecto, no se detalla en la guía de anotación utilizada.
 
 ### Ejecución de los modelos
 

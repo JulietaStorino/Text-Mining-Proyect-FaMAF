@@ -424,7 +424,7 @@ source .env/bin/activate
 ```
 3. Instalar las dependencias
 ``` bash
-pip install jupyter cython tensorflow==1.14.0 keras==2.2.4 spacy pyneuroner
+pip install cython tensorflow==1.14.0 keras==2.2.4 spacy pyneuroner
 ```
 4. Mover el archivo NeuroNer.py a la carpeta del modelo
 ``` bash

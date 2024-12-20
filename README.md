@@ -272,57 +272,6 @@ git clone "https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN.git" .
 cd ..
 ```
 
-#### CLIN-X:
-
-2. Crear el entorno virtual
-``` bash
-cd models/CLIN-X
-conda create -n clin-x python==3.8.5
-conda activate clin-x
-```
-3. Instalar las dependencias
-``` bash
-pip3 install flair==0.8 transformers==4.6.1 torch==1.8.1 scikit-learn==0.23.1 scipy==1.6.3 numpy nltk tqdm seaborn matplotlib
-```
-4. Crear las carpetas *bio_files*, *split_files*, *models*, *predictions*, *models/clin_x_experiment* y *predictions/clin_x_experiment*
-``` bash
-mkdir bio_files
-mkdir bio_files/train
-mkdir bio_files/dev
-mkdir bio_files/test_m
-mkdir bio_files/test_o
-mkdir split_files
-mkdir models
-mkdir predictions
-mkdir models/clin_x_experiment
-mkdir predictions/old_data
-mkdir predictions/new_data
-```
-5. En caso de no tener una GPU disponible, modificar el archivo *create_data_splits.py*
-``` bash
-sed -i 's/.cuda()/.to("cpu")/g' create_data_splits.py
-```
-6. Tokenizar los archivos de entrennamiento, desarrollo y prueba (del corpus MEDDOCAN y nuevos), convirtiéndolos en archivos BIO con el formato requerido
-``` bash
-python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/train/brat/ --output_path bio_files/train/
-python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/dev/brat/ --output_path bio_files/dev/
-python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/test/brat/ --output_path bio_files/test_m/
-python tokenize_files.py --input_path ../../data/brat/gold/ --output_path bio_files/test_o/
-```
-7. Dividir los datos tokenizados de entranamiento y desarrollo en varias partes de manera aleatoria
-``` bash
-python create_data_splits.py --train_files bio_files/train/ --dev_files bio_files/dev/ --method random --output_dir split_files/
-```
-8. Entrenar el modelo
-``` bash
-python train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models
-```
-9. Realizar las predicciones
-``` bash
-python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_m/ --out_path predictions/old_data/
-python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_o/ --out_path predictions/new_data/
-```
-
 #### BiLSTM-CRF:
 
 2. Descomprimir y reestructurar los datos de entrenamiento
@@ -410,7 +359,61 @@ cd ../..
 python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 ```
 
+#### CLIN-X:
+
+2. Crear el entorno virtual
+``` bash
+cd models/CLIN-X
+conda create -n clin-x python==3.8.5
+conda activate clin-x
+```
+3. Instalar las dependencias
+``` bash
+pip3 install flair==0.8 transformers==4.6.1 torch==1.8.1 scikit-learn==0.23.1 scipy==1.6.3 numpy nltk tqdm seaborn matplotlib
+```
+4. Crear las carpetas *bio_files*, *split_files*, *models*, *predictions*, *models/clin_x_experiment* y *predictions/clin_x_experiment*
+``` bash
+mkdir bio_files
+mkdir bio_files/train
+mkdir bio_files/dev
+mkdir bio_files/test_m
+mkdir bio_files/test_o
+mkdir split_files
+mkdir models
+mkdir predictions
+mkdir models/clin_x_experiment
+mkdir predictions/old_data
+mkdir predictions/new_data
+```
+5. En caso de no tener una GPU disponible, modificar el archivo *create_data_splits.py*
+``` bash
+sed -i 's/.cuda()/.to("cpu")/g' create_data_splits.py
+```
+6. Tokenizar los archivos de entrennamiento, desarrollo y prueba (del corpus MEDDOCAN y nuevos), convirtiéndolos en archivos BIO con el formato requerido
+``` bash
+python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/train/brat/ --output_path bio_files/train/
+python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/dev/brat/ --output_path bio_files/dev/
+python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/test/brat/ --output_path bio_files/test_m/
+python tokenize_files.py --input_path ../../data/brat/gold/ --output_path bio_files/test_o/
+```
+7. Dividir los datos tokenizados de entranamiento y desarrollo en varias partes de manera aleatoria
+``` bash
+python create_data_splits.py --train_files bio_files/train/ --dev_files bio_files/dev/ --method random --output_dir split_files/
+```
+8. Entrenar el modelo
+``` bash
+python train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models
+```
+9. Realizar las predicciones
+``` bash
+python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_m/ --out_path predictions/old_data/
+python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_o/ --out_path predictions/new_data/
+```
+10. Evaluar los datos
+
 #### NeuroNer:
+
+Para hacer más fácil la ejecución de este modelo, ya que originalmente se corre con una notebook de Jupyter con los parámetros ya definidos, se convirtió el archivo Train.ipynb a un archivo .py para poder ejecutarlo en la terminal, agregando a demás distinción entre los archivos de salida old_data y new_data, para poder evaluar los datos del MEDDOCAN y los datos generados respectivamente. 
 
 2. Crear el entorno virtual
 ``` bash
@@ -422,14 +425,22 @@ source .env/bin/activate
 ``` bash
 pip install jupyter cython tensorflow==1.14.0 keras==2.2.4 spacy pyneuroner
 ```
-4. Ejecutar la notebook *Train.ipynb*
+4. Mover el archivo NeuroNer.py a la carpeta del modelo
 ``` bash
-jupyter nbconvert --to notebook --execute Train.ipynb --output Train_executed.ipynb
+mv ../../NeuroNer.py .
 ```
+5. Crear los directorios necesarios
+``` bash
+mkdir output/old_data
+mkdir output/new_data
+```
+6. Correr el modelo
+``` bash
+python NeuroNer.py
+```
+7. Evaluar los datos
 
 ### Análisis y comparación de los resultados
-
-#### CLIN-X:
 
 #### BiLSTM-CRF:
 * Datos de prueba (MEDDOCAN):
@@ -455,15 +466,17 @@ Total (5 docs)                     Precision      0.3871
 ------------------------------------------------------------
 ```
 
+#### CLIN-X:
+
 #### NeuroNer:
   
 ### Comparación y análisis de los resultados
 
-En relación con el primer modelo, BiLSTM-CRF, se observa que su desempeño en la detección de entidades y posiciones es inconsistente. Aunque logra identificar correctamente las entidades más comunes y típicas del conjunto de datos original, presenta dificultades al tratar casos más complejos. Por ejemplo, al añadir números aleatorios a las direcciones, siguiendo las guías de notacion, el modelo no logra reconocerlos adecuadamente, lo que afecta su rendimiento. Asimismo, algunos números de teléfono no son detectados, lo que impide su anonimización y, por ende, podría resultar en la identificación de las personas a partir de esos datos.
+En relación con el primer modelo, BiLSTM-CRF, se observa que su desempeño en la detección de entidades y posiciones es inconsistente. Aunque logra identificar correctamente las entidades más comunes y típicas del conjunto de datos original, presenta dificultades al tratar casos más complejos. Por ejemplo, al añadir números aleatorios a las direcciones, siguiendo las guías de notación, el modelo no logra reconocerlos adecuadamente, lo que afecta su rendimiento. Asimismo, algunos números de teléfono no son detectados, lo que impide su anonimización y, por ende, podría resultar en la identificación de las personas a partir de esos datos.
 
 Además, el modelo mostró un deterioro significativo en su desempeño al evaluar datos no vistos, con una precisión del 0.3871 y una recuperación de 0.3077. Esto sugiere que ha sufrido de sobreajuste al conjunto de entrenamiento, lo que limita su capacidad de generalización a nuevos contextos. Aunque fue capaz de identificar correctamente las entidades comunes en el conjunto original, tuvo dificultades con información menos frecuente y con errores ortográficos intencionales que se introdujeron en los datos generados. Esta falta de reconocimiento de variantes en nombres, direcciones y números de teléfono indica que el modelo necesita una mayor robustez para adaptarse a la variabilidad natural del lenguaje.
 
-Si comparamos los cinco casos clínicos podemos observar las siguientes diferencias entre el texto anonimizado generado por el modelo y la versión correcta, siguiendo las guías de notación:
+Si comparamos los cinco casos clínicos, podemos observar las siguientes diferencias entre el texto anonimizado generado por el modelo y la versión correcta, siguiendo las guías de notación:
 
 * Fragmentación incorrecta de entidades: T8	TERRITORIO 204 212	Castilla T9	TERRITORIO 213 214	y T10	TERRITORIO 215 219	León
 * Etiquetado incorrecto de datos: T9	CALLE 221 234	+34 941 83 66
@@ -476,10 +489,11 @@ Si comparamos los cinco casos clínicos podemos observar las siguientes diferenc
 
 ### Conclusiones
 
-Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año, contando con un equipo de cinco empleados, podríamos optamizar diversos aspectos clave. En primer lugar, sería fundamental obtener un dataset más amplio y representativo, lo que permitiría mejorar la precisión y fiabilidad de los resultados obtenidos por los modelos. 
-Asimismo, sería necesario mejorar los algoritmos utilizados, ya sea optimizando los existentes o explorando nuevas arquitecturas que se adapten mejor a la naturaleza específica de los datos. Esto incluiría mejorar algunos de los modelos existentes para garantizar que se ajusten adecuadamente a las particularidades del lenguaje y los contextos clínicos representados.
-Por último, se podría seleccionar una mayor cantidad de modelos y comparar su desmpeño con respecto a la anonimización de los textos médicos. 
+Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año, contando con un equipo de cinco empleados, podríamos optimizar diversos aspectos clave. En primer lugar, sería fundamental obtener un dataset más amplio y representativo, lo que permitiría mejorar la precisión y fiabilidad de los resultados obtenidos por los modelos. 
 
+Asimismo, sería necesario mejorar los algoritmos utilizados, ya sea optimizando los existentes o explorando nuevas arquitecturas que se adapten mejor a la naturaleza específica de los datos. Esto incluiría mejorar algunos de los modelos existentes para garantizar que se ajusten adecuadamente a las particularidades del lenguaje y los contextos clínicos representados.
+
+Por último, se podría seleccionar una mayor cantidad de modelos y comparar su desempeño con respecto a la anonimización de los textos médicos.
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.
 - [Automatic De-Identification of Medical Texts in Spanish: the MEDDOCAN Track, Corpus, Guidelines, Methods and Evaluation of Results.](https://ceur-ws.org/Vol-2421/MEDDOCAN_overview.pdf)

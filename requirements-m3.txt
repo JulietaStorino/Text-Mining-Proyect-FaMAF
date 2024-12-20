@@ -1,0 +1,6 @@
+jupyter
+cython
+tensorflow==1.14.0
+keras==2.2.4
+spacy
+pyneuroner

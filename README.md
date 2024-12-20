@@ -291,6 +291,9 @@ mkdir bio_files/test_o
 mkdir split_files
 mkdir models
 mkdir predictions
+mkdir models/clin_x_experiment
+mkdir predictions/old_data
+mkdir predictions/new_data
 ```
 5. En caso de no tener una GPU disponible, modificar el archivo *create_data_splits.py*
 ``` bash
@@ -307,7 +310,10 @@ python tokenize_files.py --input_path ../../data/brat/gold/ --output_path bio_fi
 ``` bash
 python create_data_splits.py --train_files bio_files/train/ --dev_files bio_files/dev/ --method random --output_dir split_files/
 ```
-
+8. Entrenar el modelo
+``` bash
+python train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models --mini_batch_size 8 --max_epochs 10 --context 50 --learning_rate 5e-5
+```
 #### BiLSTM-CRF:
 2. Descomprimir y reestructurar los datos de entrenamiento
 ``` bash

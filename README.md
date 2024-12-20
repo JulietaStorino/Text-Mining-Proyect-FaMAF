@@ -8,7 +8,7 @@
 1. [Introducción](#introducción)
 2. [Motivación](#motivación)
 3. [Objetivos](#objetivos)
-4. [Trabajos previos](#trabajos-previos)
+4. [Trabajos Previos: Campaña MEDDOCAN](#trabajos-previos-campaña-meddocan)
 6. [Modelos a evaluar](#modelos-a-evaluar)
 7. [Conjunto de datos](#conjunto-de-datos)
 8. [Ejecución de los modelos](#ejecución-de-los-modelos)
@@ -33,11 +33,13 @@ El presente informe tiene como objetivo principal comparar la dependencia de dat
 - **Comparar el rendimiento de los modelos**: buscaremos determinar en qué aspectos los modelos se destacan o presentan deficiencias al realizar la tarea de anonimización en el conjunto de datos.
 - **Fomentar la colaboración interdisciplinaria**: el trabajo será en parte guiado por las críticas de nuestros compañeros, por lo que habrá un intercambio de conocimientos dado por la colaboración entre los diferentes equipos.
 
-### Trabajos previos
+### Trabajos Previos: Campaña MEDDOCAN
 
-#### Campaña “Medical Document Anonymization" - MEDDOCAN
+Este trabajo se centra en la campaña "Medical Document Anonymization (MEDDOCAN)" desarrollada por el Plan de Impulso de las Tecnologías del Lenguaje del Gobierno de España. Donde se propuso la tarea de anonimización de textos médicos en español, con el objetivo de desarrollar y evaluar la eficacia de modelos de aprendizaje automático para la identificación y desidentificación de información de salud protegida (PHI) en textos médicos en español. La campaña se llevó a cabo en el marco de la conferencia internacional IberLEF 2021, que se celebró en línea en septiembre de 2021.
 
-Este trabajo se centra en la campaña “Medical Document Anonymization (MEDDOCAN)” desarrollado por el Plan de Impulso de las tecnologías del Lenguaje del Gobierno de España. En el marco de esta campaña, se creó un corpus sintético de 1000 registros clínicos con información de salud protegida (PHI, por sus siglas en inglés), denominado [Corpus MEDDOCAN](./SPACCC_MEDDOCAN/corpus/). Este corpus se distribuyó en texto plano con codificación UTF-8, donde cada caso clínico se almacena como un único archivo de texto y las anotaciones PHI se publican en formato BRAT e i2b2 para su visualización y evaluación. A continuación mostramos un ejemplo de un texto médico del corpus MEDDOCAN y su correspodiente notación de entidades en formato BRAT e i2b2: 
+#### Corpus MEDDOCAN
+
+En el marco de esta campaña, se creó un corpus sintético de 1000 registros clínicos con información de salud protegida (PHI, por sus siglas en inglés), denominado [Corpus MEDDOCAN](./SPACCC_MEDDOCAN/corpus/). Este corpus se distribuyó en texto plano con codificación UTF-8, donde cada caso clínico se almacena como un único archivo de texto y las anotaciones PHI se publican en formato BRAT e i2b2 para su visualización y evaluación.
 
 ```plaintext
 Datos del paciente.
@@ -147,9 +149,9 @@ Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
   <figcaption> Figura 1: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en i2b2 (.xml) </figcaption>
 </div>
 
-#### Distribución de las entidades en el conjunto de datos
+#### Guía de anotación de entidades sensibles
 
-Para llevar a cabo la anotación manual, se construyeron las primeras [pautas públicas para PHI en español](./SPACCC_MEDDOCAN/guidelines/guías-de-anotación-de-información-de-salud-protegida.pdf), a manera de proporcionar un conjunto claro y conciso de reglas y directrices para la identificación y clasificación de información sensible dentro de los historiales clínicos en español, asegurando la coherencia y la precisión en la anotación de PHI en todo el corpus MEDDOCAN. La guía se basó en la especificaciones del Reglamento General de Protección de Datos (GDPR) de la Unión Europea para garantizar que el corpus anotado cumpliera con las normas de privacidad de datos. Se consideraron las directrices de anotación de los proyectos de desidentificación i2b2, basados en la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA) de los Estados Unidos. Esto permitió la adaptación de sistemas y enfoques utilizados para textos en inglés al contexto del español. Las pautas de anotación de MEDDOCAN definieron un total de 29 tipos de entidades. La Tabla 1 resume la lista de tipos de entidades sensibles definidos para el seguimiento de MEDDOCAN y la cantidad de ocurrencias entre los conjuntos de entrenamiento, desarrollo y prueba.
+Como parte de la campaña MEDDOCAN y para llevar a cabo la anotación manual, se construyeron las primeras [pautas públicas para PHI en español](./SPACCC_MEDDOCAN/guidelines/guías-de-anotación-de-información-de-salud-protegida.pdf), a manera de proporcionar un conjunto claro y conciso de reglas y directrices para la identificación y clasificación de información sensible dentro de los historiales clínicos en español, asegurando la coherencia y la precisión en la anotación de PHI en todo el corpus MEDDOCAN. La guía se basó en la especificaciones del Reglamento General de Protección de Datos (GDPR) de la Unión Europea para garantizar que el corpus anotado cumpliera con las normas de privacidad de datos. Se consideraron las directrices de anotación de los proyectos de desidentificación i2b2, basados en la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA) de los Estados Unidos. Esto permitió la adaptación de sistemas y enfoques utilizados para textos en inglés al contexto del español. Las pautas de anotación de MEDDOCAN definieron un total de 29 tipos de entidades.
 
 <div align="center">
   <table>
@@ -260,7 +262,7 @@ Siendo un total de 195 entidades en el conjunto de datos generado.
 
 ### Ejecución de los modelos
 
-En esta sección, detallamos el proceso llevado a cabo para aplicar los modelos seleccionados al conjunto de datos, explicando las modificaciones necesarias y los ajustes realizados durante su implementación. Cada modelo tuvo sus desafíos por cuestiones de compatibilidad, diferencias en las versiones de las bibliotecas utilizadas y requerimientos particulares. A continuación, describimos los aspectos más relevantes de la ejecución y configuración de cada modelo:
+Dado que los modelos presentados fueron desarrollador a fines del 2019 y no se han actualizado desde entonces, se presentaron problemas de compatibilidad con las versiones de las bibliotecas utilizadas y requerimientos particulares. Por lo tanto, se realizaron modificaciones en los modelos para poder ejecutarlos con éxito en el conjunto de datos generado. A continuación, se detallan los pasos necesarios para ejecutar cada modelo:
 
 1. Descargar e inicializar los repositorios de los modelos:
 ``` bash
@@ -271,6 +273,7 @@ cd ..
 ```
 
 #### CLIN-X:
+
 2. Crear el entorno virtual
 ``` bash
 cd models/CLIN-X
@@ -279,7 +282,7 @@ conda activate clin-x
 ```
 3. Instalar las dependencias
 ``` bash
-pip3 install -r ../../requirements-m1.txt
+pip3 install flair==0.8 transformers==4.6.1 torch==1.8.1 scikit-learn==0.23.1 scipy==1.6.3 numpy nltk tqdm seaborn matplotlib
 ```
 4. Crear las carpetas *bio_files*, *split_files*, *models*, *predictions*, *models/clin_x_experiment* y *predictions/clin_x_experiment*
 ``` bash
@@ -312,9 +315,16 @@ python create_data_splits.py --train_files bio_files/train/ --dev_files bio_file
 ```
 8. Entrenar el modelo
 ``` bash
-python train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models --mini_batch_size 8 --max_epochs 10 --context 50 --learning_rate 5e-5
+python train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models
 ```
+9. Realizar las predicciones
+``` bash
+python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_m/ --out_path predictions/old_data/
+python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_o/ --out_path predictions/new_data/
+```
+
 #### BiLSTM-CRF:
+
 2. Descomprimir y reestructurar los datos de entrenamiento
 ``` bash
 cd models/BiLSTM-CRF
@@ -331,9 +341,8 @@ source .env/bin/activate
 ```
 4. Instalar las dependencias
 ``` bash
-pip3 install -r ../../requirements-m2.txt
+pip install tensorflow==1.14.0 numpy==1.16.4 scipy==1.3.0 cython wheel spacy==2.3.2 nltk matplotlib gast==0.2.2 scikit-learn
 ```
-
 5. Descargar pipeline en español optimizado para CPU
 ``` bash
 python3 -m spacy download es_core_news_sm
@@ -345,7 +354,7 @@ sed -i "s/spacy.load('es')/spacy.load('es_core_news_sm')/g" preprocessing.py
 ```
 7. Descargar los recursos necesarios
 ``` bash
-python3 requirements-m2.py
+python3 ../../../requirements.py
 ```
 8. Preprocesar los datos
 ``` bash
@@ -402,6 +411,7 @@ python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 ```
 
 #### NeuroNer:
+
 2. Crear el entorno virtual
 ``` bash
 cd models/NeuroNer/
@@ -410,20 +420,20 @@ source .env/bin/activate
 ```
 3. Instalar las dependencias
 ``` bash
-pip3 install -r ../../requirements-m3.txt
+pip install jupyter cython tensorflow==1.14.0 keras==2.2.4 spacy pyneuroner
 ```
 4. Ejecutar la notebook *Train.ipynb*
 ``` bash
 jupyter nbconvert --to notebook --execute Train.ipynb --output Train_executed.ipynb
 ```
+
 ### Análisis y comparación de los resultados
 
 #### CLIN-X:
 
 #### BiLSTM-CRF:
+* Datos de prueba (MEDDOCAN):
 ``` bash
-(.env) [jstorino@mendieta code]$ python3 evaluate.py brat ner ../output/test/gold ../output/test/system
-                                                                      
 Report (SYSTEM: system):
 ------------------------------------------------------------
 SubTrack 1 [NER]                   Measure        Micro               
@@ -432,9 +442,9 @@ Total (156 docs)                   Precision      0.8918
                                    Recall         0.8337              
                                    F1             0.8618              
 ------------------------------------------------------------
-
-(.env) [jstorino@mendieta code]$ python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
-                                                                      
+```
+* Datos de prueba (generados):
+``` bash                                                                 
 Report (SYSTEM: system):
 ------------------------------------------------------------
 SubTrack 1 [NER]                   Measure        Micro               

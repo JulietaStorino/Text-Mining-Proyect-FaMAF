@@ -92,7 +92,7 @@ T16	NOMBRE_SUJETO_ASISTENCIA 47 63	De Miguel Rivera
 T17	NOMBRE_SUJETO_ASISTENCIA 29 34	Pedro
 ```
 <div align="center">
-  <figcaption> Figura 1: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en BRAT (.ann) </figcaption>
+  <figcaption> Figura 2: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en BRAT (.ann) </figcaption>
 </div>
 
 ``` xml
@@ -146,7 +146,7 @@ Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
 </MEDDOCAN>
 ```
 <div align="center">
-  <figcaption> Figura 1: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en i2b2 (.xml) </figcaption>
+  <figcaption> Figura 3: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en i2b2 (.xml) </figcaption>
 </div>
 
 #### Guía de anotación de entidades sensibles
@@ -275,7 +275,7 @@ cd ..
 
 #### BiLSTM-CRF:
 
-2. Descomprimir y reestructurar los datos de entrenamiento
+2. Descomprimir y reestructurar los datos de entrenamiento:
 ``` bash
 cd models/BiLSTM-CRF
 unzip data.zip
@@ -284,77 +284,77 @@ mv data/dev .
 mkdir output
 mv data/test output
 ```
-3. Crear el entorno virtual
+3. Crear el entorno virtual:
 ``` bash
 python3 -m venv .env
 source .env/bin/activate
 ```
-4. Instalar las dependencias
+4. Instalar las dependencias:
 ``` bash
 pip install tensorflow==1.14.0 numpy==1.16.4 scipy==1.3.0 cython wheel spacy==2.3.2 nltk matplotlib gast==0.2.2 scikit-learn
 ```
-5. Descargar pipeline en español optimizado para CPU
+5. Descargar pipeline en español optimizado para CPU:
 ``` bash
 python3 -m spacy download es_core_news_sm
 ```
-6. Reemplaza todas las instancias de spacy.load('es') por spacy.load('es_core_news_sm')
+6. Reemplaza todas las instancias de spacy.load('es') por spacy.load('es_core_news_sm'):
 ``` bash
 cd code
 sed -i "s/spacy.load('es')/spacy.load('es_core_news_sm')/g" preprocessing.py
 ```
-7. Descargar los recursos necesarios
+7. Descargar los recursos necesarios:
 ``` bash
 python3 ../../../requirements.py
 ```
-8. Preprocesar los datos
+8. Preprocesar los datos:
 ``` bash
 python3 preprocessing.py --dataDir ../train/gold --train
 python3 preprocessing.py --dataDir ../dev/gold --dev
 python3 preprocessing.py --dataDir ../test/gold --test
 ```
-9. Descarga el embedding de palabras necesario
+9. Descarga el embedding de palabras necesario:
 ``` bash
 cd Extension2
 wget -O wiki.es.vec https://dl.fbaipublicfiles.com/fasttext/vectors-wiki/wiki.es.vec
 ```
-10. Genera los archivos necesarios por el modelo neuronal
+10. Genera los archivos necesarios por el modelo neuronal:
 ``` bash
 python3 create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
 ```
-11. Crear directorios para guardar el modelo y los confusion plots
+11. Crear directorios para guardar el modelo y los confusion plots:
 ``` bash
 mkdir models
 mkdir plots
 cd Code
 ```
-12. Correr el modelo
+12. Correr el modelo:
 ``` bash
 python3 train.py
 ```
-13. Evaluar el modelo con los datos del MEDDOCAN
+13. Evaluar el modelo con los datos del MEDDOCAN:
 ``` bash
 cd ../..
 python3 evaluate.py brat ner ../output/test/gold ../output/test/system
 ```
-14. Preprocesar los datos nuevos
+14. Preprocesar los datos nuevos:
 ``` bash
 python3 preprocessing.py --dataDir ../../../data/brat/gold --test
 ```
-15. Genera los archivos necesarios por el modelo neuronal
+15. Genera los archivos necesarios por el modelo neuronal:
 ``` bash
 cd Extension2
 python3 create_vocabs.py --trainpickle ../train_word_ner_startidx_dict.pickle --devpickle ../dev_word_ner_startidx_dict.pickle --testpickle ../test_word_ner_startidx_dict.pickle --embfile wiki.es.vec --vocabEmbFile vocab_embeddings.npz
 ```
-16. Modificar el código con la ubicación de los nuevos modelos
+16. Modificar el código con la ubicación de los nuevos modelos:
 ``` bash
 cd Code
 sed -i 's|\.\./\.\./\.\./output/test/system/|\.\./\.\./\.\./\.\./\.\./data/brat/system/|g' train.py
 ```
-17. Correr el modelo
+17. Correr el modelo:
 ``` bash
 python3 train.py
 ```
-18. Evaluar los datos nuevos
+18. Evaluar los datos nuevos:
 ``` bash
 cd ../..
 python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
@@ -362,17 +362,17 @@ python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 
 #### CLIN-X:
 
-2. Crear el entorno virtual
+2. Crear el entorno virtual:
 ``` bash
 cd models/CLIN-X
 conda create -n clin-x python==3.8.5
 conda activate clin-x
 ```
-3. Instalar las dependencias
+3. Instalar las dependencias:
 ``` bash
 pip3 install flair==0.8 transformers==4.6.1 torch==1.8.1 scikit-learn==0.23.1 scipy==1.6.3 numpy nltk tqdm seaborn matplotlib
 ```
-4. Crear las carpetas *bio_files*, *split_files*, *models*, *predictions*, *models/clin_x_experiment* y *predictions/clin_x_experiment*
+4. Crear las carpetas *bio_files*, *split_files*, *models*, *predictions*, *models/clin_x_experiment* y *predictions/clin_x_experiment*:
 ``` bash
 mkdir bio_files
 mkdir bio_files/train
@@ -386,60 +386,60 @@ mkdir models/clin_x_experiment
 mkdir predictions/old_data
 mkdir predictions/new_data
 ```
-5. En caso de no tener una GPU disponible, modificar el archivo *create_data_splits.py*
+5. En caso de no tener una GPU disponible, modificar el archivo *create_data_splits.py*:
 ``` bash
 sed -i 's/.cuda()/.to("cpu")/g' create_data_splits.py
 ```
-6. Tokenizar los archivos de entrennamiento, desarrollo y prueba (del corpus MEDDOCAN y nuevos), convirtiéndolos en archivos BIO con el formato requerido
+6. Tokenizar los archivos de entrennamiento, desarrollo y prueba (del corpus MEDDOCAN y nuevos), convirtiéndolos en archivos BIO con el formato requerido:
 ``` bash
 python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/train/brat/ --output_path bio_files/train/
 python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/dev/brat/ --output_path bio_files/dev/
 python tokenize_files.py --input_path ../../SPACCC_MEDDOCAN/corpus/test/brat/ --output_path bio_files/test_m/
 python tokenize_files.py --input_path ../../data/brat/gold/ --output_path bio_files/test_o/
 ```
-7. Dividir los datos tokenizados de entranamiento y desarrollo en varias partes de manera aleatoria
+7. Dividir los datos tokenizados de entranamiento y desarrollo en varias partes de manera aleatoria:
 ``` bash
 python create_data_splits.py --train_files bio_files/train/ --dev_files bio_files/dev/ --method random --output_dir split_files/
 ```
-8. Entrenar el modelo
+8. Entrenar el modelo:
 ``` bash
 python train_our_model_architecture.py --data_path split_files/ --train_files random_split_1.txt,random_split_2.txt,random_split_3.txt,random_split_4.txt --dev_file random_split_5.txt --model llange/xlm-roberta-large-spanish-clinical --name clin_x_experiment --storage_path models
 ```
-9. Realizar las predicciones
+9. Realizar las predicciones:
 ``` bash
 python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_m/ --out_path predictions/old_data/
 python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio_files/test_o/ --out_path predictions/new_data/
 ```
-10. Evaluar los datos
+10. Evaluar los datos del MEDDOCAN y los datos nuevos.
 
 #### NeuroNer:
 
 Para hacer más fácil la ejecución de este modelo, ya que originalmente se corre con una notebook de Jupyter con los parámetros ya definidos, se convirtió el archivo Train.ipynb a un archivo .py para poder ejecutarlo en la terminal, agregando a demás distinción entre los archivos de salida old_data y new_data, para poder evaluar los datos del MEDDOCAN y los datos generados respectivamente. 
 
-2. Crear el entorno virtual
+2. Crear el entorno virtual:
 ``` bash
 cd models/NeuroNer/
 python3 -m venv .env
 source .env/bin/activate
 ```
-3. Instalar las dependencias
+3. Instalar las dependencias:
 ``` bash
 pip install cython tensorflow==1.14.0 keras==2.2.4 spacy pyneuroner
 ```
-4. Mover el archivo NeuroNer.py a la carpeta del modelo
+4. Mover el archivo NeuroNer.py a la carpeta del modelo:
 ``` bash
 mv ../../NeuroNer.py .
 ```
-5. Crear los directorios necesarios
+5. Crear los directorios necesarios:
 ``` bash
 mkdir output/old_data
 mkdir output/new_data
 ```
-6. Correr el modelo
+6. Correr el modelo:
 ``` bash
 python NeuroNer.py
 ```
-7. Evaluar los datos
+7. Evaluar los datos:
 
 ### Análisis y comparación de los resultados
 
@@ -469,32 +469,129 @@ Total (5 docs)                     Precision      0.3871
 
 #### CLIN-X:
 
+No se pudo concluir la ejecución del modelo debido a limitaciones de tiempo. El repositorio proporcionado por el equipo contenía el modelo original y los scripts necesarios para su entrenamiento desde cero, un proceso que requería más de 24 horas de cómputo continuo. Dada la complejidad del entrenamiento y las restricciones temporales, no fue posible realizar la evaluación del rendimiento del modelo en los datos nuevos generados para este análisis.
+
 #### NeuroNer:
-  
+
+No se pudo concluir la ejecución del modelo debido a limitaciones de tiempo. El repositorio proporcionado por el equipo contenía el modelo original y los scripts necesarios para su entrenamiento desde cero, un proceso que requería más de 24 horas de cómputo continuo. Dada la complejidad del entrenamiento y las restricciones temporales, no fue posible realizar la evaluación del rendimiento del modelo en los datos nuevos generados para este análisis.
+
 ### Comparación y análisis de los resultados
 
-En relación con el primer modelo, BiLSTM-CRF, se observa que su desempeño en la detección de entidades y posiciones es inconsistente. Aunque logra identificar correctamente las entidades más comunes y típicas del conjunto de datos original, presenta dificultades al tratar casos más complejos. Por ejemplo, al añadir números aleatorios a las direcciones, siguiendo las guías de notación, el modelo no logra reconocerlos adecuadamente, lo que afecta su rendimiento. Asimismo, algunos números de teléfono no son detectados, lo que impide su anonimización y, por ende, podría resultar en la identificación de las personas a partir de esos datos.
+<div align="center">
+<a href="https://ibb.co/0rs9573"><img src="https://i.ibb.co/FzHYprt/Matriz-confuncio.png" alt="Matriz confuncion de las predicciones" border="0"></a>
+  <figcaption> Figura 4: Matriz de confusión de las predicciones del modelo BiLSTM-CRF en los datos de prueba generados </figcaption>
+  <br>
+</div>
 
+En el modelo BiLSTM-CRF, se observa que el desempeño en la detección de entidades y posiciones es inconsistente. Aunque logra identificar correctamente las entidades más comunes y típicas en relación al conjunto de datos original, presenta dificultades al tratar casos más complejos. Por ejemplo, al añadir números aleatorios a las direcciones, siguiendo las guías de notación, el modelo no logra reconocerlos adecuadamente, lo que afecta su rendimiento. Asimismo, algunos números de teléfono no son detectados, lo que impide su anonimización y, por ende, podría resultar en la identificación de las personas a partir de esos datos.
 Además, el modelo mostró un deterioro significativo en su desempeño al evaluar datos no vistos, con una precisión del 0.3871 y una recuperación de 0.3077. Esto sugiere que ha sufrido de sobreajuste al conjunto de entrenamiento, lo que limita su capacidad de generalización a nuevos contextos. Aunque fue capaz de identificar correctamente las entidades comunes en el conjunto original, tuvo dificultades con información menos frecuente y con errores ortográficos intencionales que se introdujeron en los datos generados. Esta falta de reconocimiento de variantes en nombres, direcciones y números de teléfono indica que el modelo necesita una mayor robustez para adaptarse a la variabilidad natural del lenguaje.
-
 Si comparamos los cinco casos clínicos, podemos observar las siguientes diferencias entre el texto anonimizado generado por el modelo y la versión correcta, siguiendo las guías de notación:
 
-* Fragmentación incorrecta de entidades: T8	TERRITORIO 204 212	Castilla T9	TERRITORIO 213 214	y T10	TERRITORIO 215 219	León
-* Etiquetado incorrecto de datos: T9	CALLE 221 234	+34 941 83 66
-* Desajuste en las posiciones de las etiquetas: T25	NOMBRE_PERSONAL_SANITARIO 3687 3713	José Ángel Guerrero Rivera en vez de T31	NOMBRE_PERSONAL_SANITARIO 1641 1667	José Ángel Guerrero Rivera
-* Inclusión de información irrelevante: T20	ID_SUJETO_ASISTENCIA 1142 1215	acompañado por sus dos hijas de 20 años y 35 años debido a la reciente de
-* Omisión de etiquetas: T36	IDENTF_BIOMETRICOS 3028 3039	RG545EMR302 la etiqueta para los identificadores biométricos no fue reconocida ni aplicada.
-* Errores al combinar información de diferentes categorías en una única etiqueta: T6	CALLE 140 195	Paseo de Zorrilla, 1, quinto a la izquierda, Valladolid o T11	ID_ASEGURAMIENTO 232 269	Fijo 983 82 84 99, Móvil 683 78 02 65
-* Inconsistencia en el etiquetado de datos: T19	ID_SUJETO_ASISTENCIA 586 640	asociada 249.36.206.164 - MAC asociada 3D9.E0F.A68.E2A
-* Formato incorrecto al etiquetar datos: T32	ID_SUJETO_ASISTENCIA 3191 3221	906382828.
+#### Fragmentación incorrecta de entidades:
+Donde el modelo identifica:
+``` ann
+T8	TERRITORIO 204 212	Castilla
+T9	TERRITORIO 213 214	y
+T10	TERRITORIO 215 219	León
+```
+En lugar de:
+``` ann
+T10	TERRITORIO 204 219	Castilla y León
+```
+
+#### Etiquetado incorrecto de datos:
+Donde el modelo identifica:
+``` ann
+T9	CALLE 221 234	+34 941 83 66
+```
+En lugar de:
+``` ann
+T11	NUMERO_TELEFONO 222 237	34 941 83 66 19
+```
+
+#### Desajuste en las posiciones de las etiquetas:
+Donde el modelo identifica:
+``` ann
+T25	NOMBRE_PERSONAL_SANITARIO 3687 3713	José Ángel Guerrero Rivera
+```
+En lugar de:
+``` ann
+T31	NOMBRE_PERSONAL_SANITARIO 1641 1667	José Ángel Guerrero Rivera
+```
+
+#### Inclusión de información irrelevante:
+Donde el modelo identifica:
+``` ann
+T20	ID_SUJETO_ASISTENCIA 1142 1215	acompañado por sus dos hijas de 20 años y 35 años debido a la reciente de
+```
+En lugar de:
+``` ann
+T27	FAMILIARES_SUJETO_ASISTENCIA 1161 1170	dos hijas
+T28	FAMILIARES_SUJETO_ASISTENCIA 1174 1181	20 años
+T29	FAMILIARES_SUJETO_ASISTENCIA 1184 1191	35 años
+```
+
+#### Omisión de entidades sensibles:
+Donde el modelo no identifica entidades sensibles como:
+``` ann
+T12	NUMERO_FAX 245 260	34 941 71 73 23
+T20	DIREC_PROT_INTERNET 520 550	smtp://jfhernandez-biotech.com
+
+```
+O reconoce incorrectamente:
+``` ann
+T1	NOMBRE_SUJETO_ASISTENCIA 28 29	A
+```
+En lugar de:
+``` ann
+T1	NOMBRE_SUJETO_ASISTENCIA 28 42	A. "Spaghetti"
+T2	NOMBRE_SUJETO_ASISTENCIA 43 55	Martín López
+```
+
+#### Errores al combinar información de diferentes categorías en una única etiqueta:
+Donde el modelo identifica entidades como:
+``` ann
+T6	CALLE 140 195	Paseo de Zorrilla, 1, quinto a la izquierda, Valladolid
+...
+T11	ID_ASEGURAMIENTO 232 269	Fijo 983 82 84 99, Móvil 683 78 02 65
+```
+En lugar de:
+``` ann
+T7	CALLE 140 183	Paseo de Zorrilla, 1, quinto a la izquierda
+T8	TERRITORIO 185 195	Valladolid
+...
+T11	NUMERO_TELEFONO 237 249	983 82 84 99
+T12	NUMERO_TELEFONO 257 269	683 78 02 65
+```
+
+#### Inconsistencia en el etiquetado de datos:
+Donde el modelo identifica:
+``` ann
+T19	ID_SUJETO_ASISTENCIA 586 640	asociada 249.36.206.164 - MAC asociada 3D9.E0F.A68.E2A
+```
+En lugar de:
+``` ann
+T21	IDENTIF_DISPOSITIVOS_NRSERIE 595 609	249.36.206.164
+T22	IDENTIF_DISPOSITIVOS_NRSERIE 625 640	3D9.E0F.A68.E2A
+```
+
+#### Formato incorrecto al etiquetar datos:
+Donde el modelo identifica:
+``` ann
+T32	ID_SUJETO_ASISTENCIA 3191 3221	906382828.
+```
+En lugar de:
+``` ann
+T39	ID_EMPLEO_PERSONAL_SANITARIO 3191 3200	906382828
+```
 
 ### Conclusiones
+Los modelos presentados muestran un rendimiento variable en la tarea de anonimización de textos médicos en español. Aunque el modelo BiLSTM-CRF logra identificar y clasificar correctamente las entidades más comunes en el conjunto de datos original, presenta dificultades al tratar casos más complejos y al adaptarse a nuevos contextos. Las variabilidades que tiene el lenguaje natural, como errores ortográficos y gramaticales, abreviaciones, iniciales, sobrenombres y la inclusión de información irrelevante, afectan su capacidad de generalización y su precisión en la detección de entidades sensibles. Esto da como conclusión que el modelo necesita una mayor robustez para poder ser utilizado dentro de la tarea para la cual fue pensada.
 
-Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año, contando con un equipo de cinco empleados, podríamos optimizar diversos aspectos clave. En primer lugar, sería fundamental obtener un dataset más amplio y representativo, lo que permitiría mejorar la precisión y fiabilidad de los resultados obtenidos por los modelos. 
+Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año, contando con un equipo de cinco empleados, podríamos optimizar diversos aspectos clave. En primer lugar, sería fundamental tener entrenados más modelos de los presentados para poder comparar la eficacia de cada uno respecto al dataset generado. Además, sería necesario aumentar la cantidad de datos generados para obtener un dataset más amplio y representativo, lo que permitiría mejorar la precisión y fiabilidad de los resultados obtenidos por los modelos, al tener un entrenamiento más completo y variado.
 
-Asimismo, sería necesario mejorar los algoritmos utilizados, ya sea optimizando los existentes o explorando nuevas arquitecturas que se adapten mejor a la naturaleza específica de los datos. Esto incluiría mejorar algunos de los modelos existentes para garantizar que se ajusten adecuadamente a las particularidades del lenguaje y los contextos clínicos representados.
+Por último, sería necesario mejorar los algoritmos utilizados, ya sea optimizando los existentes o explorando nuevas arquitecturas que se adapten mejor a la naturaleza específica de los datos. Esto incluiría mejorar algunos de los modelos existentes para garantizar que se ajusten adecuadamente a las particularidades del lenguaje y los contextos clínicos representados. También incluiría adaptar el código de los modelos existentes a las versiones más recientes de las bibliotecas y dependencias utilizadas, para garantizar su compatibilidad y eficacia en la ejecución, ya que ninguno ha sido actualizado desde su presentación en 2019.
 
-Por último, se podría seleccionar una mayor cantidad de modelos y comparar su desempeño con respecto a la anonimización de los textos médicos.
 ### Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.
 - [Automatic De-Identification of Medical Texts in Spanish: the MEDDOCAN Track, Corpus, Guidelines, Methods and Evaluation of Results.](https://ceur-ws.org/Vol-2421/MEDDOCAN_overview.pdf)
@@ -508,3 +605,5 @@ Por último, se podría seleccionar una mayor cantidad de modelos y comparar su 
 - [Lukas Lange, Heike Adel, Jannik Strötgen. NLNDE: The Neither-Language-Nor-Domain-Experts’ Way of Spanish Medical Document De-Identification.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_5.pdf)
 - [Cristóbal Colón-Ruiz, Isabel Segura-Dedmar. Protected Health Information Recognition by BiLSTM-CRF.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_6.pdf)
 - [Alicia Lara-Clares, Ana Garcia-Serrano. Key Phrases Annotation in Medical Documents: MEDDOCAN 2019 Anonymization Task.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_15.pdf)
+
+«Este trabajo utilizó recursos computacionales del CCAD de la Universidad Nacional de Córdoba (https://ccad.unc.edu.ar/), que forman parte del SNCAD del MinCyT de la República Argentina.»

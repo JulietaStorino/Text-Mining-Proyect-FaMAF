@@ -596,8 +596,8 @@ Por último, sería necesario mejorar los algoritmos utilizados, ya sea optimiza
 
 ## Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.
+- [Pérez Ponte, Marcela. Protección de datos personales y el tratamiento de los datos de la salud.](https://www.studocu.com/es-ar/document/instituto-superior-de-profesorado-n0-3/literatura/datos-privadoss/77558888)
 - [Automatic De-Identification of Medical Texts in Spanish: the MEDDOCAN Track, Corpus, Guidelines, Methods and Evaluation of Results.](https://ceur-ws.org/Vol-2421/MEDDOCAN_overview.pdf)
-- [Synthea: Synthetic Health Data Engine.](https://github.com/synthetichealth/synthea/wiki)
 - [BRAT: a Web-based Tool for NLP-Assisted Text Annotation.](https://aclanthology.org/E12-2021.pdf)
 - [Guías de anotación de información de salud protegida.](https://temu.bsc.es/meddocan/wp-content/uploads/2019/02/gu%C3%ADas-de-anotaci%C3%B3n-de-informaci%C3%B3n-de-salud-protegida.pdf)
 - [GDPR: General Data Protection Regulation.](https://gdpr.eu/)

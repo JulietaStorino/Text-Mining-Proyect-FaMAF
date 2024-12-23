@@ -71,6 +71,7 @@ Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
 ```
 <div align="center">
   <figcaption> Figura 1: Ejemplo de texto médico del corpus MEDDOCAN.</figcaption>
+  <br></br>
 </div>
 
 ``` ann
@@ -94,8 +95,8 @@ T17	NOMBRE_SUJETO_ASISTENCIA 29 34	Pedro
 ```
 <div align="center">
   <figcaption> Figura 2: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en BRAT (.ann) </figcaption>
+  <br></br>
 </div>
-<br>
 
 ``` xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -149,7 +150,7 @@ Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
 ```
 <div align="center">
   <figcaption> Figura 3: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en i2b2 (.xml) </figcaption>
-  <br>
+  <br></br>
 </div>
 
 ### Guía de anotación de entidades sensibles
@@ -194,7 +195,7 @@ Como parte de la campaña MEDDOCAN y para llevar a cabo la anotación manual, se
     </tbody>
   </table>
   <figcaption>Tabla 1: Distribución del tipo de entidad entre los conjuntos de datos.</figcaption>
-  <br>
+  <br></br>
 </div>
 
 ### Evaluación de los modelos 
@@ -478,9 +479,10 @@ No se pudo concluir la ejecución del modelo debido a limitaciones de tiempo. El
 ## Comparación y análisis de los resultados
 
 <div align="center">
-<a href="https://ibb.co/0rs9573"><img src="https://i.ibb.co/FzHYprt/Matriz-confuncio.png" alt="Matriz confuncion de las predicciones" border="0"></a>
+  <a href="https://ibb.co/0rs9573"><img src="https://i.ibb.co/FzHYprt/Matriz-confuncio.png" alt="Matriz confuncion de las predicciones" border="0"></a>
+  <br></br>
   <figcaption> Figura 4: Matriz de confusión de las predicciones del modelo BiLSTM-CRF en los datos de prueba generados </figcaption>
-  <br>
+  <br></br>
 </div>
 
 En el modelo BiLSTM-CRF, se observa que el desempeño en la detección de entidades y posiciones es inconsistente. Aunque logra identificar correctamente las entidades más comunes y típicas en relación al conjunto de datos original, presenta dificultades al tratar casos más complejos. Por ejemplo, al añadir números aleatorios a las direcciones, siguiendo las guías de notación, el modelo no logra reconocerlos adecuadamente, lo que afecta su rendimiento. Asimismo, algunos números de teléfono no son detectados, lo que impide su anonimización y, por ende, podría resultar en la identificación de las personas a partir de esos datos.

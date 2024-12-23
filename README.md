@@ -1,10 +1,11 @@
-# Trabajo de presentación para el curso "Minería de Datos para Textos" (Text Mining)
-## Impacto de la Dependencia de Datos en Modelos de Fine-Tuning para la anonimización de textos de ciencias de la vida
-**Profesores**: Alemany Laura Alonso, Bordone Carranza Matias Eduardo, Teruel Milagro 
+# Impacto de la Dependencia de Datos en Modelos de Fine-Tuning para la anonimización de textos de ciencias de la vida
+Trabajo de presentación para el curso "Minería de Datos para Textos" (Text Mining).
+
+**Profesores**: Alemany Laura Alonso, Bordone Carranza Matias Eduardo, Teruel Milagros
 
 **Alumnos**: Brunello Florencia, Storino Julieta Paola, Troiano Santiago
 
-### Índice
+## Índice
 1. [Introducción](#introducción)
 2. [Motivación](#motivación)
 3. [Objetivos](#objetivos)
@@ -16,28 +17,28 @@
 10. [Conclusiones](#conclusiones)
 11. [Referencias](#referencias)
 
-### Introducción
+## Introducción
 
 El texto (lenguaje natural) es el camino más natural para codificar el conocimiento humano. Como resultado, la mayor parte del conocimiento humano se codifica en forma de datos de texto. Por ejemplo, el conocimiento científico existe casi exclusivamente en la literatura científica, mientras que los manuales técnicos contienen explicaciones detalladas sobre cómo operar los dispositivos. El texto es, con diferencia, el tipo de información más común con el que se encuentran las personas. De hecho, la mayor parte de la información que una persona produce y consume a diario está en forma de texto. [ChengXiang Zhai & Sean Masung 2016] 
 
-### Motivación
+## Motivación
 
 En el ámbito del cuidado de la salud se genera una gran cantidad de datos valiosos para la detección y caracterización de enfermedades. El acceso a estos datos se ha facilitado gracias a la digitalización del sistema de salud, permitiendo el procesamiento de grandes cantidades de datos (big data), mediante técnicas como el procesamiento del lenguaje natural (NLP) y el aprendizaje automático (ML), que permite analizar información sobre la salud de las poblaciones y descubrir factores sociales que influyen en los resultados de salud. Sin embargo, estos textos médicos están compuestos, en gran medida, por datos relativos al paciente y requieren un manejo cuidadoso para evitar la identificación de las personas, ya que pueden aludir a información que históricamente ha dado lugar a diversos tipos de discriminación.
 
 Esto plantea retos en cuanto a la protección de la privacidad de los datos de los pacientes, en la cual resalta el delicado equilibrio entre la utilidad de los datos y la privacidad, ya que, se pueden anonimizar datos hasta un punto en que no brinden información beneficiosa, volviéndose inútil o, por lo contrario, se puede tener datos que brinden información sustancial para ser vinculados a las personas a las que refieren. Por estas razones, investigadores de todo el mundo han desarrollado técnicas y algoritmos avanzados para anonimizar datos, permitiendo su uso para los fines solicitados mientras se mantiene el anonimato del paciente. Lo que nos lleva a la necesidad de evaluar la eficacia de estos algoritmos y técnicas de anonimización de datos, con el objetivo de identificar áreas de mejora y diseñar estrategias para optimizar su rendimiento.
 
-### Objetivos
+## Objetivos
 
 El presente informe tiene como objetivo principal comparar la dependencia de datos presente en diferentes aproximaciones para la anonimización de textos médicos en español. Para ello, se establecen los siguientes objetivos específicos:
 - **Evaluar el rendimiento de modelos ya existentes**: los datos usados para el desarrollo, entrenamiento y validación de los modelos de anonimización de textos médicos en español provienen de una fuente específica, desarrollados por un equipo en particular, con una estructura y contenido bien definidos, lo que puede afectar su rendimiento en contextos diferentes de la vida real, porque un problema común en el aprendizaje automático es que los modelos no generalizan bien a datos que no han visto antes (overfitting). Por ello, buscamos conocer su verdadera eficacia en la tarea de anonimización de textos, donde la notación de textos médicos pueden variar en su estructura y contenido, analizando la eficacia de los modelos seleccionados con datos que no fueron utilizados en su entrenamiento.
 - **Comparar el rendimiento de los modelos**: buscaremos determinar en qué aspectos los modelos se destacan o presentan deficiencias al realizar la tarea de anonimización en el conjunto de datos.
 - **Fomentar la colaboración interdisciplinaria**: el trabajo será en parte guiado por las críticas de nuestros compañeros, por lo que habrá un intercambio de conocimientos dado por la colaboración entre los diferentes equipos.
 
-### Trabajos Previos: Campaña MEDDOCAN
+## Trabajos Previos: Campaña MEDDOCAN
 
 Este trabajo se centra en la campaña "Medical Document Anonymization (MEDDOCAN)" desarrollada por el Plan de Impulso de las Tecnologías del Lenguaje del Gobierno de España. Donde se propuso la tarea de anonimización de textos médicos en español, con el objetivo de desarrollar y evaluar la eficacia de modelos de aprendizaje automático para la identificación y desidentificación de información de salud protegida (PHI) en textos médicos en español. La campaña se llevó a cabo en el marco de la conferencia internacional IberLEF 2021, que se celebró en línea en septiembre de 2021.
 
-#### Corpus MEDDOCAN
+### Corpus MEDDOCAN
 
 En el marco de esta campaña, se creó un corpus sintético de 1000 registros clínicos con información de salud protegida (PHI, por sus siglas en inglés), denominado [Corpus MEDDOCAN](./SPACCC_MEDDOCAN/corpus/). Este corpus se distribuyó en texto plano con codificación UTF-8, donde cada caso clínico se almacena como un único archivo de texto y las anotaciones PHI se publican en formato BRAT e i2b2 para su visualización y evaluación.
 
@@ -94,6 +95,7 @@ T17	NOMBRE_SUJETO_ASISTENCIA 29 34	Pedro
 <div align="center">
   <figcaption> Figura 2: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en BRAT (.ann) </figcaption>
 </div>
+<br>
 
 ``` xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -147,9 +149,10 @@ Remitido por: Dra. Estefanía Romero Selas. Email: eromeroselas@yahoo.es
 ```
 <div align="center">
   <figcaption> Figura 3: Ejemplo de notación de entidades de un texto médico del corpus MEDDOCAN en i2b2 (.xml) </figcaption>
+  <br>
 </div>
 
-#### Guía de anotación de entidades sensibles
+### Guía de anotación de entidades sensibles
 
 Como parte de la campaña MEDDOCAN y para llevar a cabo la anotación manual, se construyeron las primeras [pautas públicas para PHI en español](./SPACCC_MEDDOCAN/guidelines/guías-de-anotación-de-información-de-salud-protegida.pdf), a manera de proporcionar un conjunto claro y conciso de reglas y directrices para la identificación y clasificación de información sensible dentro de los historiales clínicos en español, asegurando la coherencia y la precisión en la anotación de PHI en todo el corpus MEDDOCAN. La guía se basó en la especificaciones del Reglamento General de Protección de Datos (GDPR) de la Unión Europea para garantizar que el corpus anotado cumpliera con las normas de privacidad de datos. Se consideraron las directrices de anotación de los proyectos de desidentificación i2b2, basados en la Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA) de los Estados Unidos. Esto permitió la adaptación de sistemas y enfoques utilizados para textos en inglés al contexto del español. Las pautas de anotación de MEDDOCAN definieron un total de 29 tipos de entidades.
 
@@ -191,9 +194,10 @@ Como parte de la campaña MEDDOCAN y para llevar a cabo la anotación manual, se
     </tbody>
   </table>
   <figcaption>Tabla 1: Distribución del tipo de entidad entre los conjuntos de datos.</figcaption>
+  <br>
 </div>
 
-#### Evaluación de los modelos 
+### Evaluación de los modelos 
 
 Durante el proyecto se desarrollaron diversos modelos entrenados con 500 casos clínicos del corpus, seleccionados aleatoriamente, siendo los casos restantes utilizados para desarrollo y prueba. Para evaluar el rendimiento de los sistemas de desidentificación, el proyecto definió dos subtareas o categorías principales que constribuyeron al objetivo general del proyecto:
 
@@ -205,7 +209,9 @@ Durante el proyecto se desarrollaron diversos modelos entrenados con 500 casos c
 
 Cada equipo podía enviar hasta cinco archivos de predicción (ejecuciones) en un formato predefinido (BRAT o i2b2). La evaluación se basó en la precisión, la exhaustividad y la puntuación F1, junto con las puntuaciones de fuga para medir la cantidad de información sensible que no se identificó.
 
-### Modelos a evaluar
+En este informe, se evaluará el rendimiento de los modelos seleccionados en la tarea de reconocimiento de entidades nombradas, posición y clasificación del tipo de entidad, junto con la detección de tramos sensibles con tramos estrictos.
+
+## Modelos a evaluar
 
 De entre todos los proyectos presentados por los 18 equipos participantes en ambas categorías, seleccionamos 3 proyectos de código abierto que presentaron un rendimiento destacado en la tarea de anonimización de textos médicos en español. Los modelos seleccionados son los siguientes:
 
@@ -214,10 +220,8 @@ De entre todos los proyectos presentados por los 18 equipos participantes en amb
 - **BiLSTM-CRF (University of Pennsylvania, Estados Unidos)**: Este modelo es una red neuronal que combina Bi-LSTM para capturar el contexto y CRF para la decodificación de etiquetas. Bi-LSTM (memoria bidireccional a largo y corto plazo) es un tipo de red neuronal recurrente (RNN) que procesa datos secuenciales tanto en dirección directa como inversa. Combina la potencia de LSTM con el procesamiento bidireccional, lo que permite que el modelo capture el contexto pasado y futuro de la secuencia de entrada. Por otro lado, CRF (campo aleatorio condicional) es un modelo estocástico utilizado para modelar secuencias de etiquetas en problemas de aprendizaje supervisado.
 
 - **NeuroNer (Carlos III University of Madrid, España)**: Este modelo se basa en la herramienta NeuroNer, que utiliza una arquitectura de aprendizaje profundo (deep learning) que combina dos capas bidireccionales de memoria a corto plazo (BiLSTM) con una capa final de campos aleatorios condicionales (CRF). Se utiliza una segunda capa BiLSTM para obtener la secuencia de probabilidades para cada token de pertenecer a una etiqueta específica. La capa CRF se utiliza para modelar las dependencias entre las etiquetas y obtener la secuencia de etiquetas más probable.
-Para poder correr el modelo es necesario modificar la segunda linea de código del archivo Train.ipynb:
-from keras.backend.tensorflow_backend import set_session -> from tensorflow.compat.v1.keras.backend import set_session
 
-### Conjunto de datos
+## Conjunto de datos
 
 Para llevar a cabo la comparación de los modelos seleccionados se generaron nuevos [conjuntos de datos de textos](./data/) médicos en español, obtenidos a partir del módulo [Synthetic Patient Generator](./Synthetic-Patient-Generation/). Este módulo permite la generación de datos sintéticos de pacientes, incluyendo información de salud protegida (PHI), como nombres, direcciones, fechas de nacimiento, números de teléfono, entre otros. Los datos generados se almacenan en formato txt, ann y xml.
 
@@ -261,7 +265,7 @@ De esta manera, la cantidad de ocurrencias de cada tipo de entidad en el conjunt
 Siendo un total de 195 entidades en el conjunto de datos generado, incluídas entidades de tipos que no habían sido utilizados en los datos del corpus original, como ID_EMPLEO_PERSONAL_SANITARIO, IDENTIF_VEHICULOS_NRSERIE_PLACAS, IDENTIF_DISPOSITIVOS_NRSERIE, URL_WEB, DIREC_PROT_INTERNET, IDENTF_BIOMETRICOS y OTRO_NUMERO_IDENTIF.
 Cabe aclarar que no se agregaron entidades de tipo NUMERO_BENEF_PLAN_SALUD ya que, a pesar de que se encuentra listada como una entidad sensible en la presentación del proyecto, no se detalla en la guía de anotación utilizada.
 
-### Ejecución de los modelos
+## Ejecución de los modelos
 
 Dado que los modelos presentados fueron desarrollador a fines del 2019 y no se han actualizado desde entonces, se presentaron problemas de compatibilidad con las versiones de las bibliotecas utilizadas y requerimientos particulares. Por lo tanto, se realizaron modificaciones en los modelos para poder ejecutarlos con éxito en el conjunto de datos generado. A continuación, se detallan los pasos necesarios para ejecutar cada modelo:
 
@@ -273,7 +277,7 @@ git clone "https://github.com/PlanTL-GOB-ES/SPACCC_MEDDOCAN.git" .
 cd ..
 ```
 
-#### BiLSTM-CRF:
+### BiLSTM-CRF:
 
 2. Descomprimir y reestructurar los datos de entrenamiento:
 ``` bash
@@ -360,7 +364,7 @@ cd ../..
 python3 evaluate.py brat ner ../../../data/brat/gold ../../../data/brat/system
 ```
 
-#### CLIN-X:
+### CLIN-X:
 
 2. Crear el entorno virtual:
 ``` bash
@@ -412,7 +416,7 @@ python get_test_predictions.py --name models/clin_x_experiment/ --conll_path bio
 ```
 10. Evaluar los datos del MEDDOCAN y los datos nuevos.
 
-#### NeuroNer:
+### NeuroNer:
 
 Para hacer más fácil la ejecución de este modelo, ya que originalmente se corre con una notebook de Jupyter con los parámetros ya definidos, se convirtió el archivo Train.ipynb a un archivo .py para poder ejecutarlo en la terminal, agregando a demás distinción entre los archivos de salida old_data y new_data, para poder evaluar los datos del MEDDOCAN y los datos generados respectivamente. 
 
@@ -439,11 +443,11 @@ mkdir output/new_data
 ``` bash
 python NeuroNer.py
 ```
-7. Evaluar los datos:
+7. Evaluar los datos.
 
-### Análisis y comparación de los resultados
+## Análisis y comparación de los resultados
 
-#### BiLSTM-CRF:
+### BiLSTM-CRF:
 * Datos de prueba (MEDDOCAN):
 ``` bash
 Report (SYSTEM: system):
@@ -467,15 +471,11 @@ Total (5 docs)                     Precision      0.3871
 ------------------------------------------------------------
 ```
 
-#### CLIN-X:
+### CLIN-X & NeuroNer:
 
 No se pudo concluir la ejecución del modelo debido a limitaciones de tiempo. El repositorio proporcionado por el equipo contenía el modelo original y los scripts necesarios para su entrenamiento desde cero, un proceso que requería más de 24 horas de cómputo continuo. Dada la complejidad del entrenamiento y las restricciones temporales, no fue posible realizar la evaluación del rendimiento del modelo en los datos nuevos generados para este análisis.
 
-#### NeuroNer:
-
-No se pudo concluir la ejecución del modelo debido a limitaciones de tiempo. El repositorio proporcionado por el equipo contenía el modelo original y los scripts necesarios para su entrenamiento desde cero, un proceso que requería más de 24 horas de cómputo continuo. Dada la complejidad del entrenamiento y las restricciones temporales, no fue posible realizar la evaluación del rendimiento del modelo en los datos nuevos generados para este análisis.
-
-### Comparación y análisis de los resultados
+## Comparación y análisis de los resultados
 
 <div align="center">
 <a href="https://ibb.co/0rs9573"><img src="https://i.ibb.co/FzHYprt/Matriz-confuncio.png" alt="Matriz confuncion de las predicciones" border="0"></a>
@@ -487,7 +487,7 @@ En el modelo BiLSTM-CRF, se observa que el desempeño en la detección de entida
 Además, el modelo mostró un deterioro significativo en su desempeño al evaluar datos no vistos, con una precisión del 0.3871 y una recuperación de 0.3077. Esto sugiere que ha sufrido de sobreajuste al conjunto de entrenamiento, lo que limita su capacidad de generalización a nuevos contextos. Aunque fue capaz de identificar correctamente las entidades comunes en el conjunto original, tuvo dificultades con información menos frecuente y con errores ortográficos intencionales que se introdujeron en los datos generados. Esta falta de reconocimiento de variantes en nombres, direcciones y números de teléfono indica que el modelo necesita una mayor robustez para adaptarse a la variabilidad natural del lenguaje.
 Si comparamos los cinco casos clínicos, podemos observar las siguientes diferencias entre el texto anonimizado generado por el modelo y la versión correcta, siguiendo las guías de notación:
 
-#### Fragmentación incorrecta de entidades:
+### Fragmentación incorrecta de entidades:
 Donde el modelo identifica:
 ``` ann
 T8	TERRITORIO 204 212	Castilla
@@ -499,7 +499,7 @@ En lugar de:
 T10	TERRITORIO 204 219	Castilla y León
 ```
 
-#### Etiquetado incorrecto de datos:
+### Etiquetado incorrecto de datos:
 Donde el modelo identifica:
 ``` ann
 T9	CALLE 221 234	+34 941 83 66
@@ -509,7 +509,7 @@ En lugar de:
 T11	NUMERO_TELEFONO 222 237	34 941 83 66 19
 ```
 
-#### Desajuste en las posiciones de las etiquetas:
+### Desajuste en las posiciones de las etiquetas:
 Donde el modelo identifica:
 ``` ann
 T25	NOMBRE_PERSONAL_SANITARIO 3687 3713	José Ángel Guerrero Rivera
@@ -519,7 +519,7 @@ En lugar de:
 T31	NOMBRE_PERSONAL_SANITARIO 1641 1667	José Ángel Guerrero Rivera
 ```
 
-#### Inclusión de información irrelevante:
+### Inclusión de información irrelevante:
 Donde el modelo identifica:
 ``` ann
 T20	ID_SUJETO_ASISTENCIA 1142 1215	acompañado por sus dos hijas de 20 años y 35 años debido a la reciente de
@@ -531,7 +531,7 @@ T28	FAMILIARES_SUJETO_ASISTENCIA 1174 1181	20 años
 T29	FAMILIARES_SUJETO_ASISTENCIA 1184 1191	35 años
 ```
 
-#### Omisión de entidades sensibles:
+### Omisión de entidades sensibles:
 Donde el modelo no identifica entidades sensibles como:
 ``` ann
 T12	NUMERO_FAX 245 260	34 941 71 73 23
@@ -548,7 +548,7 @@ T1	NOMBRE_SUJETO_ASISTENCIA 28 42	A. "Spaghetti"
 T2	NOMBRE_SUJETO_ASISTENCIA 43 55	Martín López
 ```
 
-#### Errores al combinar información de diferentes categorías en una única etiqueta:
+### Errores al combinar información de diferentes categorías en una única etiqueta:
 Donde el modelo identifica entidades como:
 ``` ann
 T6	CALLE 140 195	Paseo de Zorrilla, 1, quinto a la izquierda, Valladolid
@@ -564,7 +564,7 @@ T11	NUMERO_TELEFONO 237 249	983 82 84 99
 T12	NUMERO_TELEFONO 257 269	683 78 02 65
 ```
 
-#### Inconsistencia en el etiquetado de datos:
+### Inconsistencia en el etiquetado de datos:
 Donde el modelo identifica:
 ``` ann
 T19	ID_SUJETO_ASISTENCIA 586 640	asociada 249.36.206.164 - MAC asociada 3D9.E0F.A68.E2A
@@ -575,7 +575,7 @@ T21	IDENTIF_DISPOSITIVOS_NRSERIE 595 609	249.36.206.164
 T22	IDENTIF_DISPOSITIVOS_NRSERIE 625 640	3D9.E0F.A68.E2A
 ```
 
-#### Formato incorrecto al etiquetar datos:
+### Formato incorrecto al etiquetar datos:
 Donde el modelo identifica:
 ``` ann
 T32	ID_SUJETO_ASISTENCIA 3191 3221	906382828.
@@ -585,14 +585,14 @@ En lugar de:
 T39	ID_EMPLEO_PERSONAL_SANITARIO 3191 3200	906382828
 ```
 
-### Conclusiones
+## Conclusiones
 Los modelos presentados muestran un rendimiento variable en la tarea de anonimización de textos médicos en español. Aunque el modelo BiLSTM-CRF logra identificar y clasificar correctamente las entidades más comunes en el conjunto de datos original, presenta dificultades al tratar casos más complejos y al adaptarse a nuevos contextos. Las variabilidades que tiene el lenguaje natural, como errores ortográficos y gramaticales, abreviaciones, iniciales, sobrenombres y la inclusión de información irrelevante, afectan su capacidad de generalización y su precisión en la detección de entidades sensibles. Esto da como conclusión que el modelo necesita una mayor robustez para poder ser utilizado dentro de la tarea para la cual fue pensada.
 
 Si tuviéramos la oportunidad o responsabilidad de seguir con el proyecto dentro de un año, contando con un equipo de cinco empleados, podríamos optimizar diversos aspectos clave. En primer lugar, sería fundamental tener entrenados más modelos de los presentados para poder comparar la eficacia de cada uno respecto al dataset generado. Además, sería necesario aumentar la cantidad de datos generados para obtener un dataset más amplio y representativo, lo que permitiría mejorar la precisión y fiabilidad de los resultados obtenidos por los modelos, al tener un entrenamiento más completo y variado.
 
 Por último, sería necesario mejorar los algoritmos utilizados, ya sea optimizando los existentes o explorando nuevas arquitecturas que se adapten mejor a la naturaleza específica de los datos. Esto incluiría mejorar algunos de los modelos existentes para garantizar que se ajusten adecuadamente a las particularidades del lenguaje y los contextos clínicos representados. También incluiría adaptar el código de los modelos existentes a las versiones más recientes de las bibliotecas y dependencias utilizadas, para garantizar su compatibilidad y eficacia en la ejecución, ya que ninguno ha sido actualizado desde su presentación en 2019.
 
-### Referencias
+## Referencias
 - ChengXiang Zhai & Sean Masung (2016). Text Data Management and Analysis: A Practical Introduction to Information Retrieval and Text Mining. ACM Books.
 - [Automatic De-Identification of Medical Texts in Spanish: the MEDDOCAN Track, Corpus, Guidelines, Methods and Evaluation of Results.](https://ceur-ws.org/Vol-2421/MEDDOCAN_overview.pdf)
 - [Synthea: Synthetic Health Data Engine.](https://github.com/synthetichealth/synthea/wiki)
@@ -604,6 +604,5 @@ Por último, sería necesario mejorar los algoritmos utilizados, ya sea optimiza
 - [Bhavna Saluja, Gaurav Kumar, João Sedoc, Chris Callison-Burch. Anonymization of Sensitive Information in Medical Health Records.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_2.pdf)
 - [Lukas Lange, Heike Adel, Jannik Strötgen. NLNDE: The Neither-Language-Nor-Domain-Experts’ Way of Spanish Medical Document De-Identification.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_5.pdf)
 - [Cristóbal Colón-Ruiz, Isabel Segura-Dedmar. Protected Health Information Recognition by BiLSTM-CRF.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_6.pdf)
-- [Alicia Lara-Clares, Ana Garcia-Serrano. Key Phrases Annotation in Medical Documents: MEDDOCAN 2019 Anonymization Task.](https://ceur-ws.org/Vol-2421/MEDDOCAN_paper_15.pdf)
 
 «Este trabajo utilizó recursos computacionales del CCAD de la Universidad Nacional de Córdoba (https://ccad.unc.edu.ar/), que forman parte del SNCAD del MinCyT de la República Argentina.»
